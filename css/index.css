@@ -15,4 +15,5 @@ body {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
 }
