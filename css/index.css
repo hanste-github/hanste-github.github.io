@@ -5,10 +5,9 @@ body {
     background-position: 50%;
 }
 .blur {
-    -webkit-backdrop-filter: blur(8px); 
-    backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 40px;
-    border-top: 20; border-bottom: 20px; border-left: 20px; border-right: 20px;
-    margin-top: 20px; margin-left: 20px; margin-bottom: 20px; margin-right: 20px;
+    -webkit-backdrop-filter: blur(6px); 
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 10px; margin-left: 10px; margin-bottom: 10px; margin-right: 10px;
 }
