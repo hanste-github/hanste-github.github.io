@@ -8,4 +8,5 @@ body {
     -webkit-backdrop-filter: blur(8px); 
     backdrop-filter: blur(8px);
     border-radius: 6px;
+    margin: 4px;
 }
