@@ -1,12 +1,5 @@
 body {background-image: url(https://hanste-watermelon.github.io/images/backgrounds/back5.jpg); background-color: #0000;}
-.the-blur {
-    position: fixed;
-    top: auto;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.25);
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);
-}
+.blur {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    }
