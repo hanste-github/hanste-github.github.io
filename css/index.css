@@ -18,10 +18,10 @@ p, a, h1, h2, h3, h4, h5 {
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    height: 50px;
+    height: 50px; width: min-content;
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 .blurred {
     -webkit-backdrop-filter: blur(6px); 
