@@ -1,8 +1,8 @@
 body {
     background-image: url(https://hanste-watermelon.github.io/images/backgrounds/back2.jpg); 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.0);
     background-size: 120%;
-    background-position: fixed;
+    background-attachment: fixed;
 }
 p, a, h1, h2, h3, h4, h5 {
     color: white;
