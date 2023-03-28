@@ -11,7 +11,6 @@ p, a, h1, h2, h3, h4, h5 {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.1);
-    position: fixed;
 }
 .blurred {
     -webkit-backdrop-filter: blur(6px); 
