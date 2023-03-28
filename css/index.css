@@ -4,42 +4,43 @@ body {
     background-size: 100%;
     background-position: 50%;
 }
-p, h1, h2, h3, h4, h5 {color: white;}
+p, h1, h2, h3, h4, h5 {
+    color: white;
+}
 .blur1 {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.1);
-    width: calc(100%-20px);
-}
-.blur2 {
-    -webkit-backdrop-filter: blur(6px); 
-    backdrop-filter: blur(6px);
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-top: 10px; margin-left: 10px; margin-bottom: 10px; margin-right: 10px; 
-    width: calc(100%-20px);
-    border-radius: 10px;
 }
 .blurred {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(255, 0, 0, 0.1);
+    margin-top: 10px; margin-left: 10px; margin-bottom: 10px; margin-right: 10px; 
     width: calc(100%-20px);
+    border-radius: 10px;
 }
 .blurblue {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(0, 4, 255, 0.1);
+    margin-top: 10px; margin-left: 10px; margin-bottom: 10px; margin-right: 10px; 
     width: calc(100%-20px);
+    border-radius: 10px;
 }
 .blurgreen {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(60, 255, 0, 0.1);
+    margin-top: 10px; margin-left: 10px; margin-bottom: 10px; margin-right: 10px; 
     width: calc(100%-20px);
+    border-radius: 10px;
 }
 .bluryellow {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(255, 200, 0, 0.1);
+    margin-top: 10px; margin-left: 10px; margin-bottom: 10px; margin-right: 10px; 
     width: calc(100%-20px);
+    border-radius: 10px;
 }
