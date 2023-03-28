@@ -4,7 +4,7 @@ body {
     background-size: 100%;
     background-position: 50%;
 }
-p, h1, h2, h3, h4, h5 {
+p, a, h1, h2, h3, h4, h5 {
     color: white;
 }
 .blur1 {
