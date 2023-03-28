@@ -13,7 +13,7 @@ p, a, h1, h2, h3, h4, h5 {
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.1);
     top: 0px;
-    position: fixed;
+    position: sticky;
     margin: 0;
     padding: 0;
     width: 100%;
