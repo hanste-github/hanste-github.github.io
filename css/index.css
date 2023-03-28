@@ -19,6 +19,8 @@ p, a, h1, h2, h3, h4, h5 {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     height: 50px;
+    display: flex;
+    justify-content: center;
 }
 .blurred {
     -webkit-backdrop-filter: blur(6px); 
