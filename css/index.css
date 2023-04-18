@@ -31,7 +31,12 @@ p, a, h1, h2, h3, h4, h5 {
     font-size: 20px;
 }
 .border20 {
-    margin: 20px;
+    margin-top: 50%;
+    margin-bottom: 50%;
     float: left;
     margin-right: 20px;
+}
+.mittig {
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
