@@ -3,6 +3,7 @@ body {
     background-color: rgba(0, 0, 0, 0.0);
     background-size: 120%;
     background-attachment: fixed;
+    text-align: center;
 }
 p, a, h1, h2, h3, h4, h5 {
     color: white;
@@ -18,8 +19,13 @@ p, a, h1, h2, h3, h4, h5 {
     background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
+}
+.div1 {
+    margin: 10%;
+    height: 80%;
+    width: 80%;
     overflow-y: auto;
-    text-align: center;
+    border-radius: 5px;
 }
 .button1 {
     -webkit-backdrop-filter: blur(6px); 
@@ -29,9 +35,4 @@ p, a, h1, h2, h3, h4, h5 {
     border-radius: 12px;
     border: 0px;
     font-size: 20px;
-}
-.border20 {
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
 }
