@@ -13,16 +13,13 @@ p, a, h1, h2, h3, h4, h5 {
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.1);
 }
-.div1 {
-    height: 100%;
-    width: 100%;
-}
 .blur2 {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.1);
     margin-left: 10%;
     margin-right: 10%;
+    height: 100%;
     overflow-y: auto;
 }
 .button1 {
