@@ -1,5 +1,5 @@
 body {
-    background-image: url(https: //hanste watermelon .github .io/images/backgrounds/back3.jpg); 
+    background-image: url(https://hanste-watermelon.github.io/images/backgrounds/back3.jpg); 
     background-color: rgba(0, 0, 0, 0.0);
     background-size: 120%;
     background-attachment: fixed;
@@ -21,11 +21,9 @@ p, a, h1, h2, h3, h4, h5 {
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.1);
-    margin: 10%;
-    height: 80%;
-    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     overflow-y: auto;
-    border-radius: 5px;
 }
 .button1 {
     -webkit-backdrop-filter: blur(6px); 
