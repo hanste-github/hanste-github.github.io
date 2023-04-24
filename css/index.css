@@ -1,11 +1,16 @@
 body {
     background-image: url(https://hanste-watermelon.github.io/images/backgrounds/back3.jpg); 
     background-color: rgba(0, 0, 0, 0.0);
-    background-size: 120%;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
     text-align: center;
 }
-p, a, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5 {
+    color: white;
+}
+a {
+    text-decoration: none;
     color: white;
 }
 .blur1 {
