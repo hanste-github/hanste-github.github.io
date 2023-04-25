@@ -28,11 +28,39 @@ a {
     overflow-y: auto;
 }
 .blur3 {
-    -webkit-backdrop-filter: blur(6px); 
-    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(3px); 
+    backdrop-filter: blur(3px);
     background-color: rgba(0, 0, 0, 0.1);
-    margin: 5%;
+    margin: 5px;
     width: 100%;
+    border-radius: 5px;
+}
+.blur401 {
+    -webkit-backdrop-filter: blur(3px); 
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 0, 0, 0.2);
+    overflow-x: auto;
+    height: 50px;
+    border-width: 2px;
+    border-color: rgb(0, 255, 0);
+}
+.blur402 {
+    -webkit-backdrop-filter: blur(3px); 
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 255, 0, 0.2);
+    overflow-x: auto;
+    height: 50px;
+    border-width: 2px;
+    border-color: rgb(0, 0, 255);
+}
+.blur403 {
+    -webkit-backdrop-filter: blur(3px); 
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 255, 0.2);
+    overflow-x: auto;
+    height: 50px;
+    border-width: 2px;
+    border-color: rgb(255, 0, 0);
 }
 .button1 {
     -webkit-backdrop-filter: blur(6px); 
