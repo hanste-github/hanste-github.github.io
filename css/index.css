@@ -42,6 +42,7 @@ a {
     background-color: rgba(255, 0, 0, 0.2);
     overflow-x: scroll;
     height: 50px;
+    width: max-content;
     border-width: 2px;
     border-color: rgb(0, 255, 0);
 }
