@@ -33,7 +33,7 @@ a {
     backdrop-filter: blur(3px);
     background-color: rgba(0, 0, 0, 0.1);
     margin: 5px;
-    width: 100%;
+    width: max-content;
     border-radius: 5px;
 }
 .blur401 {
