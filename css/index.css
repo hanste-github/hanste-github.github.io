@@ -50,8 +50,7 @@ a {
     backdrop-filter: blur(3px);
     background-color: rgba(0, 255, 0, 0.2);
     overflow-x: auto;
-    height: 50px;
-    border-width: 2px;
+    border-width: 4px;
     border-color: rgb(0, 0, 255);
 }
 .blur403 {
