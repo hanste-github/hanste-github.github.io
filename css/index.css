@@ -40,7 +40,7 @@ a {
     -webkit-backdrop-filter: blur(3px); 
     backdrop-filter: blur(3px);
     background-color: rgba(255, 0, 0, 0.2);
-    overflow-x: auto;
+    overflow-x: scroll;
     height: 50px;
     border-width: 2px;
     border-color: rgb(0, 255, 0);
