@@ -41,6 +41,8 @@ a {
 }
 .margin20 {
     margin: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .button1 {
     -webkit-backdrop-filter: blur(6px); 
