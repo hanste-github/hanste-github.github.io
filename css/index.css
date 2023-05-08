@@ -2,3 +2,8 @@
     -webkit-backdrop-filter: blur(15px); 
     backdrop-filter: blur(15px);
 }
+.blur2 {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
