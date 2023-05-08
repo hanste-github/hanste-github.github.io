@@ -6,5 +6,6 @@
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    height: calc(auto+30px);
+    height: calc(80%);
+    overflow-y: auto;
 }
