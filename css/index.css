@@ -2,3 +2,6 @@
     -webkit-backdrop-filter: blur(15px); 
     backdrop-filter: blur(15px);
 }
+body {
+    background-image: url(/images/backgrounds/back1.jpg);
+}
