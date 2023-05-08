@@ -6,4 +6,5 @@
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: calc(auto+10px);
 }
