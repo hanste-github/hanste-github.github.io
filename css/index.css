@@ -2,11 +2,3 @@
     -webkit-backdrop-filter: blur(15px); 
     backdrop-filter: blur(15px);
 }
-.blur2 {
-    -webkit-backdrop-filter: blur(15px); 
-    backdrop-filter: blur(15px);
-    border-color: white;
-    border-style: double;
-    border-radius: 10px;
-    border-width: 5px;
-}
