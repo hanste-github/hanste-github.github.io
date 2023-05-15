@@ -3,12 +3,10 @@
     backdrop-filter: blur(15px);
 }
 .blur2 {
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    height: 80%;
-    overflow-y: auto;
-}
-.blur3 {
-    width: 100%;
+    -webkit-backdrop-filter: blur(15px); 
+    backdrop-filter: blur(15px);
+    border-color: white;
+    border-style: double;
+    border-radius: 10px;
+    border-width: 5px;
 }
