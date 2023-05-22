@@ -3,6 +3,6 @@
     backdrop-filter: blur(15px);
 }
 .scroll-x {
-    height: 20rem;
+    height: 300px;
     overflow-x: auto;
 }
