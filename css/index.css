@@ -5,4 +5,5 @@
 .scroll-x {
     height: 300px;
     overflow-x: auto;
+    overflow-y: visible;
 }
