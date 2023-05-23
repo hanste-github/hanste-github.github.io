@@ -2,8 +2,3 @@
     -webkit-backdrop-filter: blur(15px); 
     backdrop-filter: blur(15px);
 }
-.scroll-x {
-    height: 300px;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
