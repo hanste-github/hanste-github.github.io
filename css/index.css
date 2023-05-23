@@ -2,3 +2,8 @@
     -webkit-backdrop-filter: blur(15px); 
     backdrop-filter: blur(15px);
 }
+.cardover {
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    text-align: center;
+}
