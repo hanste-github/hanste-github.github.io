@@ -1,48 +1,20 @@
 .blur1 {
     -webkit-backdrop-filter: blur(15px); 
     backdrop-filter: blur(15px);
+    background-color: rgba(115, 128, 0, 0.5);
 }
 .cardover {
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
     text-align: center;
 }
-.hs-bg-001 {
-    background-color: rgb(250, 0, 0);
-}
-.hs-bg-002 {
-    background-color: rgb(255, 174, 0);
-}
+
 .hs-bg-003 {
     background-color: rgb(225, 250, 0);
 }
-.hs-bg-004 {
-    background-color: rgb(175, 250, 0);
+.hs-bg-014 {
+    background: -webkit-radial-gradient(rgba(0, 0, 0, 0.0) 0%, rgb(255, 0, 0));
 }
-.hs-bg-005 {
-    background-color: rgb(42, 250, 0);
-}
-.hs-bg-006 {
-    background-color: rgb(0, 250, 112);
-}
-.hs-bg-007 {
-    background-color: rgb(0, 212, 250);
-}
-.hs-bg-008 {
-    background-color: rgb(0, 100, 250);
-}
-.hs-bg-009 {
-    background-color: rgb(0, 4, 250);
-}
-.hs-bg-010 {
-    background-color: rgb(117, 0, 250);
-}
-.hs-bg-011 {
-    background-color: rgb(250, 0, 187);
-}
-.hs-bg-012 {
-    background-color: rgb(250, 0, 75);
-}
-.hs-bg-013 {
-    background-color: rgb(250, 0, 0);
+.hs-bg-016 {
+    background: -webkit-radial-gradient(rgba(0, 0, 0, 0.0) 0%, rgb(225, 250, 0));
 }
