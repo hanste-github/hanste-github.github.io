@@ -47,7 +47,7 @@
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 80%;
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -65,7 +65,7 @@
   /* Add Animation - Zoom in the Modal */
   .modal-content, #caption {
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 2.0s;
   }
   
   @keyframes zoom {
