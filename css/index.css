@@ -89,7 +89,7 @@
 }
 
 /* Farbthema Hell */
-@media (prefers-color-scheme: light) {
+[data-bs-theme="light"] {
     .hs-bg-001 {
         background-color: rgb(255, 118, 118);
     }
@@ -132,7 +132,7 @@
 }
 
 /* Farbthema Dunkel */
-@media (prefers-color-scheme: light) {
+@media [data-bs-theme="dark"] {
     .hs-bg-001 {
         background-color: rgb(136, 0, 0);
     }
