@@ -8,6 +8,98 @@
     border-radius: 10px;
 }
 
+/* Farbthema Hell */
+[data-bs-theme="light"] {
+    .hs-bg-001 {
+        background-color: rgb(255, 118, 118);
+    }
+    .hs-bg-002 {
+        background-color: rgb(255, 211, 115);
+    }
+    .hs-bg-003 {
+        background-color: rgb(241, 255, 115);
+    }
+    .hs-bg-004 {
+        background-color: rgb(214, 255, 119);
+    }
+    .hs-bg-005 {
+        background-color: rgb(138, 255, 115);
+    }
+    .hs-bg-006 {
+        background-color: rgb(119, 255, 180);
+    }
+    .hs-bg-007 {
+        background-color: rgb(114, 234, 255);
+    }
+    .hs-bg-008 {
+        background-color: rgb(115, 171, 255);
+    }
+    .hs-bg-009 {
+        background-color: rgb(116, 118, 255);
+    }
+    .hs-bg-010 {
+        background-color: rgb(185, 123, 255);
+    }
+    .hs-bg-011 {
+        background-color: rgb(255, 115, 220);
+    }
+    .hs-bg-012 {
+        background-color: rgb(255, 121, 161);
+    }
+    .hs-bg-013 {
+        background-color: rgb(255, 117, 117);
+    }
+    .blur1 {
+        background-color: rgba(255, 255, 255, 0.4)
+    }
+}
+
+/* Farbthema Dunkel */
+[data-bs-theme="dark"] {
+    .hs-bg-001 {
+        background-color: rgb(136, 0, 0);
+    }
+    .hs-bg-002 {
+        background-color: rgb(143, 98, 0);
+    }
+    .hs-bg-003 {
+        background-color: rgb(129, 143, 0);
+    }
+    .hs-bg-004 {
+        background-color: rgb(96, 138, 0);
+    }
+    .hs-bg-005 {
+        background-color: rgb(22, 129, 0);
+    }
+    .hs-bg-006 {
+        background-color: rgb(0, 136, 61);
+    }
+    .hs-bg-007 {
+        background-color: rgb(0, 117, 138);
+    }
+    .hs-bg-008 {
+        background-color: rgb(0, 57, 143);
+    }
+    .hs-bg-009 {
+        background-color: rgb(0, 2, 133);
+    }
+    .hs-bg-010 {
+        background-color: rgb(62, 0, 133);
+    }
+    .hs-bg-011 {
+        background-color: rgb(145, 0, 108);
+    }
+    .hs-bg-012 {
+        background-color: rgb(139, 0, 42);
+    }
+    .hs-bg-013 {
+        background-color: rgb(138, 0, 0);
+    }
+    .blur1 {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
 /* Style the Image Used to Trigger the Modal */
 #myImg {
     border-radius: 5px;
@@ -85,91 +177,5 @@
 @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
-    }
-}
-
-/* Farbthema Hell */
-[data-bs-theme="light"] {
-    .hs-bg-001 {
-        background-color: rgb(255, 118, 118);
-    }
-    .hs-bg-002 {
-        background-color: rgb(255, 211, 115);
-    }
-    .hs-bg-003 {
-        background-color: rgb(241, 255, 115);
-    }
-    .hs-bg-004 {
-        background-color: rgb(214, 255, 119);
-    }
-    .hs-bg-005 {
-        background-color: rgb(138, 255, 115);
-    }
-    .hs-bg-006 {
-        background-color: rgb(119, 255, 180);
-    }
-    .hs-bg-007 {
-        background-color: rgb(114, 234, 255);
-    }
-    .hs-bg-008 {
-        background-color: rgb(115, 171, 255);
-    }
-    .hs-bg-009 {
-        background-color: rgb(116, 118, 255);
-    }
-    .hs-bg-010 {
-        background-color: rgb(185, 123, 255);
-    }
-    .hs-bg-011 {
-        background-color: rgb(255, 115, 220);
-    }
-    .hs-bg-012 {
-        background-color: rgb(255, 121, 161);
-    }
-    .hs-bg-013 {
-        background-color: rgb(255, 117, 117);
-    }
-}
-
-/* Farbthema Dunkel */
-[data-bs-theme="dark"] {
-    .hs-bg-001 {
-        background-color: rgb(136, 0, 0);
-    }
-    .hs-bg-002 {
-        background-color: rgb(143, 98, 0);
-    }
-    .hs-bg-003 {
-        background-color: rgb(129, 143, 0);
-    }
-    .hs-bg-004 {
-        background-color: rgb(96, 138, 0);
-    }
-    .hs-bg-005 {
-        background-color: rgb(22, 129, 0);
-    }
-    .hs-bg-006 {
-        background-color: rgb(0, 136, 61);
-    }
-    .hs-bg-007 {
-        background-color: rgb(0, 117, 138);
-    }
-    .hs-bg-008 {
-        background-color: rgb(0, 57, 143);
-    }
-    .hs-bg-009 {
-        background-color: rgb(0, 2, 133);
-    }
-    .hs-bg-010 {
-        background-color: rgb(62, 0, 133);
-    }
-    .hs-bg-011 {
-        background-color: rgb(145, 0, 108);
-    }
-    .hs-bg-012 {
-        background-color: rgb(139, 0, 42);
-    }
-    .hs-bg-013 {
-        background-color: rgb(138, 0, 0);
     }
 }
