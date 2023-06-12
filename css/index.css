@@ -132,7 +132,7 @@
 }
 
 /* Farbthema Dunkel */
-@media [data-bs-theme="dark"] {
+[data-bs-theme="dark"] {
     .hs-bg-001 {
         background-color: rgb(136, 0, 0);
     }
