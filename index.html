@@ -17,29 +17,132 @@
     
   </head>
   <body>
-    <nav class="hs-nav">
-      <div class="hs-menu">
-        <ul>
-          <li><a href="#"><i class="bi bi-apple"></i></a></li>
-          <li><a href="#" class="hs-menu-item">Mac</a></li>
-          <li><a href="#" class="hs-menu-item">IPad</a></li>
-          <li><a href="#" class="hs-menu-item">IPhone</a></li>
-          <li><a href="#" class="hs-menu-item">Watch</a></li>
-          <li><a href="#" class="hs-menu-item">TV</a></li>
-          <li><a href="#" class="hs-menu-item">Music</a></li>
-          <li><a href="#" class="hs-menu-item">Support</a></li>
-          <li><a id="hs-search"><i class="bi bi-search"></i></a></li>
-          <li><a href="#"><i class="bi bi-bag-fill"></i></a></li>
-        </ul>
-        <div class="hs-search-form">
-          <form>
-            <input type="text" placeholder="Search HanSte">
-          </form>
-        </div>       
-        <a class="hs-close"><i class="bi bi-x-lg"></i></a>        
-      </div>
-    </nav>
+    <div class="nav-container">
+      <nav>
+          <ul class="mobile-nav">
+              <li>
+                  <div class="menu-icon-container">
+                      <div class="menu-icon">
+                          <span class="line-1"></span>
+                          <span class="line-2"></span>
+                      </div>
+                  </div>
+              </li>
 
+              <li>
+                  <a href="#" class="link-logo"></a>
+              </li>
+
+              <li>
+                  <a href="" class="link-bag"></a>
+              </li>
+          </ul>
+
+          <ul class="desktop-nav">
+              <li>
+                  <a href="#" class="link-logo"></a>
+              </li>
+              <li>
+                  <a href="#">Mac</a>
+              </li>
+              <li>
+                  <a href="#">iPad</a>
+              </li>
+              <li>
+                  <a href="#">iPhone</a>
+              </li>
+              <li>
+                  <a href="#">Watch</a>
+              </li>
+              <li>
+                  <a href="#">TV</a>
+              </li>
+              <li>
+                  <a href="#">Music</a>
+              </li>
+              <li>
+                  <a href="#">Support</a>
+              </li>
+              <li>
+                  <a href="#" class="link-search"></a>
+              </li>
+              <li>
+                  <a href="#" class="link-bag"></a>
+              </li>
+          </ul>
+      </nav>
+
+      <!-- End of navigation menu items -->
+
+      <div class="search-container hide">
+          <div class="link-search"></div>
+          <div class="search-bar">
+              <form action="">
+                  <input type="text" placeholder="Search apple.com">
+              </form>
+          </div>
+          <div class="link-close"></div>
+
+          <div class="quick-links">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li>
+                      <a href="#">Visiting an Apple Store FAQ</a>
+                  </li>
+                  <li>
+                      <a href="#">Shop Apple Store Online</a>
+                  </li>
+                  <li>
+                      <a href="#">Accessories</a>
+                  </li>
+                  <li>
+                      <a href="#">AirPods</a>
+                  </li>
+                  <li>
+                      <a href="#">AirTag</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+
+      <div class="mobile-search-container">
+          <div class="link-search"></div>
+          <div class="search-bar">
+              <form action="">
+                  <input type="text" placeholder="Search apple.com">
+              </form>
+          </div>
+          <span class="cancel-btn">Cancel</span>
+
+          <div class="quick-links">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li>
+                      <a href="#">Visiting an Apple Store FAQ</a>
+                  </li>
+                  <li>
+                      <a href="#">Shop Apple Store Online</a>
+                  </li>
+                  <li>
+                      <a href="#">Accessories</a>
+                  </li>
+                  <li>
+                      <a href="#">AirPods</a>
+                  </li>
+                  <li>
+                      <a href="#">AirTag</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      
+
+  </div>
+
+
+  <div class="overlay"></div>
+  
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Responsive offcanvas navbar</a>
