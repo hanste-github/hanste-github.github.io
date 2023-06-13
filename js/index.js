@@ -20,10 +20,12 @@ span.onclick = function() {
 }
 
 // HanSte Navbar
-var offcanvas12 = document.getElementById("navbarOffcanvasLg")
-offcanvas12.hidden
-var offcanvas13 = document.getElementById("offcanvas13")
-
-offcanvas13.onclick = function(){
-    offcanvas12('show')
+document.getElementById(hsfunctuto2) {x.style.display = "none"}
+function hsfunctutofunction() {
+  var x = document.getElementById("hsfunctuto2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
