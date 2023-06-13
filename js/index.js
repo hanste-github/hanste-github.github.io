@@ -18,3 +18,21 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
+$(document).ready(function(){
+  $('#hs-search').click(function(){
+      // toggleClass is used just for testing
+      $('.hs-menu-item').addClass('hide-item') 
+      $('.hs-search-form').addClass('active')
+      $('.hs-close').addClass('active')
+      $('#hs-search').hide()
+  })
+  $('.hs-close').click(function(){
+      // toggleClass is used just for testing
+      $('.hs-menu-item').removeClass('hide-item') 
+      $('.hs-search-form').removeClass('active')
+      $('.hs-close').removeClass('active')
+      $('#hs-search').show()
+  })
+})
