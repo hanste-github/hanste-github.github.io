@@ -20,12 +20,22 @@ span.onclick = function() {
 }
 
 // HanSte Navbar
-document.getElementById(hsfunctuto2) {x.style.display = "none"}
-function hsfunctutofunction() {
-  var x = document.getElementById("hsfunctuto2");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+//function hsfunctuto() {
+//  var x = document.getElementById("hsfunctuto2");
+//  if (x.style.display === "none") {
+//    x.style.display = "block";
+//  } else {
+//    x.style.display = "none";
+//  }
+//};
+
+var hsfunctuto = document.getElementById("hsfunctuto");
+var hsfunctuto2 = document.getElementById("hsfunctuto2");
+hsfunctuto.onclick = function() {
+  hsfunctuto2.style.display = "block";
+
+};
+var hsclosetuto = document.getElementById("hsclosetuto");
+hsclosetuto.onclick = function() {
+  hsfunctuto2.style.display = "none";
 }

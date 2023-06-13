@@ -188,4 +188,17 @@
     left: 0px;
     width: 100%;
     right: 0px;
+    position: fixed;
+}
+#hsclosetuto {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#hsfunctuto2 {
+    display: none;
 }
