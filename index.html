@@ -18,7 +18,7 @@
   </head>
   <body>
     <main class="d-flex flex-nowrap">
-      <div class="d-flex flex-column flex-shrink-0 blur1" style="width: 4.5rem; position: sticky;">
+      <div class="d-flex flex-column flex-shrink-0 blur1 sticky-top" style="width: 4.5rem;">
         <a href="/" class="d-block p-3 text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
           <img class="bi" width="40" height="40" src="/images/logoweiss-removebg-preview.png">
           <span class="visually-hidden">Icon-only</span>
@@ -56,71 +56,24 @@
           </li>
         </ul>
       </div>
-      <div class="container-fluid" style="left: 0px; right: 0px;">
-        <nav class="navbar blur1 sticky-top">
-          <ul class="navbar-nav justify-content-between">
-            <li class="nav-item">
-              <img href="/index.html" src="/images/logoweiss-removebg-preview.png" width="40px">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/tutorials/index.html">Tutorials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/store/index.html">Store</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/os/index.html">OS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/music/index.html">Music</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/video/index.html">Video</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="navbar navbar-expand-lg blur1 sticky-top">
-          <a class="navbar-brand" href="/index.html">
-            <img class="bi" width="40" height="40" src="/images/logoweiss-removebg-preview.png">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
-    
+      <div style="left: 0px; right: 0px; width: 100%;">
+        <ul class="nav justify-content-between blur1">
+          <li class="nav-item">
+            <a class="nav-link" href="/tutorials/index.html">Tutorials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/store/index.html">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/os/index.html">OS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/music/index.html">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/video/index.html">Video</a>
+          </li>
+        </ul>
         <!-- Navigationsleiste >
         <nav class="navbar navbar-expand-lg blur1 sticky-top border-bottom" data-bs-theme="dark">
           <div class="container">
