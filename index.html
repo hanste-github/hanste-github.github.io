@@ -58,6 +58,53 @@
           </div>
         </div>
     </nav>
+
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light mb-4">
+      <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/brand/bootstrap-logo-black.svg" width="38" height="30" class="me-3" alt="Bootstrap">expand-xxl left</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarExample-expand-xxl" aria-controls="offcanvasNavbarExample-expand-xxl">
+              <span class="navbar-toggler-icon" data-bs-target="#offcanvasNavbarExample-expand-xxl"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" data-bs-hideresize="true" tabindex="-1" id="offcanvasNavbarExample-expand-xxl" aria-labelledby="offcanvasNavbarExample-expand-xxlLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                  <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  
     <!-- Navigationsleiste >
     <nav class="navbar navbar-expand-lg blur1 sticky-top border-bottom" data-bs-theme="dark">
       <div class="container">
@@ -163,14 +210,5 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <!-- jQuery Workaround, will be replaced by pure JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- Custom script for this template -->
-    <script>
-        window.onresize = function() {
-            // jQuery Workaround, will be replaced by pure JavaScript
-            // Data attribute to hide offcanvas and enable body scroll on resize through the breakpoints
-            $('[data-bs-hideresize="true"]').offcanvas('hide');
-        }
-
-    </script>
   </body>
 </html>
