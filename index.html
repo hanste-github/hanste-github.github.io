@@ -17,8 +17,10 @@
     
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg blur1 fixed-top">
-      <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <nav class="navbar navbar-expand-lg blur1 sticky-top">
+      <a class="navbar-brand" href="/index.html">
+        <img class="bi" width="40" height="40" src="/images/logoweiss-removebg-preview.png">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -159,5 +161,16 @@
     <script src="/js/color-modes.js"></script>
     <script src="/js/bootstrap.bundle.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- jQuery Workaround, will be replaced by pure JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Custom script for this template -->
+    <script>
+        window.onresize = function() {
+            // jQuery Workaround, will be replaced by pure JavaScript
+            // Data attribute to hide offcanvas and enable body scroll on resize through the breakpoints
+            $('[data-bs-hideresize="true"]').offcanvas('hide');
+        }
+
+    </script>
   </body>
 </html>
