@@ -18,24 +18,3 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-// HanSte Navbar
-//function hsfunctuto() {
-//  var x = document.getElementById("hsfunctuto2");
-//  if (x.style.display === "none") {
-//    x.style.display = "block";
-//  } else {
-//    x.style.display = "none";
-//  }
-//};
-
-var hsfunctuto = document.getElementById("hsfunctuto");
-var hsfunctuto2 = document.getElementById("hsfunctuto2");
-hsfunctuto.onclick = function() {
-  hsfunctuto2.style.display = "block";
-
-};
-var hsclosetuto = document.getElementById("hsclosetuto");
-hsclosetuto.onclick = function() {
-  hsfunctuto2.style.display = "none";
-}
