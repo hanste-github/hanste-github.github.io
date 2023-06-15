@@ -180,16 +180,13 @@
     }
 }
 
-@media only screen and (min-width: 800px) {
-    .hidden1 {
+@media (min-width: 799px) {
+    .hs-hidden1 {
         display: none;
     }
 }
-@media only screen and (max-width: 800px) {
-    .hidden2 {
+@media (max-width: 800px) {
+    .hs-hidden2 {
         display: none;
     }
-}
-.hidden2 {
-    display: none;
 }
