@@ -179,3 +179,19 @@
       width: 100%;
     }
 }
+
+#hstopnav {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    #hssidenav1 {
+        display: none;
+    }
+    #hssidenav2 {
+        display: none;
+    }
+    #hstopnav {
+        display: block;
+    }
+}
