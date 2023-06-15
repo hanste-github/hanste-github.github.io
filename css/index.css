@@ -180,12 +180,12 @@
     }
 }
 
-@media (min-width: 800px) {
+@media only screen and (min-width: 800px) {
     .hidden1 {
         display: none;
     }
 }
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .hidden2 {
         display: none;
     }
