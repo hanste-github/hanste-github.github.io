@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="de" data-bs-theme="auto">
+<html lang="de">
   <head>
-    <title>HanSte MyStore</title>
+    <title>HanSte</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- Favicons -->
     <link rel="icon" media="(prefers-color-scheme: light)" href="/images/logoschwarz-removebg-preview.png">
@@ -17,68 +17,93 @@
     
   </head>
   <body>
-    <!-- Navigationsleiste -->
-    <nav class="navbar navbar-expand-lg blur1 sticky-top border-bottom" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand d-md-none" href="#">
-          <img class="bi" width="40" height="40" src="/images/logoweiss-removebg-preview.png">
-        </a>
-        <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-          <span class="navbar-toggler-icon"></span>
-        </a>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="#offcanvasLabel">HanSte Store</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-between flex-grow-1">
-              <li class="nav-item">
-                <img href="/index.html" src="/images/logoweiss-removebg-preview.png" width="40px">
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/tutorials/index.html">Tutorials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/store/index.html">Store</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/os/index.html">OS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/music/index.html">Music</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/video/index.html">Video</a>
-              </li>
-            </ul>
-          </div>
+    <main class="d-flex flex-nowrap">
+      <!-- Navigationsleiste oben -->
+      <div class="hs-hidden1 border-right" style="width: 3.0rem;">
+        <div class="d-flex flex-column flex-shrink-0 border-right rounded-right" style="width: 3.0rem; position: fixed; height: 100%;">
+          <a href="/" class="d-block p-3 text-decoration-none" title="Home" data-bs-toggle="tooltip">
+            <div class="hs-logo-light">
+              <img width="30" height="30" src="/images/logoweiss-removebg-preview.png">
+            </div>
+            <div class="hs-logo-dark">
+              <img width="30" height="30" src="/images/logoschwarz-removebg-preview.png">
+            </div>
+            <span class="visually-hidden">Home</span>
+          </a>
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li>
+              <a href="/tutorials/index.html" class="nav-link py-3 border-bottom rounded-0" title="Tutorials" data-bs-toggle="tooltip" data-bs-placement="right">
+                <img width="24" height="24" role="img" aria-label="Home" src="/images/logotutorials.png">
+              </a>
+            </li>
+            <li>
+              <a href="/store/index.html" class="nav-link py-3 border-bottom rounded-0" title="Store" data-bs-toggle="tooltip" data-bs-placement="right">
+                <img width="24" height="24" role="img" aria-label="Home" src="/images/logostore.png">
+              </a>
+            </li>
+            <li>
+              <a href="/os/index.html" class="nav-link py-3 border-bottom rounded-0" title="OS" data-bs-toggle="tooltip" data-bs-placement="right">
+                <img width="24" height="24" role="img" aria-label="Home" src="/images/logoos.png">
+              </a>
+            </li>
+            <li>
+              <a href="/music/index.html" class="nav-link py-3 border-bottom rounded-0" title="Music" data-bs-toggle="tooltip" data-bs-placement="right">
+                <img width="24" height="24" role="img" aria-label="Home" src="/images/logomusic.png">
+              </a>
+            </li>
+            <li>
+              <a href="/video/index.html" class="nav-link py-3 border-bottom rounded-0" title="Video" data-bs-toggle="tooltip" data-bs-placement="right">
+                <img width="24" height="24" role="img" aria-label="Home" src="/images/logotutorials.png">
+              </a>
+            </li>
+            <li>
+              <a href="/shop/index.html" class="nav-link py-3 border-bottom rounded-0" title="Shop" data-bs-toggle="tooltip" data-bs-placement="right">
+                <img width="24" height="24" role="img" aria-label="Home" src="/images/logoshop.png">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-
-    <!-- Inhalt -->
-    <div class="container-fluid">
-      <div class="mt-4 p-5 hs-bg-002 text-white rounded">
-        <h1>HanSte MyTutorials</h1>
-        <p>! In Entwicklung !</p>
+      <div style="left: 0px; right: 0px; width: 100%;">
+        <div class="hs-hidden2">
+          <nav class="navbar justify-content-between sticky-top blur1">
+            <div class="container">
+              <a class="nav-link" href="/tutorials/index.html">
+                <img class="bi" width="40" height="40" src="/images/logoweiss-removebg-preview.png">
+              </a>
+              <a class="nav-link" href="/tutorials/index.html">Tutorials</a>
+              <a class="nav-link" href="/store/index.html">Store</a>
+              <a class="nav-link" href="/os/index.html">OS</a>
+              <a class="nav-link" href="/music/index.html">Music</a>
+              <a class="nav-link" href="/video/index.html">Video</a>
+              <a class="nav-link" href="/shop/index.html">Shop</a>
+            </div>
+          </nav>
+        </div>
+        <!-- Inhalt -->
+        <div class="container-fluid">
+          <div class="mt-4 p-5 hs-bg-002 text-white rounded">
+            <h1>HanSte MyTutorials</h1>
+            <p>! In Entwicklung !</p>
+          </div>
+        </div>
+        <!-- Navigationsleiste unten -->
+        <footer class="py-5">
+          <ul class="nav justify-content-center border-bottom border-top pb-3 mb-3">
+            <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="/tutorials/index.html" class="nav-link px-2 text-body-secondary">Tutorials</a></li>
+            <li class="nav-item"><a href="/store/index.html" class="nav-link px-2 text-body-secondary">Store</a></li>
+            <li class="nav-item"><a href="/os/index.html" class="nav-link px-2 text-body-secondary">OS</a></li>
+            <li class="nav-item"><a href="/music/index.html" class="nav-link px-2 text-body-secondary">Music</a></li>
+            <li class="nav-item"><a href="/video/index.html" class="nav-link px-2 text-body-secondary">Video</a></li>
+            <li class="nav-item"><a href="/feedback/index.html" class="nav-link px-2 text-body-secondary">Feedback</a></li>
+            <li class="nav-item"><a href="/datenschutz.html" class="nav-link px-2 text-body-secondary">Datenschutz</a></li>
+            <li class="nav-item"><a href="/ueber/index.html" class="nav-link px-2 text-body-secondary">Über</a></li>
+            <li class="nav-item"><a class="nav-link px-2 text-body-secondary">&copy; 2023 HanSte</a></li>
+          </ul>
+        </footer>
       </div>
-    </div>
-    <!-- Navigationsleiste unten -->
-    <footer class="py-5">
-      <ul class="nav justify-content-center border-bottom border-top pb-3 mb-3">
-        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="/tutorials/index.html" class="nav-link px-2 text-body-secondary">Tutorials</a></li>
-        <li class="nav-item"><a href="/store/index.html" class="nav-link px-2 text-body-secondary">Store</a></li>
-        <li class="nav-item"><a href="/os/index.html" class="nav-link px-2 text-body-secondary">OS</a></li>
-        <li class="nav-item"><a href="/music/index.html" class="nav-link px-2 text-body-secondary">Music</a></li>
-        <li class="nav-item"><a href="/video/index.html" class="nav-link px-2 text-body-secondary">Video</a></li>
-        <li class="nav-item"><a href="/feedback/index.html" class="nav-link px-2 text-body-secondary">Feedback</a></li>
-        <li class="nav-item"><a href="/datenschutz.html" class="nav-link px-2 text-body-secondary">Datenschutz</a></li>
-        <li class="nav-item"><a href="/ueber/index.html" class="nav-link px-2 text-body-secondary">Über</a></li>
-        <li class="nav-item"><a class="nav-link px-2 text-body-secondary">&copy; 2023 HanSte</a></li>
-      </ul>
-    </footer>
+    </main>
     <script src="/js/index.js"></script>
     <script src="/js/color-modes.js"></script>
     <script src="/js/bootstrap.bundle.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
