@@ -52,6 +52,9 @@
     .blur1 {
         background-color: rgba(255, 255, 255, 0.4)
     }
+    .hs-logo {
+        background-image: url(/images/logoschwarz-removebg-preview.png);        
+    }
 }
 
 /* Farbthema Dunkel */
@@ -97,6 +100,9 @@
     }
     .blur1 {
         background-color: rgba(0, 0, 0, 0.4);
+    }
+    .hs-logo {
+        background-image: url(/images/logoweiss-removebg-preview.png);        
     }
 }
 
