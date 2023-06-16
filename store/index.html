@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de">
   <head>
-    <title>HanSte Store</title>
+    <title>HanSte</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -17,204 +17,204 @@
     
   </head>
   <body>
-    <main class="d-flex flex-nowrap">
+    <main>
       <!-- Navigationsleiste oben -->
-      <div class="hs-hidden1 border-right" style="width: 3.0rem;">
-        <div class="d-flex flex-column flex-shrink-0 border-right text-white blur1" style="width: 3.0rem; position: fixed; height: 100%;">
-          <a href="/" class="d-block p-3 text-decoration-none" title="Home" data-bs-toggle="tooltip">
-            <div class="hs-logo-light">
-              <img width="30" height="30" src="/images/logoweiss-removebg-preview.png">
-            </div>
-            <div class="hs-logo-dark">
-              <img width="30" height="30" src="/images/logoschwarz-removebg-preview.png">
-            </div>
-            <span class="visually-hidden">Home</span>
-          </a>
-          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+      <div class="hs-hidden1">
+        <div class="text-white blur1" style="width: 30px; top: 50%; border-top-right-radius: 10px; border-bottom-right-radius: 10px; position: fixed; transform: translateY(-50%);">
+          <ul class="nav nav-pills nav-flush flex-column">
             <li>
-              <a href="/tutorials/index.html" class="nav-link py-3 border-bottom rounded-0" title="Tutorials" data-bs-toggle="tooltip" data-bs-placement="right">
+              <a href="/index.html" class="nav-link py-3 rounded" title="Home" data-bs-toggle="tooltip" data-bs-placement="right">
+                <div class="hs-logo-light">
+                  <img width="24" height="24" role="img" aria-label="Home" src="/images/logoweiss-removebg-preview.png">
+                </div>
+                <div class="hs-logo-dark">
+                  <img width="24" height="24" role="img" aria-label="Home" src="/images/logoschwarz-removebg-preview.png">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/tutorials/index.html" class="nav-link py-3 rounded" title="Tutorials" data-bs-toggle="tooltip" data-bs-placement="right">
                 <img width="24" height="24" role="img" aria-label="Home" src="/images/logotutorials.png">
               </a>
             </li>
             <li>
-              <a href="/store/index.html" class="nav-link py-3 border-bottom rounded-0" title="Store" data-bs-toggle="tooltip" data-bs-placement="right">
+              <a href="/store/index.html" class="nav-link py-3 rounded" title="Store" data-bs-toggle="tooltip" data-bs-placement="right">
                 <img width="24" height="24" role="img" aria-label="Home" src="/images/logostore.png">
               </a>
             </li>
             <li>
-              <a href="/os/index.html" class="nav-link py-3 border-bottom rounded-0" title="OS" data-bs-toggle="tooltip" data-bs-placement="right">
+              <a href="/os/index.html" class="nav-link py-3 rounded" title="OS" data-bs-toggle="tooltip" data-bs-placement="right">
                 <img width="24" height="24" role="img" aria-label="Home" src="/images/logoos.png">
               </a>
             </li>
             <li>
-              <a href="/music/index.html" class="nav-link py-3 border-bottom rounded-0" title="Music" data-bs-toggle="tooltip" data-bs-placement="right">
+              <a href="/music/index.html" class="nav-link py-3 rounded" title="Music" data-bs-toggle="tooltip" data-bs-placement="right">
                 <img width="24" height="24" role="img" aria-label="Home" src="/images/logomusic.png">
               </a>
             </li>
             <li>
-              <a href="/video/index.html" class="nav-link py-3 border-bottom rounded-0" title="Video" data-bs-toggle="tooltip" data-bs-placement="right">
+              <a href="/video/index.html" class="nav-link py-3 rounded" title="Video" data-bs-toggle="tooltip" data-bs-placement="right">
                 <img width="24" height="24" role="img" aria-label="Home" src="/images/logotutorials.png">
               </a>
             </li>
             <li>
-              <a href="/shop/index.html" class="nav-link py-3 border-bottom rounded-0" title="Shop" data-bs-toggle="tooltip" data-bs-placement="right">
+              <a href="/shop/index.html" class="nav-link py-3 rounded" title="Shop" data-bs-toggle="tooltip" data-bs-placement="right">
                 <img width="24" height="24" role="img" aria-label="Home" src="/images/logoshop.png">
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div style="left: 0px; right: 0px; width: 100%;">
-        <div class="hs-hidden2">
-          <nav class="navbar justify-content-between sticky-top blur1">
-            <div class="container">
-              <a class="nav-link" href="/tutorials/index.html">
-                <img class="bi" width="40" height="40" src="/images/logoweiss-removebg-preview.png">
-              </a>
-              <a class="nav-link" href="/tutorials/index.html">Tutorials</a>
-              <a class="nav-link" href="/store/index.html">Store</a>
-              <a class="nav-link" href="/os/index.html">OS</a>
-              <a class="nav-link" href="/music/index.html">Music</a>
-              <a class="nav-link" href="/video/index.html">Video</a>
-              <a class="nav-link" href="/shop/index.html">Shop</a>
-            </div>
-          </nav>
-        </div>
-        <!-- Inhalt -->
-        <div class="container-fluid">
-          <div class="mt-4 p-5 hs-bg-003 text-white rounded">
-            <h1>HanSte MyStore</h1>
-            <hr>
-            <div class="container-fluid">
-              <div class="bg-dark mt-4 p-5 hs-bg-003 text-white rounded">
-                <h3>Browser</h3>
-                <!-- Trigger the Modal -->
-                <img id="myImg" src="/store/images/chrome/screenshot.png" alt="Chrome" style="width:100%;max-width:300px">
-    
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-    
-                  <!-- The Close Button -->
-                  <span class="close">&times;</span>
-    
-                  <!-- Modal Content (The Image) -->
-                  <img class="modal-content" id="img01">
-    
-                  <!-- Modal Caption (Image Text) -->
-                  <div id="caption"></div>
-                </div>
-                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-                  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 py-3">
-                      <h2 class="display-5">Chrome</h2>
-                      <p class="lead">Der Browser von Google</p>
-                    </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
-                      <img src="/store/images/chrome/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
-                    </div>
+      <div class="hs-hidden2">
+        <nav class="navbar justify-content-between sticky-top blur1">
+          <div class="container">
+             <a class="nav-link" href="/tutorials/index.html">
+              <img class="bi" width="40" height="40" src="/images/logoweiss-removebg-preview.png">
+            </a>
+            <a class="nav-link" href="/tutorials/index.html">Tutorials</a>
+            <a class="nav-link" href="/store/index.html">Store</a>
+            <a class="nav-link" href="/os/index.html">OS</a>
+            <a class="nav-link" href="/music/index.html">Music</a>
+            <a class="nav-link" href="/video/index.html">Video</a>
+            <a class="nav-link" href="/shop/index.html">Shop</a>
+          </div>
+        </nav>
+      </div>
+      <!-- Inhalt -->
+      <!-- Inhalt -->
+      <div class="container-fluid">
+        <div class="mt-4 p-5 hs-bg-003 text-white rounded">
+          <h1>HanSte MyStore</h1>
+          <hr>
+          <div class="container-fluid">
+            <div class="bg-dark mt-4 p-5 hs-bg-003 text-white rounded">
+              <h3>Browser</h3>
+              <!-- Trigger the Modal -->
+              <img id="myImg" src="/store/images/chrome/screenshot.png" alt="Chrome" style="width:100%;max-width:300px">
+  
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+  
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+  
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+  
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
+              <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 py-3">
+                    <h2 class="display-5">Chrome</h2>
+                    <p class="lead">Der Browser von Google</p>
                   </div>
-                  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 p-3">
-                      <h2 class="display-5">Firefox</h2>
-                      <p class="lead">Der Browser von Mozilla</p>
-                    </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
-                      <img src="/store/images/firefox/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
-                    </div>
-                  </div>
-                  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 p-3">
-                      <h2 class="display-5">Opera</h2>
-                      <p class="lead">Der Browser von ...</p>
-                    </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
-                      <img src="/store/images/opera/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
-                    </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
+                    <img src="/store/images/chrome/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
                   </div>
                 </div>
-                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-                  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 py-3">
-                      <h2 class="display-5">Safari</h2>
-                      <p class="lead">Der Browser von Apple</p>
-                    </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
-                      <img src="/store/images/chrome/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
-                    </div>
+                <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 p-3">
+                    <h2 class="display-5">Firefox</h2>
+                    <p class="lead">Der Browser von Mozilla</p>
                   </div>
-                  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 p-3">
-                      <h2 class="display-5">Tor</h2>
-                      <p class="lead">Der Browser von ...</p>
-                    </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
-                      <img src="/store/images/firefox/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
-                    </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
+                    <img src="/store/images/firefox/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
                   </div>
-                  <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div class="my-3 p-3">
-                      <h2 class="display-5">Opera</h2>
-                      <p class="lead">Der Browser von ...</p>
-                    </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
-                      <img src="/store/images/opera/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
-                    </div>
+                </div>
+                <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 p-3">
+                    <h2 class="display-5">Opera</h2>
+                    <p class="lead">Der Browser von ...</p>
+                  </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
+                    <img src="/store/images/opera/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
                   </div>
                 </div>
               </div>
-            </div>
-            <hr>
-            <h3>Office</h3>
-            <div class="card">
-              <img src="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Microsoft Office</h5>
-                <a class="btn btn-primary" href="">Holen</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Free Office</h5>
-                <a class="btn btn-primary" href="">Holen</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Libre Office</h5>
-                <a class="btn btn-primary" href="">Holen</a>
-              </div>
-            </div>
-            <div class="card">
-              <img src="" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Open Office</h5>
-                <a class="btn btn-primary" href="">Holen</a>
+              <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 py-3">
+                    <h2 class="display-5">Safari</h2>
+                    <p class="lead">Der Browser von Apple</p>
+                  </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
+                    <img src="/store/images/chrome/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
+                  </div>
+                </div>
+                <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 p-3">
+                    <h2 class="display-5">Tor</h2>
+                    <p class="lead">Der Browser von ...</p>
+                  </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
+                    <img src="/store/images/firefox/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
+                  </div>
+                </div>
+                <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                  <div class="my-3 p-3">
+                    <h2 class="display-5">Opera</h2>
+                    <p class="lead">Der Browser von ...</p>
+                  </div>
+                  <div class="bg-dark shadow-sm mx-auto" style="width: 90%; border-radius: 10px 10px 0 0;">
+                    <img src="/store/images/opera/screenshot.png" style="width: 100%; border-bottom: 0; border: 5px solid grey; border-radius: 10px 10px 0 0;">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <hr>
+          <h3>Office</h3>
+          <div class="card">
+            <img src="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Microsoft Office</h5>
+              <a class="btn btn-primary" href="">Holen</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Free Office</h5>
+              <a class="btn btn-primary" href="">Holen</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Libre Office</h5>
+              <a class="btn btn-primary" href="">Holen</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Open Office</h5>
+              <a class="btn btn-primary" href="">Holen</a>
+            </div>
+          </div>
         </div>
-        <!-- Navigationsleiste unten -->
-        <footer class="py-5">
-          <ul class="nav justify-content-center border-bottom border-top pb-3 mb-3">
-            <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="/tutorials/index.html" class="nav-link px-2 text-body-secondary">Tutorials</a></li>
-            <li class="nav-item"><a href="/store/index.html" class="nav-link px-2 text-body-secondary">Store</a></li>
-            <li class="nav-item"><a href="/os/index.html" class="nav-link px-2 text-body-secondary">OS</a></li>
-            <li class="nav-item"><a href="/music/index.html" class="nav-link px-2 text-body-secondary">Music</a></li>
-            <li class="nav-item"><a href="/video/index.html" class="nav-link px-2 text-body-secondary">Video</a></li>
-            <li class="nav-item"><a href="/feedback/index.html" class="nav-link px-2 text-body-secondary">Feedback</a></li>
-            <li class="nav-item"><a href="/datenschutz.html" class="nav-link px-2 text-body-secondary">Datenschutz</a></li>
-            <li class="nav-item"><a href="/ueber/index.html" class="nav-link px-2 text-body-secondary">Über</a></li>
-            <li class="nav-item"><a class="nav-link px-2 text-body-secondary">&copy; 2023 HanSte</a></li>
-          </ul>
-        </footer>
       </div>
+      <!-- Navigationsleiste unten -->
+      <footer class="py-5">
+        <ul class="nav justify-content-center border-bottom border-top pb-3 mb-3">
+          <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="/tutorials/index.html" class="nav-link px-2 text-body-secondary">Tutorials</a></li>
+          <li class="nav-item"><a href="/store/index.html" class="nav-link px-2 text-body-secondary">Store</a></li>
+          <li class="nav-item"><a href="/os/index.html" class="nav-link px-2 text-body-secondary">OS</a></li>
+          <li class="nav-item"><a href="/music/index.html" class="nav-link px-2 text-body-secondary">Music</a></li>
+          <li class="nav-item"><a href="/video/index.html" class="nav-link px-2 text-body-secondary">Video</a></li>
+          <li class="nav-item"><a href="/feedback/index.html" class="nav-link px-2 text-body-secondary">Feedback</a></li>
+          <li class="nav-item"><a href="/datenschutz.html" class="nav-link px-2 text-body-secondary">Datenschutz</a></li>
+          <li class="nav-item"><a href="/ueber/index.html" class="nav-link px-2 text-body-secondary">Über</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-body-secondary">&copy; 2023 HanSte</a></li>
+        </ul>
+      </footer>
     </main>
     <script src="/js/index.js"></script>
     <script src="/js/color-modes.js"></script>
-    <script src="/js/bootstrap.bundle.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>
