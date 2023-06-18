@@ -106,39 +106,34 @@
     }
 }
 
-/* Style the Image Used to Trigger the Modal */
+/* Image Modal */
 #myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
-  
-#myImg:hover {opacity: 0.7;}
-  
-/* The Modal (background) */
+#myImg:hover {
+    opacity: 0.8;
+}
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
     -webkit-backdrop-filter: blur(3px); 
     backdrop-filter: blur(3px);
 }
-  
-/* Modal Content (Image) */
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 80%;
 }
-  
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
     margin: auto;
     display: block;
@@ -149,19 +144,14 @@
     padding: 10px 0;
     height: 150px;
 }
-  
-/* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
     animation-name: zoom;
     animation-duration: 2.0s;
 }
-  
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
 }
-  
-/* The Close Button */
 .close {
     position: absolute;
     top: 15px;
@@ -171,16 +161,13 @@
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
-  
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media (max-width: 799px){
     .modal-content {
       width: 100%;
     }
@@ -195,4 +182,17 @@
     .hs-hidden2 {
         display: none;
     }
+    .hs-img-ueber {
+        width: 100%;
+    }
+}
+
+.hs-img-ueber {
+    width: 400px;
+    border-top-right-radius: 20px;
+    margin-right: 10px; margin-bottom: 10x;
+    border-bottom-right-radius: 10px;
+    border: 10px solid white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 20px;
 }
