@@ -183,12 +183,13 @@
         display: none;
     }
     .hs-img-ueber {
-        width: 100%;
+        max-width: 100%;
+        width: auto;
     }
 }
 
 .hs-img-ueber {
-    width: 400px;
+    width: 300px;
     border-top-right-radius: 20px;
     margin-right: 10px; margin-bottom: 10x;
     border-bottom-right-radius: 10px;
