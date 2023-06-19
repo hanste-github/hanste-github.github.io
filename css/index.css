@@ -104,6 +104,9 @@
     .hs-logo-dark {
         display: none;
     }
+    .hs-darkmod p, .hs-darkmod h1 {
+        color: white;        
+    }
 }
 
 /* Image Modal */
