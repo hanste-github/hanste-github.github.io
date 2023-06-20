@@ -10,6 +10,9 @@
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
+.hs-transparent {
+    background-color: #00000000;
+}
 .hs-mg-10 {
     margin-top: 10px;
     margin-bottom: 10px;
