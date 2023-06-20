@@ -21,6 +21,11 @@ span.onclick = function() {
 
 
 $( '#hs-div-fullscreen' ).click( function() {
-  $( '#hs-div-fullscreen2' ).width( $( window ).width() );
-  $( '#hs-div-fullscreen2' ).height( $( window ).height() );
-});
+  $('#hs-div-fullscreen2').css({
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  });
+}
