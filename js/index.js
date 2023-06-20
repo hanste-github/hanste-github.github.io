@@ -18,14 +18,3 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-
-$( '#hs-div-fullscreen' ).click( function() {
-  $('#hs-div-fullscreen2').css({
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  });
-}
