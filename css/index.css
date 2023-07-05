@@ -68,7 +68,7 @@
     display: none;
 }
 
-/* Farbthema Hell */
+/* Farbthema Hell
 [data-bs-theme="light"] {
     .hs-bg-001 {
         background-color: rgb(255, 118, 118);
