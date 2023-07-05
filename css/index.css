@@ -19,6 +19,55 @@
     border-radius: 10px;
 }
 
+.hs-bg-001 {
+    background-color: rgb(255, 118, 118);
+}
+.hs-bg-002 {
+    background-color: rgb(255, 211, 115);
+}
+.hs-bg-003 {
+    background-color: rgb(241, 255, 115);
+}
+.hs-bg-004 {
+    background-color: rgb(214, 255, 119);
+}
+.hs-bg-005 {
+    background-color: rgb(138, 255, 115);
+}
+.hs-bg-006 {
+    background-color: rgb(119, 255, 180);
+}
+.hs-bg-007 {
+    background-color: rgb(114, 234, 255);
+}
+.hs-bg-008 {
+    background-color: rgb(115, 171, 255);
+}
+.hs-bg-009 {
+    background-color: rgb(116, 118, 255);
+}
+.hs-bg-010 {
+    background-color: rgb(185, 123, 255);
+}
+.hs-bg-011 {
+    background-color: rgb(255, 115, 220);
+}
+.hs-bg-012 {
+    background-color: rgb(255, 121, 161);
+}
+.hs-bg-013 {
+    background-color: rgb(255, 117, 117);
+}
+.blur1 {
+    background-color: rgba(200, 200, 200, 0.4)
+}
+.blur2 {
+    background-color: rgba(200, 200, 200, 0.4)
+}
+.hs-logo-light {
+    display: none;
+}
+
 /* Farbthema Hell */
 [data-bs-theme="light"] {
     .hs-bg-001 {
