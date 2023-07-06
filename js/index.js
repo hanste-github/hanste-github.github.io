@@ -1,6 +1,6 @@
-const hsclosebutton = document.getElementById('hsclosebutton');
-const hsmodal = document.getElementById('modal');
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
-hsclosebutton.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
