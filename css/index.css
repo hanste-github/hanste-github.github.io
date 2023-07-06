@@ -1,121 +1,111 @@
 .blur1 {
-    -webkit-backdrop-filter: blur(20px); 
-    backdrop-filter: blur(20px);
-    background-color: var(--hs-bl-001);
-}
-.blur2 {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background-color: var(--hs-bl-002);
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
+    background-color: var(--hs-bl-001) !important;
 }
 .hs-mg-10 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border-radius: 10px !important;
 }
 
 .hs-bg-001 {
-    background-color: var(--hs-bg-001);
+    background-color: var(--hs-bg-001) !important;
 }
 .hs-bg-002 {
-    background-color: var(--hs-bg-002);
+    background-color: var(--hs-bg-002) !important;
 }
 .hs-bg-003 {
-    background-color: var(--hs-bg-003);
+    background-color: var(--hs-bg-003) !important;
 }
 .hs-bg-004 {
-    background-color: var(--hs-bg-004);
+    background-color: var(--hs-bg-004) !important;
 }
 .hs-bg-005 {
-    background-color: var(--hs-bg-005);
+    background-color: var(--hs-bg-005) !important;
 }
 .hs-bg-006 {
-    background-color: var(--hs-bg-006);
+    background-color: var(--hs-bg-006) !important;
 }
 .hs-bg-007 {
-    background-color: var(--hs-bg-007);
+    background-color: var(--hs-bg-007) !important;
 }
 .hs-bg-008 {
-    background-color: var(--hs-bg-008);
+    background-color: var(--hs-bg-008) !important;
 }
 .hs-bg-009 {
-    background-color: var(--hs-bg-009);
+    background-color: var(--hs-bg-009) !important;
 }
 .hs-bg-010 {
-    background-color: var(--hs-bg-010);
+    background-color: var(--hs-bg-010) !important;
 }
 .hs-bg-011 {
-    background-color: var(--hs-bg-011);
+    background-color: var(--hs-bg-011) !important;
 }
 .hs-bg-012 {
-    background-color: var(--hs-bg-012);
+    background-color: var(--hs-bg-012) !important;
 }
 
 .hs-logo-light {
-    display: var(--hs-loli);
+    display: var(--hs-loli) !important;
 }
 
 .hs-logo-dark {
-    display: var(--hs-loda);
+    display: var(--hs-loda) !important;
 }
 
 :root,
 [data-bs-theme="light"] {
-    --hs-bg-001: rgb(255, 118, 118);
-    --hs-bg-002: rgb(255, 211, 115);
-    --hs-bg-003: rgb(241, 255, 115);
-    --hs-bg-004: rgb(214, 255, 119);
-    --hs-bg-005: rgb(138, 255, 115);
-    --hs-bg-006: rgb(119, 255, 180);
-    --hs-bg-007: rgb(114, 234, 255);
-    --hs-bg-008: rgb(115, 171, 255);
-    --hs-bg-009: rgb(116, 118, 255);
-    --hs-bg-010: rgb(185, 123, 255);
-    --hs-bg-011: rgb(255, 115, 220);
-    --hs-bg-012: rgb(255, 121, 161);
-    --hs-bl-001: rgba(200, 200, 200, 0.4);
-    --hs-bl-002: rgba(200, 200, 200, 0.4);
-    --hs-tx-001: rgb(0, 0, 0);
-    --hs-loli: none;
-    --hs-loda: block;
+    --hs-bg-001: rgb(255, 118, 118) !important;
+    --hs-bg-002: rgb(255, 211, 115) !important;
+    --hs-bg-003: rgb(241, 255, 115) !important;
+    --hs-bg-004: rgb(214, 255, 119) !important;
+    --hs-bg-005: rgb(138, 255, 115) !important;
+    --hs-bg-006: rgb(119, 255, 180) !important;
+    --hs-bg-007: rgb(114, 234, 255) !important;
+    --hs-bg-008: rgb(115, 171, 255) !important;
+    --hs-bg-009: rgb(116, 118, 255) !important;
+    --hs-bg-010: rgb(185, 123, 255) !important;
+    --hs-bg-011: rgb(255, 115, 220) !important;
+    --hs-bg-012: rgb(255, 121, 161) !important;
+    --hs-bl-001: rgba(200, 200, 200, 0.4) !important;
+    --hs-tx-001: rgb(0, 0, 0) !important;
+    --hs-loli: none !important;
+    --hs-loda: block !important;
 }
 
 [data-bs-theme="dark"] {
-    --hs-bg-001: rgb(136, 0, 0);
-    --hs-bg-002: rgb(143, 98, 0);
-    --hs-bg-003: rgb(129, 143, 0);
-    --hs-bg-004: rgb(96, 138, 0);
-    --hs-bg-005: rgb(22, 129, 0);
-    --hs-bg-006: rgb(0, 136, 61);
-    --hs-bg-007: rgb(0, 117, 138);
-    --hs-bg-008: rgb(0, 57, 143);
-    --hs-bg-009: rgb(0, 2, 133);
-    --hs-bg-010: rgb(62, 0, 133);
-    --hs-bg-011: rgb(145, 0, 108);
-    --hs-bg-012: rgb(139, 0, 42);
-    --hs-bl-001: rgba(0, 0, 0, 0.4);
-    --hs-bl-002: rgba(0, 0, 0, 0.4);
-    --hs-tx-001: rgb(255, 255, 255);
-    --hs-loda: none;
-    --hs-loli: block;
+    --hs-bg-001: rgb(136, 0, 0) !important;
+    --hs-bg-002: rgb(143, 98, 0) !important;
+    --hs-bg-003: rgb(129, 143, 0) !important;
+    --hs-bg-004: rgb(96, 138, 0) !important;
+    --hs-bg-005: rgb(22, 129, 0) !important;
+    --hs-bg-006: rgb(0, 136, 61) !important;
+    --hs-bg-007: rgb(0, 117, 138) !important;
+    --hs-bg-008: rgb(0, 57, 143) !important;
+    --hs-bg-009: rgb(0, 2, 133) !important;
+    --hs-bg-010: rgb(62, 0, 133) !important;
+    --hs-bg-011: rgb(145, 0, 108) !important;
+    --hs-bg-012: rgb(139, 0, 42) !important;
+    --hs-bl-001: rgba(0, 0, 0, 0.4) !important;
+    --hs-bl-002: rgba(0, 0, 0, 0.4) !important;
+    --hs-tx-001: rgb(255, 255, 255) !important;
+    --hs-loda: none !important;
+    --hs-loli: block !important;
 }
 
 p, h1, h2, h3, h4, h5, a {
-    color: var(--hs-tx-001);
-    font-weight: bolder;
+    color: var(--hs-tx-001) !important;
+    font-weight: bolder !important;
 }
 
 @media (min-width: 801px) {
     .hs-hidden1 {
-        display: none;
+        display: none !important;
     }
 }
 @media (max-width: 800px) {
     .hs-hidden2 {
-        display: none;
+        display: none !important;
     }
 }
