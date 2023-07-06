@@ -55,6 +55,18 @@
     background-color: var(--hs-bg-012);
 }
 
+[data-bs-theme="light"] {
+    .hs-logo-light {
+        display: none;
+    }
+}
+
+[data-bs-theme="dark"] {
+    .hs-logo-dark {
+        display: none;
+    }
+}
+
 :root,
 [data-bs-theme="light"] {
     --hs-bg-001: rgb(255, 118, 118);
@@ -72,9 +84,6 @@
     --hs-bl-001: rgba(200, 200, 200, 0.4);
     --hs-bl-002: rgba(200, 200, 200, 0.4);
     --hs-tx-001: rgb(0, 0, 0);
-    .hs-logo-light {
-        display: none;
-    }
 }
 
 [data-bs-theme="dark"] {
@@ -93,9 +102,6 @@
     --hs-bl-001: rgba(0, 0, 0, 0.4);
     --hs-bl-002: rgba(0, 0, 0, 0.4);
     --hs-tx-001: rgb(255, 255, 255);
-    .hs-logo-dark {
-        display: none;
-    }
 }
 
 p, h1, h2, h3, h4, h5 {
