@@ -112,3 +112,13 @@ p, h1, h2, h3, h4, h5 {
         display: none;
     }
 }
+
+#modal {
+    display: block;
+}
+
+#buttonclose:hover {
+    #modal {
+        display: none;
+    }
+}
