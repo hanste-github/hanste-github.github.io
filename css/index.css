@@ -80,7 +80,7 @@
     }
 }
 
-:root, [data-bs-theme="light"] {
+:root, [data-bs-theme="dark"] {
     --hs-bg-001: rgb(136, 0, 0);
     --hs-bg-002: rgb(143, 98, 0);
     --hs-bg-003: rgb(129, 143, 0);
