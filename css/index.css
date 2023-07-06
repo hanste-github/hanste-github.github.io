@@ -1,6 +1,7 @@
 .blur1 {
     -webkit-backdrop-filter: blur(20px); 
     backdrop-filter: blur(20px);
+    background-color: var(--hs-bl-001);
 }
 .blur2 {
     top: 0;
@@ -9,9 +10,7 @@
     height: 100%;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-}
-.hs-transparent {
-    background-color: #00000000;
+    background-color: var(--hs-bl-002);
 }
 .hs-mg-10 {
     margin-top: 10px;
@@ -20,174 +19,91 @@
 }
 
 .hs-bg-001 {
-    background-color: rgb(255, 118, 118);
+    background-color: var(--hs-bg-001);
 }
 .hs-bg-002 {
-    background-color: rgb(255, 211, 115);
+    background-color: var(--hs-bg-002);
 }
 .hs-bg-003 {
-    background-color: rgb(241, 255, 115);
+    background-color: var(--hs-bg-003);
 }
 .hs-bg-004 {
-    background-color: rgb(214, 255, 119);
+    background-color: var(--hs-bg-004);
 }
 .hs-bg-005 {
-    background-color: rgb(138, 255, 115);
+    background-color: var(--hs-bg-005);
 }
 .hs-bg-006 {
-    background-color: rgb(119, 255, 180);
+    background-color: var(--hs-bg-006);
 }
 .hs-bg-007 {
-    background-color: rgb(114, 234, 255);
+    background-color: var(--hs-bg-007);
 }
 .hs-bg-008 {
-    background-color: rgb(115, 171, 255);
+    background-color: var(--hs-bg-008);
 }
 .hs-bg-009 {
-    background-color: rgb(116, 118, 255);
+    background-color: var(--hs-bg-009);
 }
 .hs-bg-010 {
-    background-color: rgb(185, 123, 255);
+    background-color: var(--hs-bg-010);
 }
 .hs-bg-011 {
-    background-color: rgb(255, 115, 220);
+    background-color: var(--hs-bg-011);
 }
 .hs-bg-012 {
-    background-color: rgb(255, 121, 161);
+    background-color: var(--hs-bg-012);
 }
 .hs-bg-013 {
-    background-color: rgb(255, 117, 117);
-}
-.blur1 {
-    background-color: rgba(200, 200, 200, 0.4)
-}
-.blur2 {
-    background-color: rgba(200, 200, 200, 0.4)
-}
-.hs-logo-light {
-    display: none;
+    background-color: var(--hs-bg-013);
 }
 
-/* Farbthema Dunkel
-[data-bs-theme="dark"] {
-    .hs-bg-001 {
-        background-color: rgb(136, 0, 0);
+:root, [data-bs-theme="light"] {
+    --hs-bg-001: rgb(255, 118, 118);
+    --hs-bg-002: rgb(255, 211, 115);
+    --hs-bg-003: rgb(241, 255, 115);
+    --hs-bg-004: rgb(214, 255, 119);
+    --hs-bg-005: rgb(138, 255, 115);
+    --hs-bg-006: rgb(119, 255, 180);
+    --hs-bg-007: rgb(114, 234, 255);
+    --hs-bg-008: rgb(115, 171, 255);
+    --hs-bg-009: rgb(116, 118, 255);
+    --hs-bg-010: rgb(185, 123, 255);
+    --hs-bg-011: rgb(255, 115, 220);
+    --hs-bg-012: rgb(255, 121, 161);
+    --hs-bg-013: rgb(255, 117, 117);
+    --hs-bl-001: rgba(200, 200, 200, 0.4);
+    --hs-bl-002: rgba(200, 200, 200, 0.4);
+    --hs-tx-001: rgb(0, 0, 0);
+    .hs-logo-light {
+        display: none;
     }
-    .hs-bg-002 {
-        background-color: rgb(143, 98, 0);
-    }
-    .hs-bg-003 {
-        background-color: rgb(129, 143, 0);
-    }
-    .hs-bg-004 {
-        background-color: rgb(96, 138, 0);
-    }
-    .hs-bg-005 {
-        background-color: rgb(22, 129, 0);
-    }
-    .hs-bg-006 {
-        background-color: rgb(0, 136, 61);
-    }
-    .hs-bg-007 {
-        background-color: rgb(0, 117, 138);
-    }
-    .hs-bg-008 {
-        background-color: rgb(0, 57, 143);
-    }
-    .hs-bg-009 {
-        background-color: rgb(0, 2, 133);
-    }
-    .hs-bg-010 {
-        background-color: rgb(62, 0, 133);
-    }
-    .hs-bg-011 {
-        background-color: rgb(145, 0, 108);
-    }
-    .hs-bg-012 {
-        background-color: rgb(139, 0, 42);
-    }
-    .hs-bg-013 {
-        background-color: rgb(138, 0, 0);
-    }
-    .blur1 {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-    .blur2 {
-        background-color: rgba(0, 0, 0, 0.4);
-    }
+}
+
+:root, [data-bs-theme="light"] {
+    --hs-bg-001: rgb(136, 0, 0);
+    --hs-bg-002: rgb(143, 98, 0);
+    --hs-bg-003: rgb(129, 143, 0);
+    --hs-bg-004: rgb(96, 138, 0);
+    --hs-bg-005: rgb(22, 129, 0);
+    --hs-bg-006: rgb(0, 136, 61);
+    --hs-bg-007: rgb(0, 117, 138);
+    --hs-bg-008: rgb(0, 57, 143);
+    --hs-bg-009: rgb(0, 2, 133);
+    --hs-bg-010: rgb(62, 0, 133);
+    --hs-bg-011: rgb(145, 0, 108);
+    --hs-bg-012: rgb(139, 0, 42);
+    --hs-bg-013: rgb(138, 0, 0);
+    --hs-bl-001: rgba(0, 0, 0, 0.4);
+    --hs-bl-002: rgba(0, 0, 0, 0.4);
+    --hs-tx-001: rgb(255, 255, 255);
     .hs-logo-dark {
         display: none;
     }
-    .hs-darkmod p, .hs-darkmod h1 {
-        color: white;        
-    }
 }
 
-/* Image Modal
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-#myImg:hover {
-    opacity: 0.8;
-}
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    -webkit-backdrop-filter: blur(3px); 
-    backdrop-filter: blur(3px);
-}
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 80%;
-}
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-.modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 2.0s;
-}
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-}
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}*/
-@media (max-width: 799px){
-    .modal-content {
-      width: 100%;
-    }
+p, h1, h2, h3, h4, h5 {
+    color: var(--hs-tx-001);        
 }
 
 @media (min-width: 801px) {
