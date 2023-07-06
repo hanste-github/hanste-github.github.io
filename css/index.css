@@ -55,19 +55,15 @@
     background-color: var(--hs-bg-012);
 }
 
-.hs-logo-light {
-    display: none;
-}
-.hs-logo-dark {
-    display: block;
+[data-bs-theme="light"] {
+    .hs-logo-light {
+        display: none;
+    }
 }
 
 [data-bs-theme="dark"] {
     .hs-logo-dark {
         display: none;
-    }
-    .hs-logo-light {
-        display: block;
     }
 }
 
