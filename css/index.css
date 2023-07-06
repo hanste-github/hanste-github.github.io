@@ -55,15 +55,19 @@
     background-color: var(--hs-bg-012);
 }
 
-[data-bs-theme="light"] {
-    .hs-logo-light {
-        display: none;
-    }
+.hs-logo-light {
+    display: none;
+}
+.hs-logo-dark {
+    display: block;
 }
 
 [data-bs-theme="dark"] {
     .hs-logo-dark {
         display: none;
+    }
+    .hs-logo-light {
+        display: block;
     }
 }
 
@@ -104,7 +108,7 @@
     --hs-tx-001: rgb(255, 255, 255);
 }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, a {
     color: var(--hs-tx-001);        
 }
 
