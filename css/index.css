@@ -123,7 +123,7 @@
     }
 }
 
-/* Image Modal */
+/* Image Modal
 #myImg {
     border-radius: 5px;
     cursor: pointer;
@@ -183,7 +183,7 @@
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
+}*/
 @media (max-width: 799px){
     .modal-content {
       width: 100%;
