@@ -81,6 +81,7 @@
     --hs-bl-002: rgba(200, 200, 200, 0.4);
     --hs-tx-001: rgb(0, 0, 0);
     --hs-loli: none;
+    --hs-loda: block;
 }
 
 [data-bs-theme="dark"] {
@@ -100,6 +101,7 @@
     --hs-bl-002: rgba(0, 0, 0, 0.4);
     --hs-tx-001: rgb(255, 255, 255);
     --hs-loda: none;
+    --hs-loli: block;
 }
 
 p, h1, h2, h3, h4, h5, a {
