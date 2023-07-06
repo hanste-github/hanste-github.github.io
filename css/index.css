@@ -54,9 +54,6 @@
 .hs-bg-012 {
     background-color: var(--hs-bg-012);
 }
-.hs-bg-013 {
-    background-color: var(--hs-bg-013);
-}
 
 :root,
 [data-bs-theme="light"] {
@@ -72,7 +69,6 @@
     --hs-bg-010: rgb(185, 123, 255);
     --hs-bg-011: rgb(255, 115, 220);
     --hs-bg-012: rgb(255, 121, 161);
-    --hs-bg-013: rgb(255, 117, 117);
     --hs-bl-001: rgba(200, 200, 200, 0.4);
     --hs-bl-002: rgba(200, 200, 200, 0.4);
     --hs-tx-001: rgb(0, 0, 0);
@@ -94,7 +90,6 @@
     --hs-bg-010: rgb(62, 0, 133);
     --hs-bg-011: rgb(145, 0, 108);
     --hs-bg-012: rgb(139, 0, 42);
-    --hs-bg-013: rgb(138, 0, 0);
     --hs-bl-001: rgba(0, 0, 0, 0.4);
     --hs-bl-002: rgba(0, 0, 0, 0.4);
     --hs-tx-001: rgb(255, 255, 255);
