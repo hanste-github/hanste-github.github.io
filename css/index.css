@@ -103,9 +103,15 @@ p, h1, h2, h3, h4, h5, a {
     .hs-hidden1 {
         display: none !important;
     }
+    .hs-fullheight {
+        height: calc(100%-3rem-40px);
+    }
 }
 @media (max-width: 800px) {
     .hs-hidden2 {
         display: none !important;
+    }
+    .hs-fullheight {
+        height: calc(100%-2rem);
     }
 }
