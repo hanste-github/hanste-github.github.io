@@ -96,7 +96,8 @@
 
 p, h1, h2, h3, h4, h5, a {
     color: var(--hs-tx-001) !important;
-    font-weight: bolder !important;
+    font-weight: 900 !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 801px) {
