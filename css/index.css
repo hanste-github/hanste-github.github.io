@@ -56,7 +56,7 @@
 }
 
 .hs-bg-nav {
-    background-color: var(--hs-bg-nav);
+    background-color: var(--hs-bg-nav) !important;
 }
 
 .hs-logo-light {
