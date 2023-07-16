@@ -3,6 +3,11 @@
     backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
 }
+.blur2 {
+    -webkit-backdrop-filter: blur(3px) !important; 
+    backdrop-filter: blur(3px) !important;
+    background-color: var(--hs-bl-001) !important;
+}
 
 .hs-bg-trans {
     background-color: #00000000 !important;
