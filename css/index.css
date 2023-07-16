@@ -1,12 +1,3 @@
-.bd-mode-toggle {
-    z-index: 10000;
-}
-
-.modal {
-    z-index: 11000;
-    display: block;
-}
-
 .blur1 {
     -webkit-backdrop-filter: blur(20px) !important; 
     backdrop-filter: blur(20px) !important;
