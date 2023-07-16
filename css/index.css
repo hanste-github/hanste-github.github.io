@@ -50,6 +50,14 @@
     background-color: var(--hs-bg-nav) !important;
 }
 
+.hs-tx-black {
+    color: var(--hs-tx-002) !important;
+}
+
+.hs-tx-white {
+    color: var(--hs-tx-003) !important;
+}
+
 .hs-logo-light {
     display: var(--hs-loli) !important;
 }
@@ -74,7 +82,9 @@
     --hs-bg-012: rgb(255, 121, 161) !important;
     --hs-bg-nav: rgba(153, 255, 119, 0.95) !important;
     --hs-bl-001: rgba(200, 200, 200, 0.4) !important;
-    --hs-tx-001: rgb(0, 0, 0) !important;
+    --hs-tx-001: rgb(0, 0, 0) !important;    
+    --hs-tx-002: rgb(0, 0, 0) !important;
+    --hs-tx-003: rgb(255, 255, 255) !important;
     --hs-loli: none !important;
     --hs-loda: block !important;
 }
@@ -94,8 +104,9 @@
     --hs-bg-012: rgb(139, 0, 42) !important;
     --hs-bg-nav: rgba(0, 62, 137, 0.95) !important;
     --hs-bl-001: rgba(0, 0, 0, 0.4) !important;
-    --hs-bl-002: rgba(0, 0, 0, 0.4) !important;
     --hs-tx-001: rgb(255, 255, 255) !important;
+    --hs-tx-002: rgb(0, 0, 0) !important;
+    --hs-tx-003: rgb(255, 255, 255) !important;
     --hs-loda: none !important;
     --hs-loli: block !important;
 }
