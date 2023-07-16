@@ -6,6 +6,11 @@
     z-index: 11000;
 }
 
+.hs-bg-trans {
+    background-color: #00000000;
+    color: #00000000;
+}
+
 .blur1 {
     -webkit-backdrop-filter: blur(20px) !important; 
     backdrop-filter: blur(20px) !important;
