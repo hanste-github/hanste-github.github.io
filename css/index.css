@@ -16,10 +16,11 @@
 }
 
 #myUL li a {
-    border-radius: 10px;
+    border-radius: 3px;
     width: 100%;
     border: 1px groove #22ff00;
     background-color: rgba(0, 0, 0, 0);
+    margin: 0;
 }
   
 #myUL li a:hover {
@@ -28,6 +29,7 @@
 
 #myUL li {
     list-style: none;
+    margin: 0;
 }
 
 
