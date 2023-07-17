@@ -1,17 +1,17 @@
 #myInput {
     border-radius: 10px;
-    width: 100%;
+    min-width: auto !important;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #2200ff;
-    margin: 10px 10px 0 10px;
+    margin: 10px 10px 0 10px !important;
 }
   
 #myUL {
     border-radius: 10px;
-    width: 100%;
+    min-width: auto !important;
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid #2200ff;
-    margin: 10px;
+    margin: 10px !important;
 }
 
 #myUL li a {
@@ -25,11 +25,12 @@
     border: 3px solid #ff0000;
 }
 
-li {
-    list-style: none;
+#myUL li {
+    list-style: none !important;
+    border: 0,5px solid var(--hs-tx-001);
 }
-ul {
-    list-style-type: none;
+ul#myUL {
+    list-style-type: none !important;
 }
 
 
