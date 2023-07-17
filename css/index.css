@@ -2,8 +2,7 @@
     border-radius: 10px;
     min-width: auto !important;
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #2200ff;
-    margin: 10px 10px 0 10px !important;
+    border: 2px solid #2200ff;
 }
   
 #myUL {
@@ -11,14 +10,11 @@
     min-width: auto !important;
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid #2200ff;
-    margin: 10px !important;
 }
 
 #myUL li a {
     margin: 10px;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0);
-    margin: 0;
 }
   
 #myUL li a:hover {
