@@ -12,17 +12,22 @@
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid #2200ff;
     margin: 10px;
+    list-style-type: none;
 }
 
 #myUL li a {
     border-radius: 10px;
     width: 100%;
-    border: 1p groove #22ff00;
+    border: 1px groove #22ff00;
     background-color: rgba(0, 0, 0, 0);
 }
   
 #myUL li a:hover {
     border: 3px solid #ff0000;
+}
+
+#myUL li {
+    list-style: none;
 }
 
 
