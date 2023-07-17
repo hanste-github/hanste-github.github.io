@@ -1,34 +1,31 @@
 #myInput {
-    border-radius: 10px;
-    min-width: auto !important;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #2200ff;
+    border-radius: 10px !important;
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 2px solid #2200ff !important;
+    margin-bottom: 10px !important;
 }
   
 #myUL {
     border-radius: 10px;
-    min-width: auto !important;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #2200ff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 2px solid #2200ff !important;
 }
 
 #myUL li a {
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    margin: 10px !important;
+    background-color: rgba(0, 0, 0, 0) !important;
 }
   
 #myUL li a:hover {
-    border: 3px solid #ff0000;
+    color: #ff0000 !important;
 }
 
 #myUL li {
-    list-style: none !important;
-    border: 0,5px solid var(--hs-tx-001);
+    list-style: none outside !important;
+    border: 1px solid var(--hs-tx-001) !important;
 }
-ul#myUL {
-    list-style-type: none !important;
-}
-
 
 .blur1 {
     -webkit-backdrop-filter: blur(20px) !important; 
