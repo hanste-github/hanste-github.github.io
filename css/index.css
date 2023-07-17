@@ -3,23 +3,22 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #2200ff;
-    margin: 10px;
+    margin: 10px 10px 0 10px;
 }
   
 #myUL {
     border-radius: 10px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #2200ff;
     margin: 10px;
 }
 
 #myUL li a {
     border-radius: 10px;
     width: 100%;
+    border: 1p groove #22ff00;
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #2200ff;
-    margin-top: -1px;
-    display: block; /* Make it into a block element to fill the whole list */
 }
   
 #myUL li a:hover {
