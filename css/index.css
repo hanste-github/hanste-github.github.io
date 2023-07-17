@@ -23,14 +23,7 @@
 }
 
 #myUL li {
-    list-style: armenian !important;
-    border: 1px solid var(--hs-tx-001) !important;
-}
-#myUL li::before {
-    border-radius: 10px;
-}
-#myUL li::after {
-    border-radius: 10px;
+    list-style: linear-gradient(var(--hs-tx-003) 0%, rgba(0, 0, 0, 0)) !important;
 }
 
 .blur1 {
