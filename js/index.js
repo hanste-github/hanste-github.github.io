@@ -39,50 +39,52 @@ function openTab(evt, tabName) {
 
 //Music
 
-// Array mit den Audiodateien
-var audioFiles = [
-  "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_14_He_Is_Seeking_You_2006.mp3",
-  "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_13_Only_Jesus_2006.mp3",
-  "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_12_We_Are_Not_Alone_2006.mp3"
-];
-
-var audioIndex = 0; // Aktueller Index des Audios
-
 var audioPlayer = document.getElementById("audioPlayer");
 var audioSource = document.getElementById("audioSource");
-var backButton = document.getElementById("backButton");
-var nextButton = document.getElementById("nextButton");
+var playButton = document.getElementById("playButton");
+var pauseButton = document.getElementById("pauseButton");
+var stopButton = document.getElementById("stopButton");
+var audio1Button = document.getElementById("audio1Button");
+var audio2Button = document.getElementById("audio2Button");
+var audio3Button = document.getElementById("audio3Button");
 
-// Funktion zum Laden und Abspielen des aktuellen Audios
-function loadAudio() {
-  audioSource.src = audioFiles[audioIndex];
+audio1Button.addEventListener("click", function() {
+  audioSource.src = "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_14_He_Is_Seeking_You_2006.mp3"";
   audioPlayer.load();
   audioPlayer.play();
+});
+
+audio2Button.addEventListener("click", function() {
+  audioSource.src = "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_13_Only_Jesus_2006.mp3";
+  audioPlayer.load();
+  audioPlayer.play();
+});
+
+audio3Button.addEventListener("click", function() {
+  audioSource.src = "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_12_We_Are_Not_Alone_2006.mp3";
+  audioPlayer.load();
+  audioPlayer.play();
+});
+
+playButton.addEventListener("click", function() {
+  audioPlayer.play();
+});
+
+pauseButton.addEventListener("click", function() {
+  audioPlayer.pause();
+});
+
+stopButton.addEventListener("click", function() {
+  audioPlayer.pause();
+  audioPlayer.currentTime = 0;
+});
+
+// Cookies
+function acceptCookies() {
+  // Hier können Sie den Code einfügen, um die Zustimmung des Benutzers zu speichern
+  // z.B. durch das Setzen eines Cookies oder das Speichern in der Datenbank
+  // Beispiel: document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+  // Hier können Sie auch zusätzliche Funktionen hinzufügen, wie das Laden von Skripten von Drittanbietern
+  // Beispiel: loadThirdPartyScripts();
+  document.querySelector('.cookie-banner').style.display = 'none';
 }
-
-// Funktion zum Wechseln zum vorherigen Audio
-function previousAudio() {
-  audioIndex--;
-  if (audioIndex < 0) {
-    audioIndex = audioFiles.length - 1;
-  }
-  loadAudio();
-}
-
-// Funktion zum Wechseln zum nächsten Audio
-function nextAudio() {
-  audioIndex++;
-  if (audioIndex >= audioFiles.length) {
-    audioIndex = 0;
-  }
-  loadAudio();
-}
-
-// Event Listener für den Back-Button
-backButton.addEventListener("click", previousAudio);
-
-// Event Listener für den Next-Button
-nextButton.addEventListener("click", nextAudio);
-
-// Initialisierung des ersten Audios
-loadAudio();

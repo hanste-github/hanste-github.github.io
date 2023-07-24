@@ -17,6 +17,10 @@
     
   </head>
   <body>
+    <div class="cookie-banner">
+      <p>Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
+      <button onclick="acceptCookies()">Akzeptieren</button>
+    </div>
     <main>
       <!-- Navigationsleiste oben -->
       <div class="hs-hidden1">
@@ -100,8 +104,14 @@
             <audio id="audioPlayer" controls>
               <source id="audioSource" src="" type="audio/mp3">
             </audio>
-            <button id="backButton">Back</button>
-            <button id="nextButton">Next</button>
+          
+            <button id="playButton">Play</button>
+            <button id="pauseButton">Pause</button>
+            <button id="stopButton">Stop</button>
+          
+            <button id="audio1Button">Audio 1</button>
+            <button id="audio2Button">Audio 2</button>
+            <button id="audio3Button">Audio 3</button>
           </div>
           <div id="tab2" class="tab">
             <h2>Tab 2 Content</h2>
