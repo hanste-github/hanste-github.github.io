@@ -86,5 +86,5 @@ function acceptCookies() {
   // Beispiel: document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
   // Hier können Sie auch zusätzliche Funktionen hinzufügen, wie das Laden von Skripten von Drittanbietern
   // Beispiel: loadThirdPartyScripts();
-  document.querySelector('.cookie-banner').style.display = 'none';
+  document.getElementsByClassName('.cookie-banner').style.display = 'none';
 }
