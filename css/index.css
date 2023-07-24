@@ -28,16 +28,18 @@
 }
 
 audio {
-    width: 100%;
+    width: calc(100% - 20px);
     height: 40px;
+    border-radius: 20px;
+    margin: 10px;
 }
 audio::-webkit-media-controls-panel {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, var(--hs-bl-001) 100%);
     border: 1px solid blue;
     border-radius: 10px;
     width: 100%;
     height: 40px;
 }
+audio:
 
 .blur1 {
     -webkit-backdrop-filter: blur(20px) !important; 
