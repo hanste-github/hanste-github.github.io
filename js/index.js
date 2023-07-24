@@ -44,46 +44,45 @@ var audioFiles = [
   "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_14_He_Is_Seeking_You_2006.mp3",
   "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_13_Only_Jesus_2006.mp3",
   "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_12_We_Are_Not_Alone_2006.mp3"
-  ];
-  
-  var audioIndex = 0; // Aktueller Index des Audios
-  
-  var audioPlayer = document.getElementById("audioPlayer");
-  var audioSource = document.getElementById("audioSource");
-  var backButton = document.getElementById("backButton");
-  var playButton = document.getElementById("playButton");
-  var pauseButton = document.getElementById("pauseButton");
-  var stopButton = document.getElementById("stopButton");
-  var nextButton = document.getElementById("nextButton");
-  
-  // Funktion zum Laden und Abspielen des aktuellen Audios
-  function loadAudio() {
+];
+
+var audioIndex = 0; // Aktueller Index des Audios
+
+var audioPlayer = document.getElementById("audioPlayer");
+var audioSource = document.getElementById("audioSource");
+var backButton = document.getElementById("backButton");
+var nextButton = document.getElementById("nextButton");
+
+// Funktion zum Laden und Abspielen des aktuellen Audios
+function loadAudio() {
   audioSource.src = audioFiles[audioIndex];
   audioPlayer.load();
   audioPlayer.play();
-  }
-  
-  // Funktion zum Wechseln zum vorherigen Audio
-  function previousAudio() {
+}
+
+// Funktion zum Wechseln zum vorherigen Audio
+function previousAudio() {
   audioIndex--;
   if (audioIndex < 0) {
-  audioIndex = audioFiles.length - 1;
+    audioIndex = audioFiles.length - 1;
   }
   loadAudio();
-  }
-  
-  // Funktion zum Wechseln zum nächsten Audio
-  function nextAudio() {
+}
+
+// Funktion zum Wechseln zum nächsten Audio
+function nextAudio() {
   audioIndex++;
   if (audioIndex >= audioFiles.length) {
-  audioIndex = 0;
+    audioIndex = 0;
   }
   loadAudio();
-  }
-  
-  // Funktion zum Pausieren des aktuellen Audios
-  function pauseAudio() {
-  audioPlayer.pause();
-  }
-  
-  // Funktion zum Stoppen des aktuellen Aud
+}
+
+// Event Listener für den Back-Button
+backButton.addEventListener("click", previousAudio);
+
+// Event Listener für den Next-Button
+nextButton.addEventListener("click", nextAudio);
+
+// Initialisierung des ersten Audios
+loadAudio();
