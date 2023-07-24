@@ -80,11 +80,11 @@ stopButton.addEventListener("click", function() {
 });
 
 // Cookies
-function acceptCookies() {
+//function acceptCookies() {
   // Hier können Sie den Code einfügen, um die Zustimmung des Benutzers zu speichern
   // z.B. durch das Setzen eines Cookies oder das Speichern in der Datenbank
   // Beispiel: document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
   // Hier können Sie auch zusätzliche Funktionen hinzufügen, wie das Laden von Skripten von Drittanbietern
   // Beispiel: loadThirdPartyScripts();
-  document.getElementsByClassName('.cookie-banner').style.display = 'none';
-}
+  //document.getElementsByClassName('.cookie-banner').style.display = 'none';
+//}
