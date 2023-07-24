@@ -18,66 +18,46 @@ function myFunction() {
   }
 }
 
-//Tabs
-
-function openTab(evt, tabName) {
-  var i, tabContent, tabButtons;
-
-  tabContent = document.getElementsByClassName("tab");
-  for (i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
-  }
-
-  tabButtons = document.getElementsByClassName("tab-button");
-  for (i = 0; i < tabButtons.length; i++) {
-    tabButtons[i].className = tabButtons[i].className.replace(" active", "");
-  }
-
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
 //Music
 
 var audioPlayer = document.getElementById("audioPlayer");
-var audioSource = document.getElementById("audioSource");
-var playButton = document.getElementById("playButton");
-var pauseButton = document.getElementById("pauseButton");
-var stopButton = document.getElementById("stopButton");
-var audio1Button = document.getElementById("audio1Button");
-var audio2Button = document.getElementById("audio2Button");
-var audio3Button = document.getElementById("audio3Button");
+var currentAudioIndex = 0;
 
-audio1Button.addEventListener("click", function() {
-  audioSource.src = "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_14_He_Is_Seeking_You_2006.mp3"";
+function playNext() {
+  currentAudioIndex++;
+  if (currentAudioIndex >= audioPlayer.children.length) {
+    currentAudioIndex = 0;
+  }
+  audioPlayer.children[currentAudioIndex].selected = true;
   audioPlayer.load();
   audioPlayer.play();
-});
+}
 
-audio2Button.addEventListener("click", function() {
-  audioSource.src = "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_13_Only_Jesus_2006.mp3";
+function playPrevious() {
+  currentAudioIndex--;
+  if (currentAudioIndex < 0) {
+    currentAudioIndex = audioPlayer.children.length - 1;
+  }
+  audioPlayer.children[currentAudioIndex].selected = true;
   audioPlayer.load();
   audioPlayer.play();
-});
+}
 
-audio3Button.addEventListener("click", function() {
-  audioSource.src = "https://info2.sermon-online.com/english/SoundforthSingers/A_Quiet_Heart_Song_12_We_Are_Not_Alone_2006.mp3";
-  audioPlayer.load();
-  audioPlayer.play();
-});
-
-playButton.addEventListener("click", function() {
-  audioPlayer.play();
-});
-
-pauseButton.addEventListener("click", function() {
+function pauseAudio() {
   audioPlayer.pause();
-});
+}
 
-stopButton.addEventListener("click", function() {
+function stopAudio() {
   audioPlayer.pause();
   audioPlayer.currentTime = 0;
-});
+}
+
+function playAudio(index) {
+  currentAudioIndex = index - 1;
+  audioPlayer.children[currentAudioIndex].selected = true;
+  audioPlayer.load();
+  audioPlayer.play();
+}
 
 // Cookies
 //function acceptCookies() {

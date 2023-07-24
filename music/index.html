@@ -93,32 +93,39 @@
       <!-- Inhalt -->
       <div class="container-fluid">
         <div class="mt-4 p-5 hs-bg-005 hs-darkmod rounded">
-          <div id="hs-music-element-home"></div>
-          <div class="tabs">
-            <button class="tab-button" onclick="openTab(event, 'tab1')">Genre</button>
-            <button class="tab-button" onclick="openTab(event, 'tab2')">Tab 2</button>
-            <button class="tab-button" onclick="openTab(event, 'tab3')">Tab 3</button>
-          </div>
-        
-          <div id="tab1" class="tab">
-            <audio id="audioPlayer" controls>
-              <source id="audioSource" src="" type="audio/mp3">
-            </audio>
-          
-            <button id="playButton">Play</button>
-            <button id="pauseButton">Pause</button>
-            <button id="stopButton">Stop</button>
-          
-            <button id="audio1Button">Audio 1</button>
-            <button id="audio2Button">Audio 2</button>
-            <button id="audio3Button">Audio 3</button>
-          </div>
-          <div id="tab2" class="tab">
-            <h2>Tab 2 Content</h2>
-          </div>
-        
-          <div id="tab3" class="tab">
-            <h2>Tab 3 Content</h2>
+          <nav>
+            <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Genre</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Artist</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Album</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-titel" type="button" role="tab" aria-controls="nav-titel" aria-selected="false">Titel</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <audio id="audioPlayer" controls>
+                <source src=".mp3" type="audio/mpeg">
+                <source src="audio2.mp3" type="audio/mpeg">
+                <source src="audio3.mp3" type="audio/mpeg">
+              </audio>
+            
+              <button onclick="playPrevious()">Back</button>
+              <button onclick="playNext()">Next</button>
+              <button onclick="pauseAudio()">Pause</button>
+              <button onclick="stopAudio()">Stop</button>
+              <button onclick="playAudio(1)">Play Audio 1</button>
+              <button onclick="playAudio(2)">Play Audio 2</button>
+              <button onclick="playAudio(3)">Play Audio 3</button>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              <p>Artist</p>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+              <p>Album</p>
+            </div>
+            <div class="tab-pane fade" id="nav-titel" role="tabpanel" aria-labelledby="nav-titel-tab" tabindex="0">
+              <p>Titel</p>
+            </div>
           </div>
         </div>
       </div>
