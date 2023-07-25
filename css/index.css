@@ -31,7 +31,6 @@ audio {
     width: 100% !important;
     height: 40px !important;
     border-radius: 10px !important;
-    margin: 10px 0 10px 0 !important;
 }
 audio::-webkit-media-controls-panel {
     border: 1px solid blue !important;
