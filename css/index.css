@@ -39,8 +39,8 @@ audio::-webkit-media-controls-panel {
 }
 
 .blur1 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
 }
 .blur2 {
@@ -59,44 +59,64 @@ audio::-webkit-media-controls-panel {
 }
 
 .hs-bg-001 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-001) !important;
 }
 .hs-bg-002 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-002) !important;
 }
 .hs-bg-003 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-003) !important;
 }
 .hs-bg-004 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-004) !important;
 }
 .hs-bg-005 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-005) !important;
 }
 .hs-bg-006 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-006) !important;
 }
 .hs-bg-007 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-007) !important;
 }
 .hs-bg-008 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-008) !important;
 }
 .hs-bg-009 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-009) !important;
 }
 .hs-bg-010 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-010) !important;
 }
 .hs-bg-011 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-011) !important;
 }
 .hs-bg-012 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
     background-color: var(--hs-bg-012) !important;
-}
-
-.hs-bg-nav {
-    background-color: var(--hs-bg-nav) !important;
 }
 
 .hs-tx-black {
@@ -117,19 +137,18 @@ audio::-webkit-media-controls-panel {
 
 :root,
 [data-bs-theme="light"] {
-    --hs-bg-001: rgb(255, 118, 118) !important;
-    --hs-bg-002: rgb(255, 211, 115) !important;
-    --hs-bg-003: rgb(241, 255, 115) !important;
-    --hs-bg-004: rgb(214, 255, 119) !important;
-    --hs-bg-005: rgb(138, 255, 115) !important;
-    --hs-bg-006: rgb(119, 255, 180) !important;
-    --hs-bg-007: rgb(114, 234, 255) !important;
-    --hs-bg-008: rgb(115, 171, 255) !important;
-    --hs-bg-009: rgb(116, 118, 255) !important;
-    --hs-bg-010: rgb(185, 123, 255) !important;
-    --hs-bg-011: rgb(255, 115, 220) !important;
-    --hs-bg-012: rgb(255, 121, 161) !important;
-    --hs-bg-nav: rgba(153, 255, 119, 0.95) !important;
+    --hs-bg-001: rgba(255, 118, 118, 0.6) !important;
+    --hs-bg-002: rgba(255, 211, 115, 0.6) !important;
+    --hs-bg-003: rgba(241, 255, 115, 0.6) !important;
+    --hs-bg-004: rgba(214, 255, 119, 0.6) !important;
+    --hs-bg-005: rgba(138, 255, 115, 0.6) !important;
+    --hs-bg-006: rgba(119, 255, 180, 0.6) !important;
+    --hs-bg-007: rgba(114, 234, 255, 0.6) !important;
+    --hs-bg-008: rgba(115, 171, 255, 0.6) !important;
+    --hs-bg-009: rgba(116, 118, 255, 0.6) !important;
+    --hs-bg-010: rgba(185, 123, 255, 0.6) !important;
+    --hs-bg-011: rgba(255, 115, 220, 0.6) !important;
+    --hs-bg-012: rgba(255, 121, 161, 0.6) !important;
     --hs-bl-001: rgba(200, 200, 200, 0.4) !important;
     --hs-tx-001: rgb(0, 0, 0) !important;    
     --hs-tx-002: rgb(0, 0, 0) !important;
@@ -139,19 +158,18 @@ audio::-webkit-media-controls-panel {
 }
 
 [data-bs-theme="dark"] {
-    --hs-bg-001: rgb(136, 0, 0) !important;
-    --hs-bg-002: rgb(143, 98, 0) !important;
-    --hs-bg-003: rgb(129, 143, 0) !important;
-    --hs-bg-004: rgb(96, 138, 0) !important;
-    --hs-bg-005: rgb(22, 129, 0) !important;
-    --hs-bg-006: rgb(0, 136, 61) !important;
-    --hs-bg-007: rgb(0, 117, 138) !important;
-    --hs-bg-008: rgb(0, 57, 143) !important;
-    --hs-bg-009: rgb(0, 2, 133) !important;
-    --hs-bg-010: rgb(62, 0, 133) !important;
-    --hs-bg-011: rgb(145, 0, 108) !important;
-    --hs-bg-012: rgb(139, 0, 42) !important;
-    --hs-bg-nav: rgba(0, 62, 137, 0.95) !important;
+    --hs-bg-001: rgba(136, 0, 0, 0.75) !important;
+    --hs-bg-002: rgba(143, 98, 0, 0.75) !important;
+    --hs-bg-003: rgba(129, 143, 0, 0.75) !important;
+    --hs-bg-004: rgba(96, 138, 0, 0.75) !important;
+    --hs-bg-005: rgba(22, 129, 0, 0.75) !important;
+    --hs-bg-006: rgba(0, 136, 61, 0.75) !important;
+    --hs-bg-007: rgba(0, 117, 138, 0.75) !important;
+    --hs-bg-008: rgba(0, 57, 143, 0.75) !important;
+    --hs-bg-009: rgba(0, 2, 133, 0.75) !important;
+    --hs-bg-010: rgba(62, 0, 133, 0.75) !important;
+    --hs-bg-011: rgba(145, 0, 108, 0.75) !important;
+    --hs-bg-012: rgba(139, 0, 42, 0.75) !important;
     --hs-bl-001: rgba(0, 0, 0, 0.4) !important;
     --hs-tx-001: rgb(255, 255, 255) !important;
     --hs-tx-002: rgb(0, 0, 0) !important;
