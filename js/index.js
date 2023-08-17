@@ -17,3 +17,14 @@ function myFunction() {
     }
   }
 }
+
+function changeBackground() {
+const fileInput = document.getElementById('upload');
+const file = fileInput.files[0];
+const reader = new FileReader();
+reader.onload = function(e) {
+  const imgData = e.target.result;
+  document.body.style.backgroundImage = `url(${imgData})`;
+}
+reader.readAsDataURL(file);
+}
