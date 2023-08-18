@@ -55,6 +55,11 @@ audio::-webkit-media-controls-panel {
     height: 100vh !important;
 }
 
+.hs-btn {
+    background-color: transparent !important;
+    border: none !important;
+}
+
 .hs-bg-trans {
     background-color: #00000000 !important;
     color: #00000000 !important;
