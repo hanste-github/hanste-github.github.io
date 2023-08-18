@@ -193,12 +193,12 @@ p, h1, h2, h3, h4, h5, a {
     color: var(--hs-tx-001) !important;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1101px) {
     :root {
         --hs-container: 1000px !important;
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     :root {
         --hs-container: auto !important;
     }
