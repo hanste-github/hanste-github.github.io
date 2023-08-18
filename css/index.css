@@ -2,28 +2,31 @@
     border-radius: 10px !important;
     width: 100% !important;
     background-color: rgba(0, 0, 0, 0) !important;
-    border: 2px solid #2200ff !important;
-    margin-bottom: 1rem !important;
-    padding: 1rem;
+    border: 2px solid !important;
+    padding: 10px;
 }
   
 #myUL {
     border-radius: 10px !important;
     width: 100% !important;
     background-color: rgba(0, 0, 0, 0) !important;
-    border: 2px solid #2200ff !important;
+    border: 2px solid !important;
 }
 
 #myUL li a {
     margin: 5px !important;
     background-color: rgba(0, 0, 0, 0) !important;
-    border: 1px solid red !important;
-    border-radius: 10px;
-    padding: 5px;
+    border: 1px dashed red !important;
+    border-radius: 10px !important;
+    padding: 5px !important;
 }
   
 #myUL li a:hover {
-    color: #ff0000 !important;
+    color: #ff000081 !important;
+}
+
+.modal-header {
+    border-bottom: none !important;
 }
 
 audio {
