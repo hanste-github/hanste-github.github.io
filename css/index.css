@@ -60,6 +60,10 @@ audio::-webkit-media-controls-panel {
     border: none !important;
 }
 
+.hs-container {
+    max-width: var(--hs-container) !important;
+}
+
 .hs-bg-trans {
     background-color: #00000000 !important;
     color: #00000000 !important;
@@ -189,13 +193,13 @@ p, h1, h2, h3, h4, h5, a {
     color: var(--hs-tx-001) !important;
 }
 
-@media (min-width: 801px) {
-    .hs-hidden1 {
-        display: none !important;
+@media (min-width: 1201px) {
+    :root {
+        --hs-container: 1000px !important;
     }
 }
-@media (max-width: 800px) {
-    .hs-hidden2 {
-        display: none !important;
+@media (max-width: 1200px) {
+    :root {
+        --hs-container: auto !important;
     }
 }
