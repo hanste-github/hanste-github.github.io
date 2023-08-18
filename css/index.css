@@ -55,7 +55,7 @@ audio::-webkit-media-controls-panel {
     height: 100vh !important;
 }
 
-.hs-btn, .hs-btn:hover, .hs-btn:active {
+.hs-btn {
     background-color: transparent !important;
     border: none !important;
 }
