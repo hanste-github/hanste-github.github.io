@@ -95,8 +95,11 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <input type="file" id="upload" class="btn" accept="image/*">
-        <button class="btn" onclick="changeBackground()">Hintergrund ändern</button>
+        <div class="btn-group w-100">
+          <input type="file" id="upload" accept="image/*" class="btn btn-warning">
+          <button onclick="changeBackground()" class="btn btn-primary"><i class="bi bi-check"></i></button>
+        </div>
+        <hr>
         <div class="btn-group-vertical" role="group" aria-labelledby="bd-theme-text">
           <button type="button" class="btn btn-light" data-bs-theme-value="light" aria-pressed="false">
             <svg class="bi me-2 opacity-50 theme-icon" style="width: 20px; height: 20px;"><use href="#sun-fill"></use></svg>
