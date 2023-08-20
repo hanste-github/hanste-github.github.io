@@ -20,6 +20,13 @@ function myFunction() {
 
 // Hintergrundbild
 
+document.addEventListener('DOMContentLoaded', function() {
+  var savedImageUrl = localStorage.getItem('backgroundImage');
+  if (savedImageUrl) {
+      document.body.style.backgroundImage = "url(" + savedImageUrl + ")";
+  }
+});
+
 document.getElementById('uploadForm').addEventListener('submit', function(e) {
   e.preventDefault();
   var fileInput = document.getElementById('imageUpload');
@@ -28,6 +35,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(e) {
 
   reader.onloadend = function() {
       document.body.style.backgroundImage = "url(" + reader.result + ")";
+      localStorage.setItem('backgroundImage', reader.result);
   }
 
   if (file) {
@@ -39,4 +47,5 @@ document.getElementById('urlForm').addEventListener('submit', function(e) {
   e.preventDefault();
   var imageUrl = document.getElementById('imageUrl').value;
   document.body.style.backgroundImage = "url(" + imageUrl + ")";
+  localStorage.setItem('backgroundImage', imageUrl);
 });
