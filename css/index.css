@@ -1,3 +1,8 @@
+body {
+    background-position: center !important;
+    background-size: cover !important;
+}
+
 #myInput {
     border-radius: 10px !important;
     width: 100% !important;
