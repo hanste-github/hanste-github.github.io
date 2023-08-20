@@ -95,7 +95,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <input type="file" id="imageUpload" accept="image/*">
+        <form id="uploadForm" enctype="multipart/form-data">
+          <input type="file" id="imageUpload" accept=".jpg, .jpeg, .png">
+          <button type="submit">Bild hochladen</button>
+        </form>
+        <br>
+        <form id="urlForm">
+            <input type="text" id="imageUrl" placeholder="Bildadresse eingeben">
+            <button type="submit">Bild anzeigen</button>
+        </form>
         <div class="btn-group w-100">
           <input type="file" id="upload" accept="image/*" class="btn btn-warning">
           <button onclick="changeBackground()" class="btn btn-primary"><i class="bi bi-check"></i></button>
