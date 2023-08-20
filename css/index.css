@@ -1,6 +1,7 @@
 body {
     background-position: center !important;
     background-size: cover !important;
+    background-attachment: fixed !important;
 }
 
 #myInput {
