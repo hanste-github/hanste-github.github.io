@@ -18,13 +18,38 @@ function myFunction() {
   }
 }
 
-function changeBackground() {
-const fileInput = document.getElementById('upload');
-const file = fileInput.files[0];
-const reader = new FileReader();
-reader.onload = function(e) {
-  const imgData = e.target.result;
-  document.body.style.backgroundImage = `url(${imgData})`;
+
+// Funktion zum Speichern des Hintergrundbilds als Cookie
+function saveBackgroundImage(imageUrl) {
+  document.cookie = "backgroundImage=" + imageUrl + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 }
-reader.readAsDataURL(file);
+
+// Funktion zum Laden des Hintergrundbilds aus dem Cookie
+function loadBackgroundImage() {
+  var cookies = document.cookie.split(';');
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].trim();
+    if (cookie.indexOf("backgroundImage=") === 0) {
+      var imageUrl = cookie.substring("backgroundImage=".length, cookie.length);
+      document.body.style.backgroundImage = "url('" + imageUrl + "')";
+      break;
+    }
+  }
 }
+
+// Event-Listener für das Hochladen des Bildes
+document.getElementById("imageUpload").addEventListener("change", function(event) {
+  var file = event.target.files[0];
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+    var imageUrl = e.target.result;
+    document.body.style.backgroundImage = "url('" + imageUrl + "')";
+    saveBackgroundImage(imageUrl);
+  };
+
+  reader.readAsDataURL(file);
+});
+
+// Beim Laden der Seite das Hintergrundbild aus dem Cookie laden
+loadBackgroundImage();
