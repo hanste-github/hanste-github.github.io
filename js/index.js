@@ -41,12 +41,14 @@ window.onload = function() {
 if (localStorage.getItem("akzeptiert") === "true") {
   hsmodal.style.display = "none";
   hsactivateScript();
+  hsmodalhidden();
 }
 
 hsacceptBtn.onclick = function() {
   hsmodal.style.display = "none";
   localStorage.setItem("akzeptiert", "true");
   hsactivateScript();
+  hsmodalhidden();
 }
 
 function hsactivateScript() {
@@ -82,5 +84,9 @@ function hsactivateScript() {
     localStorage.setItem('backgroundImage', imageUrl);
 
   });
+
+  function hsmodalhidden() {
+    document.getElementById("hsModal").classList.add("hidden");
+  };
 
 };
