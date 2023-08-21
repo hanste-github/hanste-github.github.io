@@ -28,13 +28,9 @@ hscloseBtn.onclick = function() {
 	hsmodal.style.display = "none";
 };
 
-hsacceptBtn.onclick = function() {
-	hsmodal.style.display = "none";
-};
-
 window.onclick = function(event) {
 	if (event.target == hsmodal) {
-      	hsmodal.style.display = "none";
+    hsmodal.style.display = "none";
 	}
 };
 
@@ -42,9 +38,20 @@ window.onload = function() {
 	hsmodal.style.display = "block";
 };
 
-function activateScript() {
-  // Hintergrundbild
+if (localStorage.getItem("akzeptiert") === "true") {
+  hsmodal.style.display = "none";
+  hsactivateScript();
+}
 
+hsacceptBtn.onclick = function() {
+  hsmodal.style.display = "none";
+  localStorage.setItem("akzeptiert", "true");
+  hsactivateScript();
+}
+
+function hsactivateScript() {
+
+  // Hintergrundbild
   document.addEventListener('DOMContentLoaded', function() {
     var savedImageUrl = localStorage.getItem('backgroundImage');
     if (savedImageUrl) {
@@ -73,5 +80,7 @@ function activateScript() {
     var imageUrl = document.getElementById('imageUrl').value;
     document.body.style.backgroundImage = "url(" + imageUrl + ")";
     localStorage.setItem('backgroundImage', imageUrl);
+
   });
+
 };
