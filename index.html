@@ -106,19 +106,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <form id="uploadForm" enctype="multipart/form-data">
-          <input type="file" id="imageUpload" accept=".jpg, .jpeg, .png">
-          <button type="submit">Bild hochladen</button>
+        <form id="uploadForm" enctype="multipart/form-data" class="btn-group w-100">
+          <input class="btn btn-warning" type="file" id="imageUpload" accept=".jpg, .jpeg, .png">
+          <button class="btn btn-primary" type="submit"><i class="bi bi-check"></i></button>
         </form>
         <br>
-        <form id="urlForm">
-            <input type="text" id="imageUrl" placeholder="Bildadresse eingeben">
-            <button type="submit">Bild anzeigen</button>
+        <form id="urlForm" class="btn-group w-100">
+            <input class="btn btn-warning" type="text" id="imageUrl" placeholder="Bildadresse eingeben">
+            <button class="btn btn-primary" type="submit"><i class="bi bi-check"></i></button>
         </form>
-        <div class="btn-group w-100">
-          <input type="file" id="upload" accept="image/*" class="btn btn-warning">
-          <button onclick="changeBackground()" class="btn btn-primary"><i class="bi bi-check"></i></button>
-        </div>
         <hr>
         <div class="btn-group-vertical" role="group" aria-labelledby="bd-theme-text">
           <button type="button" class="btn btn-light" data-bs-theme-value="light" aria-pressed="false">
