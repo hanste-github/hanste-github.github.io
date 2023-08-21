@@ -18,34 +18,60 @@ function myFunction() {
   }
 }
 
-// Hintergrundbild
 
-document.addEventListener('DOMContentLoaded', function() {
-  var savedImageUrl = localStorage.getItem('backgroundImage');
-  if (savedImageUrl) {
-      document.body.style.backgroundImage = "url(" + savedImageUrl + ")";
-  }
-});
+// CookieModal
+var hsmodal = document.getElementById("hsModal");
+var hscloseBtn = document.getElementsByClassName("hs-close")[0];
+var hsacceptBtn = document.getElementById("hsacceptBtn");
 
-document.getElementById('uploadForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  var fileInput = document.getElementById('imageUpload');
-  var file = fileInput.files[0];
-  var reader = new FileReader();
+hscloseBtn.onclick = function() {
+	hsmodal.style.display = "none";
+};
 
-  reader.onloadend = function() {
-      document.body.style.backgroundImage = "url(" + reader.result + ")";
-      localStorage.setItem('backgroundImage', reader.result);
-  }
+hsacceptBtn.onclick = function() {
+	hsmodal.style.display = "none";
+};
 
-  if (file) {
-      reader.readAsDataURL(file);
-  }
-});
+window.onclick = function(event) {
+	if (event.target == hsmodal) {
+      	hsmodal.style.display = "none";
+	}
+};
 
-document.getElementById('urlForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  var imageUrl = document.getElementById('imageUrl').value;
-  document.body.style.backgroundImage = "url(" + imageUrl + ")";
-  localStorage.setItem('backgroundImage', imageUrl);
-});
+window.onload = function() {
+	hsmodal.style.display = "block";
+};
+
+function activateScript() {
+  // Hintergrundbild
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var savedImageUrl = localStorage.getItem('backgroundImage');
+    if (savedImageUrl) {
+        document.body.style.backgroundImage = "url(" + savedImageUrl + ")";
+    }
+  });
+
+  document.getElementById('uploadForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var fileInput = document.getElementById('imageUpload');
+    var file = fileInput.files[0];
+    var reader = new FileReader();
+
+    reader.onloadend = function() {
+        document.body.style.backgroundImage = "url(" + reader.result + ")";
+        localStorage.setItem('backgroundImage', reader.result);
+    }
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+  });
+
+  document.getElementById('urlForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var imageUrl = document.getElementById('imageUrl').value;
+    document.body.style.backgroundImage = "url(" + imageUrl + ")";
+    localStorage.setItem('backgroundImage', imageUrl);
+  });
+};
