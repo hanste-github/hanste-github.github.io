@@ -17,13 +17,11 @@ body {
 }
 
 .hs-modal-content {
-    background-color: var(--hs-bl-001);
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 90%;
     max-width: 600px;
-    backdrop-filter: blur(10px);
 }
 
 .hs-close {
