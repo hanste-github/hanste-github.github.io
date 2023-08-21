@@ -205,7 +205,7 @@ audio::-webkit-media-controls-panel {
     --hs-bg-010: rgba(185, 123, 255, 0.6) !important;
     --hs-bg-011: rgba(255, 115, 220, 0.6) !important;
     --hs-bg-012: rgba(255, 121, 161, 0.6) !important;
-    --hs-bl-001: rgba(200, 200, 200, 0.4) !important;
+    --hs-bl-001: rgba(200, 200, 200, 0.6) !important;
     --hs-tx-001: rgb(0, 0, 0) !important;    
     --hs-tx-002: rgb(0, 0, 0) !important;
     --hs-tx-003: rgb(255, 255, 255) !important;
@@ -226,7 +226,7 @@ audio::-webkit-media-controls-panel {
     --hs-bg-010: rgba(62, 0, 133, 0.75) !important;
     --hs-bg-011: rgba(145, 0, 108, 0.75) !important;
     --hs-bg-012: rgba(139, 0, 42, 0.75) !important;
-    --hs-bl-001: rgba(0, 0, 0, 0.4) !important;
+    --hs-bl-001: rgba(0, 0, 0, 0.6) !important;
     --hs-tx-001: rgb(255, 255, 255) !important;
     --hs-tx-002: rgb(0, 0, 0) !important;
     --hs-tx-003: rgb(255, 255, 255) !important;
