@@ -25,12 +25,12 @@ var hscloseBtn = document.getElementsByClassName("hs-close")[0];
 var hsacceptBtn = document.getElementById("hsacceptBtn");
 
 hscloseBtn.onclick = function() {
-	hsmodal.style.display = "none";
+  hsmodalhidden();
 };
 
 window.onclick = function(event) {
 	if (event.target == hsmodal) {
-    hsmodal.style.display = "none";
+    hsmodalhidden();
 	}
 };
 
@@ -39,13 +39,11 @@ window.onload = function() {
 };
 
 if (localStorage.getItem("akzeptiert") === "true") {
-  hsmodal.style.display = "none";
   hsactivateScript();
   hsmodalhidden();
 }
 
 hsacceptBtn.onclick = function() {
-  hsmodal.style.display = "none";
   localStorage.setItem("akzeptiert", "true");
   hsactivateScript();
   hsmodalhidden();
