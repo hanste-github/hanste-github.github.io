@@ -25,28 +25,31 @@ var hscloseBtn = document.getElementsByClassName("hs-close")[0];
 var hsacceptBtn = document.getElementById("hsacceptBtn");
 
 hscloseBtn.onclick = function() {
-  hsmodalhidden();
+  hsmodal.style.display = "none";
 };
 
 window.onclick = function(event) {
 	if (event.target == hsmodal) {
-    hsmodalhidden();
+    hsmodal.style.display = "none";
 	}
 };
 
 window.onload = function() {
 	hsmodal.style.display = "block";
+  if (localStorage.getItem("akzeptiert") === "true") {
+    hsmodal.style.display = "none";
+  }
 };
 
 if (localStorage.getItem("akzeptiert") === "true") {
   hsactivateScript();
-  hsmodalhidden();
+  hsmodal.style.display = "none";
 }
 
 hsacceptBtn.onclick = function() {
   localStorage.setItem("akzeptiert", "true");
   hsactivateScript();
-  hsmodalhidden();
+  hsmodal.style.display = "none";
 }
 
 function hsactivateScript() {
@@ -82,9 +85,4 @@ function hsactivateScript() {
     localStorage.setItem('backgroundImage', imageUrl);
 
   });
-
-  function hsmodalhidden() {
-    document.getElementById("hsModal").classList.add("hidden");
-  };
-
 };

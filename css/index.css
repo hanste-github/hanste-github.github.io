@@ -19,9 +19,11 @@ body {
 .hs-modal-content {
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 3px solid;
+    border-image: conic-gradient();
     width: 90%;
     max-width: 600px;
+    border-image: linear-gradient(rgba(0, 0, 0, 0.0) 10%, var(--hs-tx-001) 50%, rgba(0, 0, 0, 0.0) 90%) 1;
 }
 
 .hs-close {
