@@ -6,25 +6,26 @@ body {
 }
 
 .hs-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: var(--hs-bl-001);
+    display: none !important;
+    position: fixed !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: auto !important;
+    background-color: var(--hs-bl-001) !important;
 }
 
 .hs-modal-content {
-    margin: 10% auto;
-    padding: 20px;
-    border: 3px solid;
-    border-image: conic-gradient();
-    width: 90%;
-    max-width: 600px;
-    border-image: linear-gradient(rgba(0, 0, 0, 0.0) 10%, var(--hs-tx-001) 50%, rgba(0, 0, 0, 0.0) 90%) 1;
+    margin: 10% auto !important;
+    padding: 20px !important;
+    border: 3px solid !important;
+    border-image: conic-gradient() !important;
+    width: 90% !important;
+    max-width: 600px !important;
+    border-image: linear-gradient(rgba(0, 0, 0, 0.0) 10%, var(--hs-tx-001) 50%, rgba(0, 0, 0, 0.0) 90%) 1 !important;
+    border-radius: 0.75rem !important;
 }
 
 .hs-close {
@@ -72,18 +73,6 @@ body {
 
 .modal-header {
     border-bottom: none !important;
-}
-
-audio {
-    width: 100% !important;
-    height: 40px !important;
-    border-radius: 10px !important;
-}
-audio::-webkit-media-controls-panel {
-    border: 1px solid blue !important;
-    border-radius: 10px !important;
-    width: 100% !important;
-    height: 40px !important;
 }
 
 .blur1 {
