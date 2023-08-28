@@ -2,6 +2,7 @@ body {
     background-position: center !important;
     background-size: cover !important;
     background-attachment: fixed !important;
+    background-image: url(/images/background.jpg);
 }
 
 .hs-modal {
