@@ -6,7 +6,6 @@ body {
 }
 
 .hs-modal {
-    display: none !important;
     position: fixed !important;
     z-index: 1 !important;
     left: 0 !important;
