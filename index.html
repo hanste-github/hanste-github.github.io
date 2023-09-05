@@ -45,53 +45,55 @@
     </div>
 
     <!-- Navigationsleiste oben -->
-    <nav class="navbar navbar-expand-lg sticky-top blur1" aria-label="Offcanvas navbar large">
-      <div class="container-fluid hs-container">
-        <a class="navbar-brand ms-3" href="/">
-          <div class="hs-logo-light">
-            <img class="bi hs-logo-light" width="30px" height="30px" src="/images/logoweiss-removebg-preview.png">
+    <div class="container-fluid sticky-top">
+      <nav class="navbar navbar-expand-lg rounded blur1 mt-3" aria-label="Offcanvas navbar large">
+        <div class="container-fluid hs-container">
+          <a class="navbar-brand ms-3" href="/">
+            <div class="hs-logo-light">
+              <img class="bi hs-logo-light" width="30px" height="30px" src="/images/logoweiss-removebg-preview.png">
+            </div>
+            <div class="hs-logo-dark">
+              <img class="bi hs-logo-dark" width="30px" height="30px" src="/images/logoschwarz-removebg-preview.png">
+            </div>
+          </a>
+          <button class="navbar-toggler hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar3" aria-controls="offcanvasNavbar3" aria-label="Toggle navigation">
+            <i class="bi bi-grid"></i>
+          </button>
+          <div class="offcanvas offcanvas-start blur3 rounded"  data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar3" aria-labelledby="offcanvasNavbar3Label">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/tutorials/index.html">Tutorials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/store/index.html">Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/os/index.html">OS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/media/index.html">Media</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/shop/index.html">Shop</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="hs-logo-dark">
-            <img class="bi hs-logo-dark" width="30px" height="30px" src="/images/logoschwarz-removebg-preview.png">
-          </div>
-        </a>
-        <button class="navbar-toggler hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar3" aria-controls="offcanvasNavbar3" aria-label="Toggle navigation">
-          <i class="bi bi-grid"></i>
-        </button>
-        <div class="offcanvas offcanvas-start blur3 rounded"  data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar3" aria-labelledby="offcanvasNavbar3Label">
-          <div class="offcanvas-header">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav w-100 justify-content-around">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/tutorials/index.html">Tutorials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/store/index.html">Store</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/os/index.html">OS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/media/index.html">Media</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/shop/index.html">Shop</a>
-              </li>
-            </ul>
-          </div>
+          <!-- Button Searchmodal -->
+          <button type="button" class="btn hs-btn me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-search me-1"></i>
+          </button>
+          <!-- Button Einstellungen -->
+          <button class="btn hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="bi bi-gear"></i>
+          </button>
         </div>
-        <!-- Button Searchmodal -->
-        <button type="button" class="btn hs-btn me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <i class="bi bi-search me-1"></i>
-        </button>
-        <!-- Button Einstellungen -->
-        <button class="btn hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-          <i class="bi bi-gear"></i>
-        </button>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- Einstellungen -->
     <div class="offcanvas offcanvas-end blur3" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -238,57 +240,59 @@
     </div>
 
     <!-- Navigationsmenu Unten -->
-    <div class="mt-3 p-3 blur1">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>HanSte</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="/feedback/index.html" class="nav-link p-0 text-body-secondary">Feedback</a></li>
-            <li class="nav-item mb-2"><a href="/datenschutz.html" class="nav-link p-0 text-body-secondary">Datenschutz</a></li>
-            <li class="nav-item mb-2"><a href="/ueber/index.html" class="nav-link p-0 text-body-secondary">Über</a></li>
-            <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Impressum</a></li>
+    <div class="container-fluid">
+      <div class="mt-3 mb-3 p-3 blur1 rounded">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>HanSte</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="/feedback/index.html" class="nav-link p-0 text-body-secondary">Feedback</a></li>
+              <li class="nav-item mb-2"><a href="/datenschutz.html" class="nav-link p-0 text-body-secondary">Datenschutz</a></li>
+              <li class="nav-item mb-2"><a href="/ueber/index.html" class="nav-link p-0 text-body-secondary">Über</a></li>
+              <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-body-secondary">Impressum</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <a href="/tutorials/index.html" class="nav-link"><h5>Tutorials</h5></a>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">Tutorials</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <a href="/store/index.html" class="nav-link"><h5>Store</h5></a>
+            <ul class="nav flex-column">
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <a href="/os/index.html" class="nav-link"><h5>OS</h5></a>
+            <ul class="nav flex-column">
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <a href="/media/index.html" class="nav-link"><h5>Media</h5></a>
+            <ul class="nav flex-column">
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <a href="/shop/index.html" class="nav-link"><h5>Shop</h5></a>
+            <ul class="nav flex-column">
+            </ul>
+          </div>
+        </div>
+        
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2023 HanSte</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="https://github.com/hanste-web"><i class="bi bi-github"></i></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/hanste_insta/"><i class="bi bi-instagram"></i></a></li>
           </ul>
         </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/tutorials/index.html" class="nav-link"><h5>Tutorials</h5></a>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">Tutorials</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/store/index.html" class="nav-link"><h5>Store</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/os/index.html" class="nav-link"><h5>OS</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/media/index.html" class="nav-link"><h5>Media</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/shop/index.html" class="nav-link"><h5>Shop</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
-      </div>
-      
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2023 HanSte</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="https://github.com/hanste-web"><i class="bi bi-github"></i></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/hanste_insta/"><i class="bi bi-instagram"></i></a></li>
-        </ul>
       </div>
     </div>
 
