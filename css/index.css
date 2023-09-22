@@ -7,7 +7,7 @@ body {
 
 .hs-modal {
     position: fixed !important;
-    z-index: 1 !important;
+    z-index: 10000 !important;
     left: 0 !important;
     top: 0 !important;
     width: 100% !important;
