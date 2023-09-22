@@ -1,10 +1,8 @@
 function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
+  var input = document.getElementById('myInput');
+  var filter = input.value.toUpperCase();
+  var ul = document.getElementById("myUL");
+  var li = ul.getElementsByTagName('li');
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
@@ -16,12 +14,13 @@ function myFunction() {
   }
 }
 
+var hsnavbar = document.getElementsByClassName("hs-navbar");
 window.onscroll = function() {hsscrollFunction()};
 function hsscrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.getElementsByClassName("hs-navbar").style.borderRadius = "0 0 0.375rem 0.375rem";
+    hsnavbar.style.borderRadius = "0 0 0.375rem 0.375rem";
   } else {
-    document.getElementsByClassName("hs-navbar").style.borderRadius = "0.375rem";
+    hsnavbar.style.borderRadius = "0.375rem";
   }
 };
 
