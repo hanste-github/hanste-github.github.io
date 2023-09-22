@@ -19,9 +19,9 @@ function myFunction() {
 window.onscroll = function() {hsscrollFunction()};
 function hsscrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    hsheader.style.borderRadius = "0 0 0.375rem 0.375rem";
+    document.getElementsByClassName("hs-navbar").style.borderRadius = "0 0 0.375rem 0.375rem";
   } else {
-    hsheader.style.borderRadius = "0.375rem";
+    document.getElementsByClassName("hs-navbar").style.borderRadius = "0.375rem";
   }
 };
 
