@@ -5,6 +5,15 @@ body {
     background-image: url(/images/background.jpg);
 }
 
+/*Navbar*/
+#hs-link-wiki:hover #hs-link-wiki-hover {
+    display: flex !important;
+}
+.hs-link-hover {
+    display: none !important;
+}
+/**/
+
 .hs-modal {
     position: fixed !important;
     z-index: 10000 !important;
