@@ -19,14 +19,13 @@ function myFunction() {
 window.addEventListener("scroll", (event) => {
   var hsdoc = document.documentElement;
   var hstop = (window.pageYOffset || hsdoc.scrollTop) - (hsdoc.clientTop || 0);
-  var hsheader = document.getElementsByClassName("hs-navbar")[0]
-  if (hstop > 10px) {
+  var hsheader = document.getElementsByClassName("hs-navbar")[0];
+  if (hstop > 10) {
     hsheader.style.borderRadius = "0 0 0.375rem 0.375rem";
   } else {
     hsheader.style.borderRadius = "0.375rem";
   }
 });
-
 
 // CookieModal
 var hsmodal = document.getElementById("hsModal");
