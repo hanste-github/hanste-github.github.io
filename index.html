@@ -45,34 +45,30 @@
     </div>
 
     <!-- Navigationsleiste oben -->
-    <div class="container-fluid sticky-top pt-1 mt-2">
-      <nav class="navbar navbar-expand-lg rounded blur1" aria-label="Offcanvas navbar large">
-        <div class="container-fluid hs-container">
-          <a class="navbar-brand ms-3" href="/">
-            <div class="hs-logo-light">
-              <img class="bi hs-logo-light" width="30px" height="30px" src="/images/logoweiss-removebg-preview.png">
-            </div>
-            <div class="hs-logo-dark">
-              <img class="bi hs-logo-dark" width="30px" height="30px" src="/images/logoschwarz-removebg-preview.png">
-            </div>
+    <div class="hs-navbar">
+      <div class="d-flex">
+        <div class="me-4">
+          <a href="/index.html">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet" width="35px" height="35px">
+              <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="var(--hs-tx-001)" stroke="none">
+                <path d="M1556 4989 c-274 -29 -552 -129 -782 -282 -375 -249 -636 -634 -734 -1083 -36 -169 -42 -337 -38 -1229 4 -768 6 -859 22 -945 64 -334 202 -626 409 -861 296 -336 707 -542 1157 -579 153 -13 1673 -13 1820 0 380 33 717 175 998 420 295 258 490 608 568 1020 16 86 18 178 22 955 4 900 -1 1048 -39 1220 -163 749 -777 1294 -1539 1364 -137 13 -1744 13 -1864 0z m285 -528 c47 -47 42 51 43 -866 l1 -690 615 0 615 0 -4 541 c-2 297 0 639 4 759 l7 220 38 37 38 38 319 0 c309 0 321 -1 347 -21 53 -41 51 -12 56 -819 l5 -755 198 -3 197 -2 40 -40 40 -40 0 -318 0 -319 -34 -39 -34 -39 -203 -5 -204 -5 -5 -755 c-5 -807 -3 -778 -56 -819 -26 -20 -38 -21 -347 -21 l-319 0 -38 38 -38 37 -7 210 c-4 116 -5 454 -2 751 4 391 2 545 -6 553 -8 8 -183 11 -608 11 -516 0 -598 -2 -609 -15 -9 -11 -11 -105 -7 -412 3 -219 3 -555 0 -748 l-6 -350 -37 -37 -38 -38 -313 0 c-338 0 -344 1 -383 53 -21 28 -21 36 -26 785 l-5 757 -198 3 -197 2 -40 40 -40 40 0 313 c0 426 -13 407 290 407 l190 0 0 750 c0 829 -3 790 63 830 30 19 52 20 346 20 l313 0 39 -39z"></path>
+              </g>
+            </svg>
           </a>
-          <ul class="navbar-nav w-100 justify-content-around">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/wiki/index.html" id="hs-link-wiki">Wiki</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/store/index.html">Store</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/os/index.html">OS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/media/index.html">Media</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/shop/index.html">Shop</a>
-            </li>
-          </ul>
+        </div>
+        <div class="w-100 d-flex">
+          <a class="nav-link" aria-current="page" href="/wiki/index.html" id="hs-link-wiki">Wiki</a>
+          <div class="hs-link-hover" id="hs-link-wiki-hover">Wiki</div>
+          <a class="nav-link" aria-current="page" href="/store/index.html">Store</a>
+          <a class="nav-link" aria-current="page" href="/os/index.html">OS</a>
+          <a class="nav-link" aria-current="page" href="/os/index.html">OS</a>
+          <a class="nav-link" aria-current="page" href="/media/index.html">Media</a>
+          <a class="nav-link" aria-current="page" href="/shop/index.html">Shop</a>
+        </div>
+        <div class="ms-3">
+          <button class="hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="height: 35px;width: 35px;">
+            <i class="bi bi-gear"></i>
+          </button>
           <!-- Button Searchmodal -->
           <button type="button" class="btn hs-btn me-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="bi bi-search me-1"></i>
@@ -82,8 +78,7 @@
             <i class="bi bi-gear"></i>
           </button>
         </div>
-        <div class="hs-link-hover" id="hs-link-wiki-hover">Wiki</div>
-      </nav>
+      </div>
     </div>
 
     <!-- Einstellungen -->

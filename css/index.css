@@ -6,14 +6,30 @@ body {
 }
 
 /*Navbar*/
+.hs-navbar {
+    background-color: var(--hs-bl-001) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px) !important;
+    position: sticky !important;
+    top: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    height: 45px !important;
+    padding: 5px !important;
+    z-index: 100 !important;
+}
 .hs-link-hover {
-    display: none !important;
-    position: absolute !important;
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
+    background-color: var(--hs-bl-001) !important;
+    border-radius: 10px !important;
+    position: fixed !important;
     left: 0 !important;
     width: 100% !important;
     right: 0 !important;
+    display: none !important;
 }
-#hs-link-wiki:hover #hs-link-wiki-hover {
+#hs-link-wiki:hover + #hs-link-wiki-hover {
     display: block !important;
 }
 /**/
