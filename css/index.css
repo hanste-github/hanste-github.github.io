@@ -99,6 +99,16 @@ body {
     border: none !important;
     border-radius: 0 0.375rem 0.375rem 0 !important;
 }
+#hs-search-close {
+    height: 30px !important;
+    width: 30px !important;
+    background-color: none !important;
+    border: none !important;
+}
+#hs-search-close:focus {
+    border: none !important;
+    outline: none !important;
+}
 /**/
 
 .hs-blur-001 {
