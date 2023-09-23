@@ -266,8 +266,11 @@ p, h1, h2, h3, h4, h5, a {
 }
 
 @media (min-width: 1101px) {
+    .hs-nav {
+        display: flex;
+    }
     .hs-nav-toogler {
-        display: none;
+        display: none !important;
     }
     :root {
         --hs-container: 1000px !important;
