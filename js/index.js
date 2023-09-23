@@ -112,9 +112,7 @@ document.getElementById("hs-search-input").addEventListener("keyup", function(ev
   }
 });
 function hssearch() {
-  var hscontent = document.getElementById('hs-content');
-  var hssearchcontent = document.getElementById('hs-search-content').innerHTML;
-  hscontent.innerHTML = hssearchcontent;
+  document.getElementById('hs-search-content').style.display = "block";
 
   var input = document.getElementById('hs-search-input');
   var filter = input.value.toUpperCase();
