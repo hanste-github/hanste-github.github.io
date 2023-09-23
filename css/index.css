@@ -274,6 +274,7 @@ p, h1, h2, h3, h4, h5, a {
 @media (min-width: 1101px) {
     :root {
         --hs-container: 1000px !important;
+        --hs-nav: flex !important;
         --hs-nav-toggler: none !important;
     }
 }
@@ -281,6 +282,7 @@ p, h1, h2, h3, h4, h5, a {
     :root {
         --hs-container: auto !important;
         --hs-nav: none !important;
+        --hs-nav-toggler: block !important;
     }
 }
 
