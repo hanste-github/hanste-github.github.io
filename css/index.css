@@ -280,7 +280,7 @@ p, h1, h2, h3, h4, h5, a {
     .hs-nav {
         display: none !important;
     }
-    .hs-nav-toogler {
+    .hs-nav-toggler {
         display: inline-block !important;
     }
     :root {
