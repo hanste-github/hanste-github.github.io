@@ -23,25 +23,59 @@ function hsscrollFunction() {
     document.getElementById('hs-navbar').style.borderRadius = "0.375rem";
   }
 };
-function hsnavbarshowwiki() {
-  var hsnavbarlinkwikihover = document.getElementById('hs-navbar-link-wiki-hover');
-  hsnavbarlinkwikihover.style.display = "block !important";
-};
-function hsnavbarshowstore() {
-  document.getElementById('hs-navbar-link-store-hover').style.display = "block";
-};
-function hsnavbarshowos() {
-  document.getElementById('hs-navbar-link-os-hover').style.display = "block !important";
-};
-function hsnavbarshowmedia() {
-  document.getElementById('hs-navbar-link-media-hover').style.display = "block !important";
-};
-function hsnavbarshowblog() {
-  document.getElementById('hs-navbar-link-blog-hover').style.display = "block !important";
-};
-function hsnavbarshowshop() {
-  document.getElementById('hs-navbar-link-shop-hover').style.display = "block !important";
-};
+
+// Navbar show links
+var navbarLinkStore = document.getElementById("hs-navbar-link-store");
+var navbarLinkOS = document.getElementById("hs-navbar-link-os");
+var navbarLinkMedia = document.getElementById("hs-navbar-link-media");
+var navbarLinkBlog = document.getElementById("hs-navbar-link-blog");
+var navbarLinkShop = document.getElementById("hs-navbar-link-shop");
+
+navbarLinkStore.addEventListener("mouseover", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-store-hover");
+  hoverElement.style.display = "block";
+});
+navbarLinkStore.addEventListener("mouseout", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-store-hover");
+  hoverElement.style.display = "none";
+});
+
+navbarLinkOS.addEventListener("mouseover", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-os-hover");
+  hoverElement.style.display = "block";
+});
+navbarLinkOS.addEventListener("mouseout", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-os-hover");
+  hoverElement.style.display = "none";
+});
+
+navbarLinkMedia.addEventListener("mouseover", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-media-hover");
+  hoverElement.style.display = "block";
+});
+navbarLinkMedia.addEventListener("mouseout", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-media-hover");
+  hoverElement.style.display = "none";
+});
+
+navbarLinkBlog.addEventListener("mouseover", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-blog-hover");
+  hoverElement.style.display = "block";
+});
+navbarLinkBlog.addEventListener("mouseout", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-blog-hover");
+  hoverElement.style.display = "none";
+});
+
+navbarLinkShop.addEventListener("mouseover", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-shop-hover");
+  hoverElement.style.display = "block";
+});
+navbarLinkShop.addEventListener("mouseout", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-shop-hover");
+  hoverElement.style.display = "none";
+});
+
 
 // CookieModal
 var hsmodal = document.getElementById("hsModal");
