@@ -33,11 +33,11 @@ var navbarLinkBlog = document.getElementById("hs-navbar-link-blog");
 var navbarLinkShop = document.getElementById("hs-navbar-link-shop");
 
 navbarLinkWiki.addEventListener("mouseover", function() {
-  var hoverElement = document.getElementById("hs-navbar-link-store-hover");
+  var hoverElement = document.getElementById("hs-navbar-link-wiki-hover");
   hoverElement.style.display = "block";
 });
 navbarLinkWiki.addEventListener("mouseout", function() {
-  var hoverElement = document.getElementById("hs-navbar-link-store-hover");
+  var hoverElement = document.getElementById("hs-navbar-link-wiki-hover");
   hoverElement.style.display = "none";
 });
 
