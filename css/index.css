@@ -39,10 +39,7 @@ body {
     left: 0 !important;
     width: 100% !important;
     right: 0 !important;
-    display: none !important;
-}
-#hs-navbar-link-wiki:hover + #hs-navbar-link-wiki-hover {
-    display: block !important;
+    display: none;
 }
 /**/
 
