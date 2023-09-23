@@ -57,7 +57,7 @@
               </svg>
             </a>
           </div>
-          <div class="w-100 d-flex justify-content-around">
+          <div class="w-100 d-flex justify-content-around hs-nav">
             <a class="hs-navbar-link" aria-current="page" href="/wiki/index.html" id="hs-navbar-link-wiki">Wiki</a>
             <a class="hs-navbar-link" aria-current="page" href="/store/index.html" id="hs-navbar-link-store">Store</a>
             <a class="hs-navbar-link" aria-current="page" href="/os/index.html" id="hs-navbar-link-os">OS</a>
@@ -65,11 +65,14 @@
             <a class="hs-navbar-link" aria-current="page" href="/blog/index.html" id="hs-navbar-link-blog">Blog</a>
             <a class="hs-navbar-link" aria-current="page" href="/shop/index.html" id="hs-navbar-link-shop">Shop</a>
           </div>
+          <button class="btn hs-btn me-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
+            <i class="bi bi-grid"></i>
+          </button>          
           <button class="btn hs-btn me-1" id="hs-navbar-link-search">
             <i class="bi bi-search"></i>
           </button>
           <!-- Button Einstellungen -->
-          <button class="hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="height: 35px;width: 35px;">
+          <button class="hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <i class="bi bi-gear"></i>
           </button>
         </div>
@@ -89,6 +92,28 @@
           <button id="hs-search-close" onclick="hssearchclose()">
             <i class="bi bi-x-lg"></i>
           </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExample2Label">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExample2Label">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </div>
       </div>
     </div>
