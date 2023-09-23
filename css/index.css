@@ -269,7 +269,7 @@ p, h1, h2, h3, h4, h5, a {
     .hs-nav {
         display: flex !important;
     }
-    .hs-nav-toogler {
+    .hs-nav-toggler {
         display: none !important;
     }
     :root {
