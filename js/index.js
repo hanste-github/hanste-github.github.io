@@ -31,6 +31,7 @@ var navbarLinkOS = document.getElementById("hs-navbar-link-os");
 var navbarLinkMedia = document.getElementById("hs-navbar-link-media");
 var navbarLinkBlog = document.getElementById("hs-navbar-link-blog");
 var navbarLinkShop = document.getElementById("hs-navbar-link-shop");
+var navbarLinkSearch = document.getElementById("hs-navbar-link-search");
 
 navbarLinkWiki.addEventListener("mouseover", function() {
   var hoverElement = document.getElementById("hs-navbar-link-wiki-hover");
@@ -83,6 +84,23 @@ navbarLinkShop.addEventListener("mouseover", function() {
 });
 navbarLinkShop.addEventListener("mouseout", function() {
   var hoverElement = document.getElementById("hs-navbar-link-shop-hover");
+  hoverElement.style.display = "none";
+});
+
+navbarLinkSearch.addEventListener("click", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-search-hover");
+  if (hoverElement.style.display = "none") {
+    hoverElement.style.display = "block";
+  } else {
+    hoverElement.style.display = "none";
+  };
+});
+navbarLinkSearch.addEventListener("mouseover", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-search-hover");
+  hoverElement.style.display = "block";
+});
+navbarLinkSearch.addEventListener("mouseout", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-search-hover");
   hoverElement.style.display = "none";
 });
 
