@@ -27,7 +27,7 @@ function hsnavbarshowwiki() {
   document.getElementById('hs-navbar-link-wiki-hover').style.display = "block !important";
 };
 function hsnavbarshowstore() {
-  document.getElementById('hs-navbar-link-store-hover').style.display = "block !important";
+  document.getElementById('hs-navbar-link-store-hover').style.display = "block";
 };
 function hsnavbarshowos() {
   document.getElementById('hs-navbar-link-os-hover').style.display = "block !important";
