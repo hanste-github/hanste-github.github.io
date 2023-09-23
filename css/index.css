@@ -267,7 +267,7 @@ p, h1, h2, h3, h4, h5, a {
 
 @media (min-width: 1101px) {
     .hs-nav-toogler {
-        display: none !important;
+        display: none;
     }
     :root {
         --hs-container: 1000px !important;
@@ -275,7 +275,7 @@ p, h1, h2, h3, h4, h5, a {
 }
 @media (max-width: 1100px) {
     .hs-nav {
-        display: none !important;
+        display: none;
     }
     :root {
         --hs-container: auto !important;
