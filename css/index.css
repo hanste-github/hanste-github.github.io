@@ -38,7 +38,7 @@ body {
     display: none;
 }
 /**/
-
+/*Cookie-Modal*/
 .hs-modal {
     position: fixed !important;
     z-index: 10000 !important;
@@ -74,54 +74,15 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+/**/
 
-
-
-#myInput {
-    border-radius: 10px !important;
-    width: 100% !important;
-    background-color: rgba(0, 0, 0, 0) !important;
-    border: 2px solid !important;
-    padding: 10px;
-}
-  
-#myUL {
-    border-radius: 10px !important;
-    width: 100% !important;
-    background-color: rgba(0, 0, 0, 0) !important;
-    border: 2px solid !important;
-}
-
-#myUL li a {
-    margin: 5px !important;
-    background-color: rgba(0, 0, 0, 0) !important;
-    border: 1px dashed red !important;
-    border-radius: 10px !important;
-    padding: 5px !important;
-}
-  
-#myUL li a:hover {
-    color: #ff000081 !important;
-}
-
-.modal-header {
-    border-bottom: none !important;
-}
-
-.blur1 {
+.hs-blur-001 {
     -webkit-backdrop-filter: blur(20px) !important; 
     backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
 }
-.blur2 {
-    -webkit-backdrop-filter: blur(3px) !important; 
-    backdrop-filter: blur(3px) !important;
-    background-color: var(--hs-bl-001) !important;
-}
-.blur3 {
-    -webkit-backdrop-filter: blur(20px) !important; 
-    backdrop-filter: blur(20px) !important;
-    background-color: var(--hs-bl-001) !important;
+
+.hs-h-100 {
     height: 100vh !important;
 }
 
