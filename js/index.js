@@ -99,10 +99,10 @@ navbarLinkSearch.addEventListener("mouseover", function() {
   var hoverElement = document.getElementById("hs-navbar-link-search-hover");
   hoverElement.style.display = "block";
 });
-navbarLinkSearch.addEventListener("mouseout", function() {
+function hssearchclose() {
   var hoverElement = document.getElementById("hs-navbar-link-search-hover");
   hoverElement.style.display = "none";
-});
+};
 
 // Search
 document.getElementById("hs-search-input").addEventListener("keyup", function(event) {
