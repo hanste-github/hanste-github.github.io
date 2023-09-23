@@ -24,22 +24,22 @@ function hsscrollFunction() {
   }
 };
 function hsnavbarshowwiki() {
-  document.getElementById('hs-navbar-link-wiki-hover').style.display = "block";
+  document.getElementById('hs-navbar-link-wiki-hover').style.display = "block !important";
 };
 function hsnavbarshowstore() {
-  document.getElementById('hs-navbar-link-store-hover').style.display = "block";
+  document.getElementById('hs-navbar-link-store-hover').style.display = "block !important";
 };
 function hsnavbarshowos() {
-  document.getElementById('hs-navbar-link-os-hover').style.display = "block";
+  document.getElementById('hs-navbar-link-os-hover').style.display = "block !important";
 };
 function hsnavbarshowmedia() {
-  document.getElementById('hs-navbar-link-media-hover').style.display = "block";
+  document.getElementById('hs-navbar-link-media-hover').style.display = "block !important";
 };
 function hsnavbarshowblog() {
-  document.getElementById('hs-navbar-link-blog-hover').style.display = "block";
+  document.getElementById('hs-navbar-link-blog-hover').style.display = "block !important";
 };
 function hsnavbarshowshop() {
-  document.getElementById('hs-navbar-link-shop-hover').style.display = "block";
+  document.getElementById('hs-navbar-link-shop-hover').style.display = "block !important";
 };
 
 // CookieModal
