@@ -24,7 +24,10 @@ body {
     display: flex !important;
 }
 .hs-nav {
-    display: var(--hs-nav);
+    display: var(--hs-nav) !important;
+}
+.hs-nav-toogler {
+    display: var(--hs-nav-toggler) !important;
 }
 .hs-navbar-link {
     height: 31px !important;
@@ -271,6 +274,7 @@ p, h1, h2, h3, h4, h5, a {
 @media (min-width: 1101px) {
     :root {
         --hs-container: 1000px !important;
+        --hs-nav-toggler: none !important;
     }
 }
 @media (max-width: 1100px) {
