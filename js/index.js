@@ -25,11 +25,21 @@ function hsscrollFunction() {
 };
 
 // Navbar show links
+var navbarLinkWiki = document.getElementById("hs-navbar-link-wiki");
 var navbarLinkStore = document.getElementById("hs-navbar-link-store");
 var navbarLinkOS = document.getElementById("hs-navbar-link-os");
 var navbarLinkMedia = document.getElementById("hs-navbar-link-media");
 var navbarLinkBlog = document.getElementById("hs-navbar-link-blog");
 var navbarLinkShop = document.getElementById("hs-navbar-link-shop");
+
+navbarLinkWiki.addEventListener("mouseover", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-store-hover");
+  hoverElement.style.display = "block";
+});
+navbarLinkWiki.addEventListener("mouseout", function() {
+  var hoverElement = document.getElementById("hs-navbar-link-store-hover");
+  hoverElement.style.display = "none";
+});
 
 navbarLinkStore.addEventListener("mouseover", function() {
   var hoverElement = document.getElementById("hs-navbar-link-store-hover");
