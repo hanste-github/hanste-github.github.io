@@ -104,6 +104,32 @@ navbarLinkSearch.addEventListener("mouseout", function() {
   hoverElement.style.display = "none";
 });
 
+// Search
+document.getElementById("hs-search-input").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) { // Überprüfen, ob die Eingabetaste gedrückt wurde
+    event.preventDefault(); // Verhindern, dass das Formular gesendet wird
+    hssearch(); // Funktion zum Durchführen der Suche aufrufen
+  }
+});
+function hssearch() {
+  var hscontent = document.getElementById('hs-content');
+  var hssearchcontent = document.getElementById('hs-search-content').innerHTML;
+  hscontent.innerHTML = hssearchcontent;
+
+  var input = document.getElementById('hs-search-input');
+  var filter = input.value.toUpperCase();
+  var ul = document.getElementById('hs-search-ul');
+  var li = ul.getElementsByTagName('li');
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
 
 // CookieModal
 var hsmodal = document.getElementById("hsModal");
