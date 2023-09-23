@@ -14,6 +14,7 @@ function myFunction() {
   }
 }
 
+// Navbar
 window.onscroll = function() {hsscrollFunction()};
 function hsscrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
@@ -21,6 +22,24 @@ function hsscrollFunction() {
   } else {
     document.getElementById('hs-navbar').style.borderRadius = "0.375rem";
   }
+};
+function hsnavbarshowwiki() {
+  document.getElementById('hs-navbar-link-wiki-hover').style.display = "block";
+};
+function hsnavbarshowstore() {
+  document.getElementById('hs-navbar-link-store-hover').style.display = "block";
+};
+function hsnavbarshowos() {
+  document.getElementById('hs-navbar-link-os-hover').style.display = "block";
+};
+function hsnavbarshowmedia() {
+  document.getElementById('hs-navbar-link-media-hover').style.display = "block";
+};
+function hsnavbarshowblog() {
+  document.getElementById('hs-navbar-link-blog-hover').style.display = "block";
+};
+function hsnavbarshowshop() {
+  document.getElementById('hs-navbar-link-shop-hover').style.display = "block";
 };
 
 // CookieModal
