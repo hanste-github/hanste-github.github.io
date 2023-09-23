@@ -17,6 +17,13 @@ body {
     padding: 5px !important;
     z-index: 100 !important;
 }
+.hs-navbar-container {
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    max-width: var(--hs-container) !important;
+    width: 100% !important;
+    display: flex !important;
+}
 .hs-navbar-link {
     height: 31px !important;
     margin: 2px !important;
