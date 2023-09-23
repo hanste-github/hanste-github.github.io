@@ -31,8 +31,8 @@ body {
     line-height: 31px !important;
 }
 .hs-navbar-link-hover {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
     border-radius: 10px !important;
     position: fixed !important;
@@ -116,8 +116,8 @@ body {
 }
 
 .blur1 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
 }
 .blur2 {
@@ -126,8 +126,8 @@ body {
     background-color: var(--hs-bl-001) !important;
 }
 .blur3 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
     height: 100vh !important;
 }
@@ -147,63 +147,63 @@ body {
 }
 
 .hs-bg-001 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-001) !important;
 }
 .hs-bg-002 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-002) !important;
 }
 .hs-bg-003 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-003) !important;
 }
 .hs-bg-004 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-004) !important;
 }
 .hs-bg-005 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-005) !important;
 }
 .hs-bg-006 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-006) !important;
 }
 .hs-bg-007 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-007) !important;
 }
 .hs-bg-008 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-008) !important;
 }
 .hs-bg-009 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-009) !important;
 }
 .hs-bg-010 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-010) !important;
 }
 .hs-bg-011 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-011) !important;
 }
 .hs-bg-012 {
-    -webkit-backdrop-filter: blur(10px) !important; 
-    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bg-012) !important;
 }
 
