@@ -126,7 +126,7 @@ function hssearch() {
     } else {
       li[i].style.display = "none";
     }
-  }
+  };
   var hssearchhide = document.getElementsByClassName("hs-search-hide");
   hssearchhide.style.display = "none";
 }
