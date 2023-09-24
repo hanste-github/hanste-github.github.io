@@ -128,7 +128,7 @@ function hssearch() {
     }
   };
   var hssearchhide = document.getElementsByClassName("hs-search-hide");
-  hssearchhide.style.display = "none";
+  hssearchhide.style.display = "none !important";
 }
 function hssearchclose2() {
   document.getElementById("hs-navbar-link-search-hover").style.display = "none";
