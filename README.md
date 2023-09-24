@@ -9,7 +9,7 @@ Holen sie sich kostenlose Apps für ihren PC oder Smartphone
 ## [HanSte OS](https://hanste-web.github.io/os/index.html)
 Holen sie sich HanSte OS für ihren PC HanSte PhoneOS für ihr Smartphone
 ## [HanSte Media](https://hanste-web.github.io/media/index.html)
-Hören sie sich chritsliche Musik online an oder sehen sie sich Vorträge oder andere Videos an
+Hören sie sich christliche Musik online an oder sehen sie sich Vorträge oder andere Videos an
 ## [HanSte Blog](https://hanste-web.github.io/blog/index.html)
 Lesen sie die Blogbeiträge
 ## [HanSte Shop](https://hanste-web.github.io/shop/index.html)
