@@ -86,7 +86,7 @@
       <div class="hs-navbar-link-hover rounded p-1" id="hs-navbar-link-search-hover">
         <div class="btn-group w-100">
           <input type="text" id="hs-search-input" placeholder="Suchen...">
-          <button id="hs-search-button" onclick="hssearchcontent()">
+          <button id="hs-search-button" onclick="hssearch()">
             <i class="bi bi-search"></i>
           </button>
           <button id="hs-search-close" onclick="hssearchclose()">
@@ -147,6 +147,9 @@
 
     <!-- Search -->
     <div class="hs-content p-3 hs-bg-001 rounded" id="hs-search-content" style="display: none;">
+      <button onclick="hssearchclose2()" style="float: left !important;">
+        <i class="bi bi-x-lg"></i>
+      </button>
       <ul id="hs-search-ul" class="nav flex-column">
         <li>
           <a class="nav-link">ABC1</a>

@@ -127,7 +127,13 @@ function hssearch() {
       li[i].style.display = "none";
     }
   }
+  document.getElementsByClassName('hs-search-hide').style.display = "none";
 }
+function hssearchclose2() {
+  document.getElementById("hs-navbar-link-search-hover").style.display = "none";
+  document.getElementById('hs-search-content').style.display = "none";
+  document.getElementsByClassName('hs-search-hide').style.display = "";
+};
 
 // CookieModal
 var hsmodal = document.getElementById("hsModal");
