@@ -71,8 +71,12 @@ window.onscroll = function() {hsscrollFunction()};
 function hsscrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById('hs-navbar').style.borderRadius = "0 0 0.375rem 0.375rem";
+    document.getElementById('hs-navbar').style.padding = "5px";
+    document.getElementById('hs-navbar').style.height = "45px";
   } else {
     document.getElementById('hs-navbar').style.borderRadius = "0.375rem";
+    document.getElementById('hs-navbar').style.padding = "15px";
+    document.getElementById('hs-navbar').style.height = "65px";
   }
 };
 
