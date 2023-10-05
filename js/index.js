@@ -74,7 +74,7 @@ function hsscrollFunction() {
   } else {
     document.getElementById('hs-navbar').style.borderRadius = "0.375rem";
   };
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 10) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 10) {
     document.getElementById('hs-navbar').style.padding = "5px";
     document.getElementById('hs-navbar').style.height = "45px";
   } else {
