@@ -39,6 +39,22 @@ body {
     left: 10px !important;
     right: 10px !important;
 }
+#hsnavbarlinksearchhover {
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
+    background-color: var(--hs-bl-001) !important;
+    border-radius: 0.375rem !important;
+    display: none;
+    margin: 0 10px 10px 10px !important;
+}
+#hs-search-content {
+    -webkit-backdrop-filter: blur(20px) !important; 
+    backdrop-filter: blur(20px) !important;
+    background-color: var(--hs-bl-001) !important;
+    border-radius: 0.375rem !important;
+    display: none;
+    margin: 0 10px 10px 10px !important;
+}
 /**/
 /*Cookie-Modal*/
 .hs-modal {
