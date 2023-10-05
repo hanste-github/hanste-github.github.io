@@ -85,6 +85,8 @@ function hsscrollFunction() {
 
 // Navbar show links
 function hsshow(hsshowId) {
+  var hsnavbarlinkhover = document.getElementsByClassName('hs-navbar-link-hover');
+  hsnavbarlinkhover.style.display = "none";
   var hsshowElement = document.getElementById(hsshowId);
   hsshowElement.style.display = "block";
 };
