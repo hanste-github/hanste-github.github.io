@@ -74,12 +74,12 @@ function hsscrollFunction() {
   } else {
     document.getElementById('hs-navbar').style.borderRadius = "0.375rem";
   };
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 10) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById('hs-navbar').style.padding = "5px";
     document.getElementById('hs-navbar').style.height = "45px";
   } else {
-    document.getElementById('hs-navbar').style.padding = "15px";
-    document.getElementById('hs-navbar').style.height = "65px";
+    document.getElementById('hs-navbar').style.padding = "10px";
+    document.getElementById('hs-navbar').style.height = "55px";
   };
 };
 

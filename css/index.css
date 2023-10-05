@@ -12,8 +12,8 @@ body {
     backdrop-filter: blur(20px) !important;
     border-radius: 0.375rem;
     margin: 10px !important;
-    height: 65px;
-    padding: 15px;
+    height: 55px;
+    padding: 10px;
     z-index: 100 !important;
 }
 .hs-navbar-container {
@@ -34,8 +34,10 @@ body {
     backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
     border-radius: 0.375rem !important;
-    margin: 10px !important;
     display: none;
+    position: absolute;
+    left: 10px !important;
+    right: 10px !important;
 }
 /**/
 /*Cookie-Modal*/
