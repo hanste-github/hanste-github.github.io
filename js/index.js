@@ -85,10 +85,14 @@ function hsscrollFunction() {
 
 // Navbar show links
 function hsshow(hsshowId) {
-  var hsnavbarlinkhover = document.getElementsByClassName('hs-navbar-link-hover');
-  hsnavbarlinkhover.style.display = "none";
-  var hsshowElement = document.getElementById(hsshowId);
-  hsshowElement.style.display = "block";
+  var elements = document.getElementsByClassName("hs-navbar-link-hover");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.display = "none";
+  }
+  var elementToShow = document.getElementById(hsshowId);
+  if (elementToShow) {
+    elementToShow.style.display = "block";
+  }
 };
 function hsclose(hscloseId) {
   var hscloseElement = document.getElementById(hscloseId);
