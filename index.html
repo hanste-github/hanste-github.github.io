@@ -58,12 +58,12 @@
             </a>
           </div>
           <div class="w-100 justify-content-around hs-nav">
-            <a class="hs-navbar-link" aria-current="page" href="/wiki/index.html" id="hs-navbar-link-wiki">Wiki</a>
-            <a class="hs-navbar-link" aria-current="page" href="/store/index.html" id="hs-navbar-link-store">Store</a>
-            <a class="hs-navbar-link" aria-current="page" href="/os/index.html" id="hs-navbar-link-os">OS</a>
-            <a class="hs-navbar-link" aria-current="page" href="/media/index.html" id="hs-navbar-link-media">Media</a>
-            <a class="hs-navbar-link" aria-current="page" href="/blog/index.html" id="hs-navbar-link-blog">Blog</a>
-            <a class="hs-navbar-link" aria-current="page" href="/shop/index.html" id="hs-navbar-link-shop">Shop</a>
+            <a class="hs-navbar-link" aria-current="page" onclick="hsshow(hsnavbarlinkwikihover)" onmouseover="hsshow(hsnavbarlinkwikihover)" href="/wiki/index.html">Wiki</a>
+            <a class="hs-navbar-link" aria-current="page" onclick="hsshow(hsnavbarlinkstorehover)" onmouseover="hsshow(hsnavbarlinkstorehover)" href="/store/index.html">Store</a>
+            <a class="hs-navbar-link" aria-current="page" onclick="hsshow(hsnavbarlinkoshover)" onmouseover="hsshow(hsnavbarlinkoshover)" href="/os/index.html">OS</a>
+            <a class="hs-navbar-link" aria-current="page" onclick="hsshow(hsnavbarlinkmediahover)" onmouseover="hsshow(hsnavbarlinkmediahover)" href="/media/index.html">Media</a>
+            <a class="hs-navbar-link" aria-current="page" onclick="hsshow(hsnavbarlinkbloghover)" onmouseover="hsshow(hsnavbarlinkbloghover)" href="/blog/index.html">Blog</a>
+            <a class="hs-navbar-link" aria-current="page" onclick="hsshow(hsnavbarlinkshophover)" onmouseover="hsshow(hsnavbarlinkshophover)" href="/shop/index.html">Shop</a>
           </div>
           <button class="btn hs-btn me-1 hs-nav-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
             <i class="bi bi-grid"></i>
@@ -77,19 +77,49 @@
           </button>
         </div>
       </div>
-      <div class="hs-navbar-link-hover rounded p-1" id="hs-navbar-link-wiki-hover">Wiki</div>
-      <div class="hs-navbar-link-hover rounded p-1" id="hs-navbar-link-store-hover">Store</div>
-      <div class="hs-navbar-link-hover rounded p-1" id="hs-navbar-link-os-hover">OS</div>
-      <div class="hs-navbar-link-hover rounded p-1" id="hs-navbar-link-media-hover">Media</div>
-      <div class="hs-navbar-link-hover rounded p-1" id="hs-navbar-link-blog-hover">Blog</div>
-      <div class="hs-navbar-link-hover rounded p-1" id="hs-navbar-link-shop-hover">Shop</div>
-      <div class="hs-navbar-link-hover rounded p-1" id="hs-navbar-link-search-hover">
+      <div class="hs-navbar-link-hover rounded p-1" id="hsnavbarlinkwikihover">
+        <button class="btn hs-btn" onclick="hsclose(hsnavbarlinkwikihover)" style="float: right !important;">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        Wiki
+      </div>
+      <div class="hs-navbar-link-hover rounded p-1" id="hsnavbarlinkstorehover">
+        <button class="btn hs-btn" onclick="hsclose(hsnavbarlinkstorehover)" style="float: right !important;">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        Store
+      </div>
+      <div class="hs-navbar-link-hover rounded p-1" id="hsnavbarlinkoshover">
+        <button class="btn hs-btn" onclick="hsclose(hsnavbarlinkoshover)" style="float: right !important;">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        OS
+      </div>
+      <div class="hs-navbar-link-hover rounded p-1" id="hsnavbarlinkmediahover">
+        <button class="btn hs-btn" onclick="hsclose(hsnavbarlinkmediahover)" style="float: right !important;">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        Media
+      </div>
+      <div class="hs-navbar-link-hover rounded p-1" id="hsnavbarlinkbloghover">
+        <button class="btn hs-btn" onclick="hsclose(hsnavbarlinkbloghover)" style="float: right !important;">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        Blog
+      </div>
+      <div class="hs-navbar-link-hover rounded p-1" id="hsnavbarlinkshophover">
+        <button class="btn hs-btn" onclick="hsclose(hsnavbarlinkshophover)" style="float: right !important;">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        Shop
+      </div>
+      <div class="hs-navbar-link-hover rounded p-1" id="hsnavbarlinksearchhover">
         <div class="btn-group w-100">
           <input type="text" id="hs-search-input" placeholder="Suchen...">
           <button id="hs-search-button" onclick="hssearch()">
             <i class="bi bi-search"></i>
           </button>
-          <button id="hs-search-close" onclick="hssearchclose()">
+          <button id="hs-search-close" onclick="hsclose(hsnavbarlinksearchhover)">
             <i class="bi bi-x-lg"></i>
           </button>
         </div>
