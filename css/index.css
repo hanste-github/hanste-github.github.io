@@ -45,7 +45,7 @@ body {
     background-color: var(--hs-bl-001) !important;
     border-radius: 0.375rem !important;
     display: none;
-    margin: 0 10px 10px 10px !important;
+    position: static !important;
 }
 #hs-search-content {
     -webkit-backdrop-filter: blur(20px) !important; 
@@ -53,7 +53,6 @@ body {
     background-color: var(--hs-bl-001) !important;
     border-radius: 0.375rem !important;
     display: none;
-    margin: 0 10px 10px 10px !important;
 }
 /**/
 /*Cookie-Modal*/
