@@ -32,7 +32,7 @@ hsacceptBtn.onclick = function() {
 }
 
 function hsactivateScript() {
-  function hsmarginandroundedsize() {
+  document.getElementById('hschangemarginandroundedsize').addEventListener('click', function() {
     var marginSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-margin-size");
     var roundedSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-rounded-size");
     if (marginSize === "10px") {
@@ -49,7 +49,7 @@ function hsactivateScript() {
       document.documentElement.style.setProperty("--hs-rounded-size", "0.375rem");
       localStorage.setItem('hsroundedsize', '0.375rem')
     }
-  };
+  });
   if (localStorage.getItem('hsmarginsize')) {
     document.documentElement.setPropertyPropertyValue("--hs-margin-size", localStorage.getItem('hsmarginsize'))
   }
