@@ -51,10 +51,10 @@ function hsactivateScript() {
     }
   });
   if (localStorage.getItem('hsmarginsize')) {
-    document.documentElement.setPropertyPropertyValue("--hs-margin-size", localStorage.getItem('hsmarginsize'))
+    document.documentElement.style.setProperty("--hs-margin-size", localStorage.getItem('hsmarginsize'))
   }
   if (localStorage.getItem('hsroundedsize')) {
-    document.documentElement.setPropertyPropertyValue("--hs-rounded-size", localStorage.getItem('hsroundedsize'))
+    document.documentElement.style.setProperty("--hs-rounded-size", localStorage.getItem('hsroundedsize'))
   };
 
   // Hintergrundbild
