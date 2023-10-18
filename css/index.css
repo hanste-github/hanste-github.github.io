@@ -133,6 +133,7 @@ body {
 /*Content*/
 .hs-content {
     margin: 0 var(--hs-margin-size) var(--hs-margin-size) var(--hs-margin-size) !important;
+    border-radius: var(--hs-rounded-size) !important;
 }
 /**/
 

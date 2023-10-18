@@ -1,17 +1,3 @@
-function hsmarginandroundedsize() {
-  var marginSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-margin-size");
-  var roundedSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-rounded-size");
-  if (marginSize === "10px") {
-    document.documentElement.style.setProperty("--hs-margin-size", "0");
-  } else {
-    document.documentElement.style.setProperty("--hs-margin-size", "10px");
-  }
-  if (roundedSize === "0.375rem") {
-    document.documentElement.style.setProperty("--hs-rounded-size", "0");
-  } else {
-    document.documentElement.style.setProperty("--hs-rounded-size", "0.375rem");
-  }
-};
 // CookieModal
 var hsmodal = document.getElementById("hsModal");
 var hscloseBtn = document.getElementsByClassName("hs-close")[0];
@@ -46,6 +32,30 @@ hsacceptBtn.onclick = function() {
 }
 
 function hsactivateScript() {
+  function hsmarginandroundedsize() {
+    var marginSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-margin-size");
+    var roundedSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-rounded-size");
+    if (marginSize === "10px") {
+      document.documentElement.style.setProperty("--hs-margin-size", "0");
+      localStorage.setItem('hsmarginsize', '0')
+    } else {
+      document.documentElement.style.setProperty("--hs-margin-size", "10px");
+      localStorage.setItem('hsmarginsize', '10px')
+    }
+    if (roundedSize === "0.375rem") {
+      document.documentElement.style.setProperty("--hs-rounded-size", "0");
+      localStorage.setItem('hsroundedsize', '0')
+    } else {
+      document.documentElement.style.setProperty("--hs-rounded-size", "0.375rem");
+      localStorage.setItem('hsroundedsize', '0.375rem')
+    }
+  };
+  if (localStorage.getItem('hsmarginsize')) {
+    document.documentElement.setPropertyPropertyValue("--hs-margin-size", localStorage.getItem('hsmarginsize'))
+  }
+  if (localStorage.getItem('hsroundedsize')) {
+    document.documentElement.setPropertyPropertyValue("--hs-rounded-size", localStorage.getItem('hsroundedsize'))
+  };
 
   // Hintergrundbild
   document.addEventListener('DOMContentLoaded', function() {
