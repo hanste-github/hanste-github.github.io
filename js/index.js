@@ -1,3 +1,17 @@
+function hsmarginandroundedsize() {
+  var marginSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-margin-size");
+  var roundedSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-rounded-size");
+  if (marginSize === "10px") {
+    document.documentElement.style.setProperty("--hs-margin-size", "0");
+  } else {
+    document.documentElement.style.setProperty("--hs-margin-size", "10px");
+  }
+  if (roundedSize === "0.375rem") {
+    document.documentElement.style.setProperty("--hs-rounded-size", "0");
+  } else {
+    document.documentElement.style.setProperty("--hs-rounded-size", "0.375rem");
+  }
+};
 // CookieModal
 var hsmodal = document.getElementById("hsModal");
 var hscloseBtn = document.getElementsByClassName("hs-close")[0];

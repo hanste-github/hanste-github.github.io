@@ -10,8 +10,8 @@ body {
     background-color: var(--hs-bl-001) !important;
     -webkit-backdrop-filter: blur(20px) !important;
     backdrop-filter: blur(20px) !important;
-    border-radius: 0.375rem;
-    margin: 10px !important;
+    border-radius: var(--hs-rounded-size) !important;
+    margin: var(--hs-margin-size) !important;
     height: 55px;
     padding: 10px;
     z-index: 100 !important;
@@ -33,28 +33,28 @@ body {
     -webkit-backdrop-filter: blur(20px) !important; 
     backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
-    border-radius: 0.375rem !important;
+    border-radius: var(--hs-rounded-size) !important;
     display: none;
     position: absolute;
-    left: 10px !important;
-    right: 10px !important;
+    left: var(--hs-margin-size) !important;
+    right: var(--hs-rounded-size) !important;
 }
 #hsnavbarlinksearchhover {
     -webkit-backdrop-filter: blur(20px) !important; 
     backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
-    border-radius: 0.375rem !important;
+    border-radius: var(--hs-rounded-size) !important;
     display: none;
     position: static !important;
-    margin: 0 10px 10px 10px !important;
+    margin: 0 var(--hs-margin-size) var(--hs-margin-size) var(--hs-margin-size) !important;
 }
 #hs-search-content {
     -webkit-backdrop-filter: blur(20px) !important; 
     backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
-    border-radius: 0.375rem !important;
+    border-radius: var(--hs-rounded-size) !important;
     display: none;
-    margin: 0 10px 10px 10px !important;
+    margin: 0 var(--hs-margin-size) var(--hs-margin-size) var(--hs-margin-size) !important;
 }
 /**/
 /*Cookie-Modal*/
@@ -132,7 +132,7 @@ body {
 /**/
 /*Content*/
 .hs-content {
-    margin: 0 10px 10px 10px !important;
+    margin: 0 var(--hs-margin-size) var(--hs-margin-size) var(--hs-margin-size) !important;
 }
 /**/
 
@@ -280,6 +280,10 @@ body {
     --hs-tx-003: rgb(255, 255, 255) !important;
     --hs-loda: none !important;
     --hs-loli: block !important;
+}
+:root {
+    --hs-margin-size: 10px;
+    --hs-rounded-size: 0.375rem;
 }
 
 p, h1, h2, h3, h4, h5, a {
