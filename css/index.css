@@ -239,19 +239,20 @@ body {
 
 :root,
 [data-bs-theme="light"] {
-    --hs-bg-001: rgba(255, 118, 118, 0.6) !important;
-    --hs-bg-002: rgba(255, 211, 115, 0.6) !important;
-    --hs-bg-003: rgba(241, 255, 115, 0.6) !important;
-    --hs-bg-004: rgba(214, 255, 119, 0.6) !important;
-    --hs-bg-005: rgba(138, 255, 115, 0.6) !important;
-    --hs-bg-006: rgba(119, 255, 180, 0.6) !important;
-    --hs-bg-007: rgba(114, 234, 255, 0.6) !important;
-    --hs-bg-008: rgba(115, 171, 255, 0.6) !important;
-    --hs-bg-009: rgba(116, 118, 255, 0.6) !important;
-    --hs-bg-010: rgba(185, 123, 255, 0.6) !important;
-    --hs-bg-011: rgba(255, 115, 220, 0.6) !important;
-    --hs-bg-012: rgba(255, 121, 161, 0.6) !important;
-    --hs-bl-001: rgba(200, 200, 200, 0.6) !important;
+    --hs-bg-001: rgba(255, 118, 118, 0.75) !important;
+    --hs-bg-002: rgba(255, 211, 115, 0.75) !important;
+    --hs-bg-003: rgba(241, 255, 115, 0.75) !important;
+    --hs-bg-004: rgba(214, 255, 119, 0.75) !important;
+    --hs-bg-005: rgba(138, 255, 115, 0.75) !important;
+    --hs-bg-006: rgba(119, 255, 180, 0.75) !important;
+    --hs-bg-007: rgba(114, 234, 255, 0.75) !important;
+    --hs-bg-008: rgba(115, 171, 255, 0.75) !important;
+    --hs-bg-009: rgba(116, 118, 255, 0.75) !important;
+    --hs-bg-010: rgba(185, 123, 255, 0.75) !important;
+    --hs-bg-011: rgba(255, 115, 220, 0.75) !important;
+    --hs-bg-012: rgba(255, 121, 161, 0.75) !important;
+    --hs-bl-001: rgba(200, 200, 200, 0.75) !important;
+    --hs-bg-noblur-001: rgba(200, 200, 200, 0.9) !important;
     --hs-tx-001: rgb(0, 0, 0) !important;    
     --hs-tx-002: rgb(0, 0, 0) !important;
     --hs-tx-003: rgb(255, 255, 255) !important;
@@ -272,7 +273,8 @@ body {
     --hs-bg-010: rgba(62, 0, 133, 0.75) !important;
     --hs-bg-011: rgba(145, 0, 108, 0.75) !important;
     --hs-bg-012: rgba(139, 0, 42, 0.75) !important;
-    --hs-bl-001: rgba(0, 0, 0, 0.6) !important;
+    --hs-bl-001: rgba(0, 0, 0, 0.75) !important;
+    --hs-bg-noblur-001: rgba(0, 0, 0, 0.9) !important;
     --hs-tx-001: rgb(255, 255, 255) !important;
     --hs-tx-002: rgb(0, 0, 0) !important;
     --hs-tx-003: rgb(255, 255, 255) !important;
