@@ -32,12 +32,12 @@ body {
 .hs-navbar-link-hover {
     -webkit-backdrop-filter: blur(20px) !important; 
     backdrop-filter: blur(20px) !important;
-    background-color: var(--hs-bl-001) !important;
+    background-color: var(--hs-bl-002) !important;
     border-radius: var(--hs-rounded-size) !important;
     display: none;
     position: absolute;
     left: var(--hs-margin-size) !important;
-    right: var(--hs-rounded-size) !important;
+    right: var(--hs-margin-size) !important;
 }
 #hsnavbarlinksearchhover {
     -webkit-backdrop-filter: blur(20px) !important; 
