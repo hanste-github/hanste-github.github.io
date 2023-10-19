@@ -142,6 +142,11 @@ body {
     backdrop-filter: blur(20px) !important;
     background-color: var(--hs-bl-001) !important;
 }
+.hs-blur-001 {
+    -webkit-backdrop-filter: blur(10px) !important; 
+    backdrop-filter: blur(10px) !important;
+    background-color: var(--hs-bl-002) !important;
+}
 
 .hs-h-100 {
     height: 100vh !important;
@@ -252,7 +257,8 @@ body {
     --hs-bg-010: rgba(185, 123, 255, 0.75) !important;
     --hs-bg-011: rgba(255, 115, 220, 0.75) !important;
     --hs-bg-012: rgba(255, 121, 161, 0.75) !important;
-    --hs-bl-001: rgba(200, 200, 200, 0.75) !important;
+    --hs-bl-001: rgba(255, 255, 255, 0.75) !important;
+    --hs-bl-002: rgba(235, 235, 235, 0.75) !important;
     --hs-bg-noblur-001: rgba(200, 200, 200, 0.9) !important;
     --hs-tx-001: rgb(0, 0, 0) !important;    
     --hs-tx-002: rgb(0, 0, 0) !important;
@@ -275,6 +281,7 @@ body {
     --hs-bg-011: rgba(145, 0, 108, 0.75) !important;
     --hs-bg-012: rgba(139, 0, 42, 0.75) !important;
     --hs-bl-001: rgba(0, 0, 0, 0.75) !important;
+    --hs-bl-002: rgba(20, 20, 20, 0.75) !important;
     --hs-bg-noblur-001: rgba(0, 0, 0, 0.9) !important;
     --hs-tx-001: rgb(255, 255, 255) !important;
     --hs-tx-002: rgb(0, 0, 0) !important;
