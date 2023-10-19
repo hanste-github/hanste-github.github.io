@@ -120,12 +120,6 @@ function hsshow(hsshowId) {
     elementToShow.style.display = "block";
   }
 };
-document.getElementById('hs-navbar-leave').addEventListener('mouseleave', function(e) {
-  var elements = document.getElementsByClassName("hs-navbar-link-hover");
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].style.display = "none";
-  }
-});
 function hsclose(hscloseId) {
   var hscloseElement = document.getElementById(hscloseId);
   hscloseElement.style.display = "none";
