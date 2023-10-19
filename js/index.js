@@ -37,8 +37,8 @@ function hsactivateScript() {
     var marginSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-margin-size");
     var roundedSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-rounded-size");
     if (marginSize === "10px") {
-      document.documentElement.style.setProperty("--hs-margin-size", "0");
-      localStorage.setItem('hsmarginsize', '0')
+      document.documentElement.style.setProperty("--hs-margin-size", "0px");
+      localStorage.setItem('hsmarginsize', '0px')
     } else {
       document.documentElement.style.setProperty("--hs-margin-size", "10px");
       localStorage.setItem('hsmarginsize', '10px')
