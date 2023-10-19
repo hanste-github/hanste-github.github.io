@@ -94,7 +94,8 @@ function hsactivateScript() {
 window.onscroll = function() {hsscrollFunction()};
 function hsscrollFunction() {
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.getElementById('hs-navbar').style.borderRadius = "0 0 0.375rem 0.375rem";
+    document.getElementById('hs-navbar').style.borderStartStartRadius = "0.375rem";
+    document.getElementById('hs-navbar').style.borderStartEndRadius = "0.375rem";
   } else {
     document.getElementById('hs-navbar').style.borderRadius = "0.375rem";
   };
