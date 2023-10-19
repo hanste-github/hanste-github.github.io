@@ -133,6 +133,10 @@ document.getElementById("hs-search-input").addEventListener("keyup", function(ev
   }
 });
 function hssearch() {
+  var hssearchhide = document.getElementsByClassName("hs-search-hide");
+  for (var i = 0; i < hssearchhide.length; i++) {
+    hssearchhide[i].style.display = "none";
+  }
   document.getElementById('hs-search-content').style.display = "block";
 
   var input = document.getElementById('hs-search-input');
@@ -152,8 +156,10 @@ function hssearch() {
   hssearchhide.style.display = "none !important";
 }
 function hssearchclose2() {
-  document.getElementById("hs-navbar-link-search-hover").style.display = "none";
+  document.getElementById("hsnavbarlinksearchhover").style.display = "none";
   document.getElementById('hs-search-content').style.display = "none";
   var hssearchhide = document.getElementsByClassName("hs-search-hide");
-  hssearchhide.style.display = "";
+  for (var i = 0; i < hssearchhide.length; i++) {
+    hssearchhide[i].style.display = "block";
+  }
 };

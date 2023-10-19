@@ -42,7 +42,7 @@ body {
 #hsnavbarlinksearchhover {
     -webkit-backdrop-filter: blur(20px) !important; 
     backdrop-filter: blur(20px) !important;
-    background-color: var(--hs-bl-001) !important;
+    background-color: var(--hs-bl-002) !important;
     border-radius: var(--hs-rounded-size) !important;
     display: none;
     position: static !important;
