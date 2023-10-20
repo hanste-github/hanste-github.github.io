@@ -124,6 +124,12 @@ function hsclose(hscloseId) {
   var hscloseElement = document.getElementById(hscloseId);
   hscloseElement.style.display = "none";
 };
+function hscloseclass(hscloseclassId) {
+  var hscloseclass = document.getElementsByClassName(hscloseclassId);
+  for (var i = 0; i < hscloseclass.length; i++) {
+    hscloseclass[i].style.display = "none";
+  }
+};
 
 // Search
 document.getElementById("hs-search-input").addEventListener("keyup", function(event) {
