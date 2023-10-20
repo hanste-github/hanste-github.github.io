@@ -11,7 +11,7 @@ body {
     -webkit-backdrop-filter: blur(20px) !important;
     backdrop-filter: blur(20px) !important;
     border-radius: var(--hs-rounded-size) !important;
-    margin: var(--hs-margin-size) !important;
+    margin: var(--hs-margin-size) var(--hs-margin-size) 0 var(--hs-margin-size) !important;
     height: 55px;
     padding: 10px;
     z-index: 100 !important;
