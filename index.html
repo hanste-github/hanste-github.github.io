@@ -174,32 +174,39 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
+        <h5>Hintergrundbild ändern</h5>
+        <p>...durch ein Bild von ihrem Computer.</p>
         <form id="uploadForm" enctype="multipart/form-data" class="btn-group w-100 mb-2">
           <input class="btn btn-warning" type="file" id="imageUpload" accept=".jpg, .jpeg, .png">
           <button class="btn btn-primary" type="submit"><i class="bi bi-check"></i></button>
         </form>
         <br>
+        <p>...durch ein Bild aus dem Internet.</p>
         <form id="urlForm" class="btn-group w-100">
             <input class="btn btn-warning" type="text" id="imageUrl" placeholder="Bildadresse eingeben">
             <button class="btn btn-primary" type="submit"><i class="bi bi-check"></i></button>
         </form>
         <hr>
+        <h5>Theme ändern (minimal)</h5>
         <div class="btn-group-vertical w-100" role="group" aria-labelledby="bd-theme-text">
           <button type="button" class="btn btn-light" data-bs-theme-value="light" aria-pressed="false">
             <svg class="bi me-2 theme-icon" style="width: 20px; height: 20px;"><use href="#sun-fill"></use></svg>
-            Light
+            Hell
           </button>
           <button type="button" class="btn btn-dark" data-bs-theme-value="dark" aria-pressed="false">
             <svg class="bi me-2 theme-icon" style="width: 20px; height: 20px;"><use href="#moon-stars-fill"></use></svg>
-            Dark
+            Dunkel
           </button>
           <button type="button" class="btn btn-secondary" data-bs-theme-value="auto" aria-pressed="true">
             <svg class="bi me-2 theme-icon" style="width: 20px; height: 20px;"><use href="#circle-half"></use></svg>
-            Auto
+            Automatisch
           </button>
         </div>
         <hr>
+        <h5>Abstände ändern</h5>
         <button class="btn btn-primary w-100" id="hschangemarginandroundedsize">Abstände ändern</button>
+        <hr>
+        <h5>Theme ändern (maximal)</h5>
       </div>
     </div>
 
