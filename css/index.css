@@ -263,8 +263,6 @@ body {
     --hs-tx-001: rgb(0, 0, 0) !important;    
     --hs-tx-002: rgb(0, 0, 0) !important;
     --hs-tx-003: rgb(255, 255, 255) !important;
-    --hs-loli: none !important;
-    --hs-loda: block !important;
 }
 
 [data-bs-theme="dark"] {
@@ -286,9 +284,29 @@ body {
     --hs-tx-001: rgb(255, 255, 255) !important;
     --hs-tx-002: rgb(0, 0, 0) !important;
     --hs-tx-003: rgb(255, 255, 255) !important;
-    --hs-loda: none !important;
-    --hs-loli: block !important;
 }
+
+[data-bs-theme="darkblue"] {
+    --hs-bg-001: rgba(0, 136, 118, 0.75) !important;
+    --hs-bg-002: rgba(0, 143, 131, 0.75) !important;
+    --hs-bg-003: rgba(0, 124, 143, 0.75) !important;
+    --hs-bg-004: rgba(0, 87, 138, 0.75) !important;
+    --hs-bg-005: rgba(0, 77, 129, 0.75) !important;
+    --hs-bg-006: rgba(0, 29, 136, 0.75) !important;
+    --hs-bg-007: rgba(0, 11, 138, 0.75) !important;
+    --hs-bg-008: rgba(0, 5, 143, 0.75) !important;
+    --hs-bg-009: rgba(16, 0, 133, 0.75) !important;
+    --hs-bg-010: rgba(47, 0, 133, 0.75) !important;
+    --hs-bg-011: rgba(63, 0, 145, 0.75) !important;
+    --hs-bg-012: rgba(100, 0, 139, 0.75) !important;
+    --hs-bl-001: rgba(5, 0, 51, 0.75) !important;
+    --hs-bl-002: rgba(25, 20, 71, 0.75) !important;
+    --hs-bg-noblur-001: rgba(5, 0, 51, 0.9) !important;
+    --hs-tx-001: rgb(255, 255, 255) !important;
+    --hs-tx-002: rgb(0, 0, 0) !important;
+    --hs-tx-003: rgb(255, 255, 255) !important;
+}
+
 :root {
     --hs-margin-size: 10px;
     --hs-rounded-size: 0.375rem;
