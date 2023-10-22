@@ -32,6 +32,7 @@ hsacceptBtn.onclick = function() {
 }
 
 function hsactivateScript() {
+
   // Margins und Borderradius
   document.getElementById('hschangemarginandroundedsize').addEventListener('click', function() {
     var marginSize = getComputedStyle(document.documentElement).getPropertyValue("--hs-margin-size");
