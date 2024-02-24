@@ -1,371 +1,329 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-  <head>
-    <title>Labourers and Servants of the Lord</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HanSte</title>
+        <link href="http://hanste.free.nf/images/logo.png" rel="icon">
 
-    <!-- Favicons -->
-    <link rel="icon" media="(prefers-color-scheme: light)" href="/images/logoschwarz-removebg-preview.png">
-    <link rel="icon" media="(prefers-color-scheme: dark)" href="/images/logoweiss-removebg-preview.png">
-    <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+                background-color: var(--hs-bg-001);
+            }
+            p, h1, h2, h3, h4, h5, a {
+                color: var(--hs-fg-001)
+            }
 
-    <!-- CSS -->
-    <link href="/css/index.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    
-  </head>
-  <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
+            li {display: inline;}
+            button {padding: 0; background-color: transparent; border: none; text-align: center; text-decoration: none;}
+            a {text-decoration: none}
 
-    <!-- CookieModal -->
-    <div id="hsModal" class="hs-modal">
-      <div class="hs-modal-content rounded hs-blur-001">
-        <span class="hs-close">&times;</span>
-        <h2>Cookie-Benachrichtigung</h2>
-        <p>Diese Website verwendet Cookies, um Ihnen das beste Erlebnis auf unserer Website zu bieten.</p>
-        <p>Bitte bestätigen Sie, dass Sie mit der Verwendung von Cookies einverstanden sind.</p>
-        <button class="btn btn-primary" id="hsacceptBtn" onclick="activateScript()">Akzeptieren</button>
-      </div>
-    </div>
+            .hs-fill {fill: var(--hs-fg-001)}
+            #hs-doc {
+                background-color: var(--hs-bg-002);
+                display: block;
+                margin-top: 0;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                min-height: 100vh;
+            }
+            #hs-nav {
+                background-color: var(--hs-bg-003);
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                border-radius: 10px;
+                margin: 0 0 10px 0;
+                padding: 5px;
+                position: sticky;
+                top: 10px;
+                z-index: 100;
+            }
+            #hs-nav-container {
+                padding: 0;
+                height: 35px;
+                margin: 0;
+                display: flex;
+                width: 100%;
+            }
+            #hsnavcontent3 {
+                margin-left: auto;
+            }
+            #hsnavcontentbreiteseite {
+                display: none;
+                width: 100%;
+            }
+            #hsnavcontent div {display: flex;}
+            #hsnavcontent div a {margin: 5px auto 5px auto;}
 
-    <!-- Navigationsleiste oben -->
-    <div class="sticky-top" onmouseleave="hscloseclass('hs-navbar-link-hover')">
-      <div class="hs-navbar" id="hs-navbar">
-        <div class="hs-navbar-container justify-content-around">
-          <div class="me-2">
-            <a href="/index.html">
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 1000.000000 1000.000000" preserveAspectRatio="xMidYMid meet">
-                <g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)" fill="var(--hs-tx-001)" stroke="none">
-                  <path d="M4690 9978 c-153 -14 -274 -27 -355 -38 -44 -6 -105 -13 -135 -16 -30 -3 -64 -9 -75 -14 -11 -5 -36 -11 -55 -14 -19 -3 -60 -10 -90 -16 -30 -6 -72 -14 -93 -17 -20 -3 -40 -9 -43 -14 -3 -5 -20 -9 -39 -9 -19 0 -36 -4 -39 -9 -3 -5 -20 -11 -38 -14 -83 -14 -352 -93 -400 -118 -10 -5 -22 -9 -28 -9 -6 0 -32 -9 -58 -21 -26 -12 -56 -24 -67 -29 -11 -4 -32 -12 -47 -19 -16 -6 -38 -15 -50 -20 -28 -10 -117 -50 -140 -62 -10 -5 -25 -9 -33 -9 -8 0 -15 -4 -15 -10 0 -5 -9 -10 -20 -10 -11 0 -20 -4 -20 -10 0 -5 -9 -10 -20 -10 -11 0 -20 -4 -20 -10 0 -5 -9 -10 -19 -10 -11 0 -21 -4 -23 -8 -1 -4 -46 -29 -98 -56 -52 -26 -104 -53 -115 -60 -11 -6 -42 -24 -70 -39 -27 -15 -59 -33 -70 -40 -11 -6 -38 -23 -60 -37 -22 -14 -48 -29 -56 -35 -48 -30 -257 -174 -289 -200 -21 -16 -64 -50 -95 -75 -95 -75 -147 -118 -215 -179 -36 -33 -80 -72 -99 -87 -55 -46 -262 -255 -311 -314 -25 -30 -56 -66 -70 -80 -14 -14 -41 -45 -60 -70 -19 -25 -38 -46 -42 -48 -4 -2 -8 -8 -8 -14 0 -6 -19 -33 -43 -59 -73 -84 -107 -126 -107 -134 0 -5 -7 -17 -17 -27 -9 -10 -21 -27 -27 -37 -27 -47 -81 -121 -88 -121 -5 0 -8 -5 -8 -10 0 -6 -21 -43 -48 -83 -26 -40 -54 -86 -62 -102 -8 -17 -20 -37 -27 -45 -7 -9 -43 -76 -82 -150 -38 -74 -83 -161 -100 -194 -17 -32 -31 -67 -31 -77 0 -10 -3 -19 -7 -19 -9 0 -33 -49 -33 -67 0 -7 -4 -13 -10 -13 -5 0 -10 -7 -10 -15 0 -8 -4 -23 -9 -33 -37 -74 -51 -106 -51 -118 0 -8 -4 -22 -9 -32 -10 -19 -30 -67 -41 -97 -4 -11 -12 -31 -17 -45 -6 -14 -16 -43 -22 -65 -7 -22 -16 -49 -21 -60 -9 -22 -49 -166 -57 -205 -2 -14 -8 -34 -13 -45 -5 -11 -11 -33 -14 -50 -5 -29 -12 -62 -37 -157 -6 -24 -13 -63 -15 -88 -3 -25 -9 -54 -14 -65 -9 -21 -18 -74 -26 -165 -3 -30 -9 -64 -14 -75 -9 -19 -15 -79 -26 -255 -2 -47 -9 -94 -15 -105 -13 -26 -5 -594 11 -725 6 -52 13 -131 16 -175 2 -44 9 -89 14 -100 5 -11 12 -42 15 -70 5 -47 16 -129 30 -220 4 -22 10 -49 15 -60 5 -11 11 -33 14 -50 11 -61 36 -172 55 -235 6 -19 17 -60 25 -90 24 -93 108 -335 119 -347 4 -3 7 -12 7 -20 0 -7 9 -35 21 -61 12 -26 25 -56 29 -67 27 -67 105 -241 122 -270 6 -11 42 -78 79 -150 467 -908 1293 -1702 2249 -2158 514 -246 1020 -390 1620 -463 183 -22 694 -30 899 -15 1091 84 2075 490 2906 1199 144 123 433 416 555 562 653 784 1021 1643 1147 2680 26 209 26 851 0 1060 -58 480 -157 884 -309 1270 -421 1066 -1151 1920 -2139 2503 -168 99 -473 249 -624 307 -11 4 -32 12 -47 19 -16 6 -38 15 -50 20 -13 4 -34 13 -48 19 -14 6 -56 21 -95 33 -38 12 -79 25 -90 30 -43 18 -143 47 -185 54 -25 4 -49 11 -55 15 -5 4 -23 10 -40 14 -16 4 -48 11 -70 17 -65 16 -128 30 -165 35 -19 3 -44 9 -55 14 -11 5 -40 11 -65 14 -25 3 -76 10 -115 16 -38 6 -95 13 -125 16 -30 3 -64 9 -75 14 -11 5 -54 12 -95 14 -41 3 -120 9 -175 15 -120 11 -526 11 -645 -1z m1189 -1177 c57 -11 91 -37 119 -91 l22 -44 0 -728 0 -728 708 0 c389 -1 727 -5 751 -9 54 -11 90 -37 118 -87 l23 -39 -1 -895 c0 -833 -2 -897 -18 -925 -33 -57 -7 -56 -812 -56 -526 1 -746 -3 -756 -10 -11 -10 -13 -354 -13 -1969 l0 -1958 -51 -46 -51 -46 -897 0 -896 0 -39 23 c-48 27 -75 62 -86 113 -6 23 -10 845 -10 1967 l0 1927 -739 0 -738 0 -33 23 c-19 12 -43 38 -54 57 -21 35 -21 45 -21 920 0 867 0 886 20 919 26 44 62 70 111 81 21 5 357 10 746 10 l707 0 3 738 c3 716 4 738 23 771 25 42 62 71 106 81 46 11 1702 11 1758 1z"/>
-                </g>
-              </svg>
-            </a>
-          </div>
-          <div class="w-100 justify-content-around hs-nav">
-            <a class="hs-navbar-link" aria-current="page" onclick="hsshow('hsnavbarlinkwikihover')" onmouseover="hsshow('hsnavbarlinkwikihover')" href="/wiki/index.html">Wiki</a>
-            <a class="hs-navbar-link" aria-current="page" onclick="hsshow('hsnavbarlinkstorehover')" onmouseover="hsshow('hsnavbarlinkstorehover')" href="/store/index.html">Store</a>
-            <a class="hs-navbar-link" aria-current="page" onclick="hsshow('hsnavbarlinkoshover')" onmouseover="hsshow('hsnavbarlinkoshover')" href="/os/index.html">OS</a>
-            <a class="hs-navbar-link" aria-current="page" onclick="hsshow('hsnavbarlinkmediahover')" onmouseover="hsshow('hsnavbarlinkmediahover')" href="/media/index.html">Media</a>
-            <a class="hs-navbar-link" aria-current="page" onclick="hsshow('hsnavbarlinkbloghover')" onmouseover="hsshow('hsnavbarlinkbloghover')" href="/blog/index.html">Blog</a>
-            <a class="hs-navbar-link" aria-current="page" onclick="hsshow('hsnavbarlinkshophover')" onmouseover="hsshow('hsnavbarlinkshophover')" href="/shop/index.html">Shop</a>
-          </div>
-          <button class="btn hs-btn me-1 hs-nav-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
-            <i class="bi bi-grid"></i>
-          </button>          
-          <button class="btn hs-btn me-1" onclick="hsshow('hsnavbarlinksearchhover')" onmouseover="hsshow('hsnavbarlinksearchhover')" >
-            <i class="bi bi-search"></i>
-          </button>
-          <!-- Button Einstellungen -->
-          <button class="hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <i class="bi bi-gear"></i>
-          </button>
+            .hs-content {
+                margin: 0 0 10px 0;
+                background-color: var(--hs-bg-003);
+                border-radius: 10px;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-content: space-evenly;
+            }
+            .hs-content-inner {
+                margin: 10px;
+                border-radius: 10px 10px 0 0;
+                background-color: var(--hs-bg-001);
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                padding: 0;
+            }
+            .hs-content-inner-h {
+                margin: 0px;
+                border-radius: 10px 10px 0 0;
+                font-size: 20px;
+                text-align: center;
+                padding: 5px;
+            }
+
+            :root, [data-bs-theme=light] {
+                --hs-bg-001: rgba(255, 255, 255, 0.5);
+                --hs-bg-002: rgba(235, 235, 235, 0.5);
+                --hs-bg-003: rgba(215, 215, 215, 0.5);
+                --hs-fg-001: rgba(0, 0, 0, 0.95)
+            }
+            [data-bs-theme=dark] {
+                --hs-bg-001: rgb(0, 0, 0);
+                --hs-bg-002: rgb(20, 20, 20);
+                --hs-bg-003: rgb(40, 40, 40);
+                --hs-fg-001: rgba(255, 255, 255, 0.95)
+            }
+
+            @media (min-width: 500px) {
+                #hs-doc {
+                    width: 450px
+                }
+            }
+            @media (min-width: 800px) {
+                #hs-doc {
+                    width: 750px
+                }
+            }
+            @media (min-width: 1200px) {
+                #hs-doc {
+                    width: 1100px
+                }
+                #hsnavcontent3 {display: none}
+                #hsnavcontentbreiteseite {display: flex}
+            }
+            @media (min-width: 1600px) {
+                #hs-doc {
+                    width: 1500px
+                }
+            }
+            @media (min-width: 2000px) {
+                #hs-doc {
+                    width: 1800px
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="hs-doc">
+            <div id="hs-nav">
+                <div id="hs-nav-container">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" class="hs-fill" stroke="none">
+                            <path d="M2145 4971 c-118 -16 -379 -77 -437 -100 -13 -6 -75 -30 -139 -55 -158 -61 -359 -168 -479 -255 -107 -77 -152 -111 -215 -166 -470 -406 -773 -967 -850 -1573 -21 -175 -20 -478 4 -662 87 -663 449 -1273 993 -1674 128 -93 380 -240 468 -271 19 -7 55 -22 80 -33 134 -60 382 -126 574 -152 203 -27 507 -28 710 -1 526 71 1026 320 1411 706 391 391 641 900 710 1443 22 179 20 500 -5 673 -76 536 -316 1019 -700 1410 -362 368 -858 622 -1375 705 -158 25 -584 28 -750 5z m-341 -668 c58 -21 127 -92 144 -151 9 -28 12 -212 12 -671 l0 -631 540 0 540 0 0 631 c0 459 3 643 12 671 18 60 85 130 146 151 44 16 75 18 209 15 176 -4 206 -13 271 -81 61 -63 62 -73 62 -764 l0 -622 223 -3 222 -3 47 -28 c26 -15 62 -49 80 -75 l33 -47 0 -195 0 -196 -35 -49 c-24 -33 -54 -59 -89 -77 l-53 -28 -214 0 -213 0 -3 -642 c-3 -595 -4 -646 -21 -683 -25 -55 -63 -93 -122 -121 -46 -22 -63 -24 -205 -24 -134 0 -161 3 -200 21 -60 27 -98 64 -126 124 l-24 50 0 638 0 637 -540 0 -540 0 0 -637 0 -638 -24 -50 c-29 -62 -77 -107 -137 -130 -39 -14 -74 -16 -205 -13 -174 4 -208 13 -266 75 -65 68 -63 43 -66 751 l-3 642 -213 0 -214 0 -53 28 c-35 18 -65 44 -89 77 l-35 49 0 196 0 195 33 47 c18 26 54 60 80 75 l47 28 222 3 222 3 3 642 c3 707 1 682 66 750 60 64 103 75 282 76 114 1 155 -3 194 -16z"/>
+                        </g>
+                    </svg>
+                    <div id="hsnavcontentbreiteseite">
+                        <div style="display: flex; justify-content: space-around; width: 100%; margin: 8.5px; font-size: 18px;">
+                            <div>
+                                <a href="https://youtube.com/@HanSte_Offiziell" style="display: flex; align-items: center; height: 18px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 4px" fill="hs-fg-001" class="bi bi-youtube" viewBox="0 0 18 18">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                    </svg>
+                                    Youtube
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://instagram.com/hanste_insta" style="display: flex; align-items: center; height: 18px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 4px" fill="var(--hs-fg-001)" class="bi bi-instagram" viewBox="0 0 18 18">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>
+                                    Instagram
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.tiktok.com/@hanste_tiktok" style="display: flex; align-items: center; height: 18px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 4px" fill="var(--hs-fg-001)" class="bi bi-tiktok" viewBox="0 0 18 18">
+                                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                    </svg>
+                                    TikTok
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="hsnavmenu()" id="hsnavcontent3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" class="hs-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                </div>
+                <div style="display: none; font-size: 18px" id="hsnavcontent">
+                    <div>
+                        <a href="https://youtube.com/@HanSte_Offiziell" style="display: flex; align-items: center; height: 18px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 4px" fill="hs-fg-001" class="bi bi-youtube" viewBox="0 0 18 18">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                            </svg>
+                            Youtube
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://instagram.com/hanste_insta" style="display: flex; align-items: center; height: 18px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 4px" fill="var(--hs-fg-001)" class="bi bi-instagram" viewBox="0 0 18 18">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                            Instagram
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.tiktok.com/@hanste_tiktok" style="display: flex; align-items: center; height: 18px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 4px" fill="var(--hs-fg-001)" class="bi bi-tiktok" viewBox="0 0 18 18">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                            </svg>
+                            TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hs-content" data-masonry='{"percentPosition": true }'>
+                <!-- Hier neue Beiträge einfügen -->
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">21. Februar 2024</div><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@hanste_tiktok/video/7338072684233805089" data-video-id="7338072684233805089" style="max-width:540px; min-width:326px; margin-top: 0;" > <section> <a target="_blank" title="@hanste_tiktok" href="https://www.tiktok.com/@hanste_tiktok?refer=embed">@hanste_tiktok</a> <p>Gott liebt dich! Er starb für dich!</p> <a target="_blank" title="♬ original sound  - HanSte" href="https://www.tiktok.com/music/original-sound-HanSte-7338072735886641953?refer=embed">♬ original sound  - HanSte</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">21. Februar 2024</div><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/C3nSOn2Pvri/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C3nSOn2Pvri/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C3nSOn2Pvri/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">21. Februar 2024</div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C3nRqkHoEqr/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C3nRqkHoEqr/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C3nRqkHoEqr/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">21. Februar 2024</div><iframe style="max-width:400px; min-width:326px; min-height:326px" src="https://youtube.com/embed/O_1R5TT9faM?si=ZOtlYcG7eIn7UG3j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">28. Januar 2024</div><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@hanste_tiktok/video/7329282140967947553" data-video-id="7329282140967947553" style="max-width:400px; min-width:326px; margin-top: 0px" > <section> <a target="_blank" title="@hanste_tiktok" href="https://www.tiktok.com/@hanste_tiktok?refer=embed">@hanste_tiktok</a> <p>Wenn es keinen ... #HanSte</p> <a target="_blank" title="♬ original sound  - HanSte" href="https://www.tiktok.com/music/original-sound-HanSte-7329282190876265249?refer=embed">♬ original sound  - HanSte</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">17. Januar 2024</div><iframe style="max-width:400px; min-width:326px; min-height:326px" src="https://youtube.com/embed/xPLyViFRcis?si=Lur4od3aYLfyFzcl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">4.Januar 2024</div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C1seh8DM_82/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C1seh8DM_82/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C1seh8DM_82/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">4.Januar 2024</div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C1sciGLM121/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C1sciGLM121/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C1sciGLM121/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">20. September 2023</div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C1E1MqksPkV/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C1E1MqksPkV/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C1E1MqksPkV/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">13. Dezember 2023</div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C0zswilLGGE/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C0zswilLGGE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C0zswilLGGE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">8. Dezember 2023</div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C0m414mrsnC/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C0m414mrsnC/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C0m414mrsnC/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">3. November 2023</div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CzL22rmNDls/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CzL22rmNDls/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CzL22rmNDls/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+
+                <div class="hs-content-inner"><div class="hs-content-inner-h">2. November 2023</div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CzJ8m6Era5w/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="border:0; border-radius:10px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:400px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CzJ8m6Era5w/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Sieh dir diesen Beitrag auf Instagram an</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CzJ8m6Era5w/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Ein Beitrag geteilt von HanSte (@hanste_insta)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+                
+            </div>
         </div>
-      </div>
-      <div style="height: var(--hs-margin-size) !important;"></div>
+        <script>
+            function hsnavmenu() {
+                var x = document.getElementById("hsnavcontent");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
 
-      <div class="hs-navbar-link-hover p-1" id="hsnavbarlinkwikihover">
-        <button class="btn hs-btn" onclick="hsclose('hsnavbarlinkwikihover')" style="float: right !important;">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        Wiki
-      </div>
+            /*!
+            * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+            * Copyright 2011-2023 The Bootstrap Authors
+            * Licensed under the Creative Commons Attribution 3.0 Unported License.
+            */
 
-      <div class="hs-navbar-link-hover p-1" id="hsnavbarlinkstorehover">
-        <button class="btn hs-btn" onclick="hsclose('hsnavbarlinkstorehover')" style="float: right !important;">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        Store
-      </div>
+            (() => {
+                'use strict'
 
-      <div class="hs-navbar-link-hover p-1" id="hsnavbarlinkoshover">
-        <button class="btn hs-btn" onclick="hsclose('hsnavbarlinkoshover')" style="float: right !important;">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        OS
-      </div>
+                const getStoredTheme = () => localStorage.getItem('theme')
+                const setStoredTheme = theme => localStorage.setItem('theme', theme)
 
-      <div class="hs-navbar-link-hover p-1" id="hsnavbarlinkmediahover">
-        <button class="btn hs-btn" onclick="hsclose('hsnavbarlinkmediahover')" style="float: right !important;">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        Media
-      </div>
+                const getPreferredTheme = () => {
+                    const storedTheme = getStoredTheme()
+                    if (storedTheme) {
+                    return storedTheme
+                    }
 
-      <div class="hs-navbar-link-hover p-1" id="hsnavbarlinkbloghover">
-        <button class="btn hs-btn" onclick="hsclose('hsnavbarlinkbloghover')" style="float: right !important;">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        Blog
-      </div>
+                    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+                }
 
-      <div class="hs-navbar-link-hover p-1" id="hsnavbarlinkshophover">
-        <button class="btn hs-btn" onclick="hsclose('hsnavbarlinkshophover')" style="float: right !important;">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        Shop
-      </div>
+                const setTheme = theme => {
+                    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark')
+                    } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme)
+                    }
+                }
 
-      <div class="hs-navbar-link-hover p-1" id="hsnavbarlinksearchhover">
-        <div class="btn-group w-100">
-          <input type="text" id="hs-search-input" placeholder="Suchen...">
-          <button id="hs-search-button" onclick="hssearch()">
-            <i class="bi bi-search"></i>
-          </button>
-          <button id="hs-search-close" onclick="hsclose('hsnavbarlinksearchhover')">
-            <i class="bi bi-x-lg"></i>
-          </button>
-        </div>
-      </div>
+                setTheme(getPreferredTheme())
 
-      <!-- Search -->
-      <div class="p-3 hs-blur-001" id="hs-search-content" style="display: none;">
-        <button class="btn hs-btn" onclick="hssearchclose2()" style="float: right !important;">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        <ul id="hs-search-ul" class="nav flex-column">
-          <li>
-            <a class="nav-link">ABC1</a>
-          </li>
-          <li>
-            <a class="nav-link">ABC2</a>
-          </li>
-          <li>
-            <a class="nav-link">ABC3</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+                const showActiveTheme = (theme, focus = false) => {
+                    const themeSwitcher = document.querySelector('#bd-theme')
 
-    <div class="offcanvas offcanvas-start hs-blur-001 hs-h-100" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExample2Label">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExample2Label">Labourers and Servants of the Lord</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body nav flex-column">
-        <a class="hs-navbar-link" aria-current="page" href="/wiki/index.html">Wiki</a>
-        <a class="hs-navbar-link" aria-current="page" href="/store/index.html">Store</a>
-        <a class="hs-navbar-link" aria-current="page" href="/os/index.html">OS</a>
-        <a class="hs-navbar-link" aria-current="page" href="/media/index.html">Media</a>
-        <a class="hs-navbar-link" aria-current="page" href="/blog/index.html">Blog</a>
-        <a class="hs-navbar-link" aria-current="page" href="/shop/index.html">Shop</a>
-      </div>
-    </div>
+                    if (!themeSwitcher) {
+                    return
+                    }
 
-    <!-- Einstellungen -->
-    <div class="offcanvas offcanvas-end hs-blur-001 hs-h-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Einstellungen</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <h5>Hintergrundbild ändern</h5>
-        <p>...durch ein Bild von ihrem Computer.</p>
-        <form id="uploadForm" enctype="multipart/form-data" class="btn-group w-100 mb-2">
-          <input class="btn btn-warning" type="file" id="imageUpload" accept=".jpg, .jpeg, .png">
-          <button class="btn btn-primary" type="submit"><i class="bi bi-check"></i></button>
-        </form>
-        <br>
-        <p>...durch ein Bild aus dem Internet.</p>
-        <form id="urlForm" class="btn-group w-100">
-            <input class="btn btn-warning" type="text" id="imageUrl" placeholder="Bildadresse eingeben">
-            <button class="btn btn-primary" type="submit"><i class="bi bi-check"></i></button>
-        </form>
-        <hr>
-        <h5>Theme ändern</h5>
-        <div class="btn-group-vertical w-100" role="group" aria-labelledby="bd-theme-text">
-          <button type="button" class="btn btn-light" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 theme-icon" style="width: 20px; height: 20px;"><use href="#sun-fill"></use></svg>
-            Hell
-          </button>
-          <button type="button" class="btn btn-dark" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 theme-icon" style="width: 20px; height: 20px;"><use href="#moon-stars-fill"></use></svg>
-            Dunkel
-          </button>
-          <button type="button" class="btn btn-secondary" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 theme-icon" style="width: 20px; height: 20px;"><use href="#circle-half"></use></svg>
-            Automatisch
-          </button>
-        </div>
-        <hr>
-        <h5>Abstände ändern</h5>
-        <button class="btn btn-primary w-100" id="hschangemarginandroundedsize">Abstände ändern</button>
-      </div>
-    </div>
+                    const themeSwitcherText = document.querySelector('#bd-theme-text')
+                    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+                    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+                    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
 
-    <!-- Inhalt -->
-    <div class="hs-content p-3 hs-bg-012 hs-search-hide">
-      <div class="row" data-masonry='{"percentPosition": true }'>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card p-3 hs-bg-004">
-            <figure class="p-3 mb-0">
-              <blockquote class="blockquote">
-                <p>Jauchzet dem HERRN, alle Welt; singet, rühmet und lobet!</p>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-body-secondary">
-                Die Bibel <cite title="Source Title">Psalmen 98,4</cite>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card text-center p-3 hs-bg-005">
-            <figure class="mb-0">
-              <blockquote class="blockquote">
-                <p>Selig sind, die reinen Herzens sind; denn sie werden Gott schauen.</p>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-white">
-                Die Bibel <cite title="Source Title">Matthäus 5,8</cite>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <div class="card p-3 text-end hs-bg-006">
-            <figure class="mb-0">
-              <blockquote class="blockquote">
-                <p>HERR, du bist mein Gott, dich preise ich; ich lobe deinen Namen. Denn du hast Wunder getan; deine Ratschlüsse von alters her sind treu und wahrhaftig.</p>
-              </blockquote>
-              <figcaption class="blockquote-footer mb-0 text-body-secondary">
-                Die Bibel <cite title="Source Title">Jesaja 25,1</cite>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hs-content p-3 hs-bg-001 hs-search-hide">
-      <h1>Labourers and Servants of the Lord</h1>
-      <blockquote class="blockquote">
-        <p>Wie oft sieht man christliche Medien mit den der Welt im Internet vermischt, sei es auf Youtube, Spotify... Wer lässt dann schon gerne beispielsweise seine Kinder auf solchen Internetseiten christliche Musik hören. Und dies möchte ich mit Gottes Hilfe ändern.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer mb-0 text-body-secondary">
-        von <cite title="Source Title">Hananja Stechert</cite>
-      </figcaption>
-      <a href="/ueber/index.html" class="btn btn-primary">Über Labourers and Servants of the Lord</a>
-      <a href="/ueber/index.html" class="btn btn-primary">Über Hananja Stechert</a>
-    </div>
-    <div class="hs-content p-3 hs-bg-002 hs-search-hide">
-      <h1>Wiki</h1>
-      <p>Das Wiki soll den Einblick in das Wissenschaftliche aus der Sicht eines Christen ermöglichen</p>
-      <a href="/wiki/index.html" class="btn btn-success">Wiki besuchen</a>
-    </div>
-    <div class="hs-content p-3 hs-bg-003 hs-search-hide">
-      <h1>Store</h1>
-      <p>Der Store soll nur Apps enthalten, die man als Christ braucht. Er soll keine sinnlosen Spiele beinhalten.</p>
-      <a href="/store/index.html" class="btn btn-info">Apps holen</a>
-    </div>
-    <div class="hs-content p-3 hs-bg-004 hs-search-hide">
-      <h1>OS</h1>
-      <p>Das OS und das PhoneOS sollen nur notwendige Apps enthalten, also keine Spiele, aber dafür beispielsweise eine App zum Verse lernen oder oder auch Apps um Textdokumente zu schreiben.</p>
-      <a href="/os/index.html" class="btn btn-warning">Mehr</a>
-    </div>
-    <div class="hs-content p-3 hs-bg-005 hs-search-hide">
-      <h1>Media</h1>
-      <p>Media soll nicht wie Youtbe und andere Plattformen sinnlose Videos enthalten, sondern für das Leben notwendige.</p>
-      <a href="/media/index.html" class="btn btn-danger">Christliche Medien online entdecken</a>
-    </div>
-    <div class="hs-content p-3 hs-bg-006 hs-search-hide">
-      <h1>Blog</h1>
-      <p>Und hier kann man wichtige Neuigkeiten zu dieser Webseite und über die Christen auf der Welt lesen können.</p>
-      <a href="/shop/index.html" class="btn btn-success">Jetzt den Blog besuchen</a>
-    </div>
-    <div class="hs-content p-3 hs-bg-007 hs-search-hide">
-      <h1>Shop</h1>
-      <p>Auch der Shop soll nur notwendige Dinge beinhalten und keine sündigen Sachen.</p>
-      <a href="/shop/index.html" class="btn btn-success">Shop ansehen und Einkaufen gehen</a>
-    </div>
-    <div class="hs-content p-3 hs-bg-008 hs-search-hide">
-      <h1>Geben sie ihr Feedback und unterstützen sie so diese Seite</h1>
-      <p>Geben sie jetzt ihr Feedback zu dieser Seite</p>
-      <a href="/feedback/index.html" class="btn btn-info">Feedback geben</a>
-    </div>
-    <div class="hs-content p-3 hs-bg-009 hs-search-hide">
-      <h1>Helfen sie mit</h1>
-      <p>Programmiere sie das, was noch nicht programmiert ist. Senden sie eine Mail an mich, wenn sie programmieren können und helfen sie mir mit.</p>
-      <a href="mailto:stecherthananja@outlook.de" class="btn btn-warning">Mail senden</a>
-    </div>
+                    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active')
+                    element.setAttribute('aria-pressed', 'false')
+                    })
 
-    <!-- Navigationsmenu Unten -->
-    <div class="hs-content p-3 hs-blur-001">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>HanSte</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="/feedback.html" class="nav-link p-0 text-body-secondary">Feedback</a></li>
-            <li class="nav-item mb-2"><a href="/datenschutz.html" class="nav-link p-0 text-body-secondary">Datenschutz</a></li>
-            <li class="nav-item mb-2"><a href="/ueber.html" class="nav-link p-0 text-body-secondary">Über</a></li>
-            <li class="nav-item mb-2"><a href="/impressum.html" class="nav-link p-0 text-body-secondary">Impressum</a></li>
-            <li class="nav-item mb-2"><a href="/agbs.html" class="nav-link p-0 text-body-secondary">AGBs</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/wiki/index.html" class="nav-link"><h5>Wiki</h5></a>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="/index.html" class="nav-link p-0 text-body-secondary">Wiki</a>
-            </li>
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/store/index.html" class="nav-link"><h5>Store</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/os/index.html" class="nav-link"><h5>OS</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/media/index.html" class="nav-link"><h5>Media</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
+                    btnToActive.classList.add('active')
+                    btnToActive.setAttribute('aria-pressed', 'true')
+                    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+                    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+                    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
 
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/blog/index.html" class="nav-link"><h5>Blog</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
-  
-        <div class="col-6 col-md-2 mb-3">
-          <a href="/shop/index.html" class="nav-link"><h5>Shop</h5></a>
-          <ul class="nav flex-column">
-          </ul>
-        </div>
-      </div>
-      
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2023 HanSte</p>
-      </div>
-    </div>
+                    if (focus) {
+                    themeSwitcher.focus()
+                    }
+                }
 
-    <!-- Javascript -->
-    <script src="/js/index.js"></script>
-    <script src="/js/color-modes.js"></script>
-    <script src="/js/bootstrap.bundle.js"></script>
-    <script src="/js/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
-  </body>
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    const storedTheme = getStoredTheme()
+                    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme())
+                    }
+                })
+
+                window.addEventListener('DOMContentLoaded', () => {
+                    showActiveTheme(getPreferredTheme())
+
+                    document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                        const theme = toggle.getAttribute('data-bs-theme-value')
+                        setStoredTheme(theme)
+                        setTheme(theme)
+                        showActiveTheme(theme, true)
+                        })
+                    })
+                })
+            })()
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    </body>
 </html>
